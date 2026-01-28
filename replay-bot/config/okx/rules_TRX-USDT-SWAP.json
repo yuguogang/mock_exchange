@@ -1,0 +1,13 @@
+{
+  "exchange": "okx",
+  "symbol": "TRX-USDT-SWAP",
+  "contractSize": 1000,
+  "fundingIntervalHours": 8,
+  "pricePrecision": 5,
+  "quantityPrecision": 0,
+  "tickSize": "0.00001",
+  "lotSize": "1",
+  "minSize": "1",
+  "ctVal": "1000",
+  "settleCcy": "USDT"
+}

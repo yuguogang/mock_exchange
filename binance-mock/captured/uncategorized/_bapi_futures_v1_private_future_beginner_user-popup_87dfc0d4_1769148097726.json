@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "url": "https://www.binance.com/bapi/futures/v1/private/future/beginner/user-popup",
+    "method": "POST",
+    "pathname": "/bapi/futures/v1/private/future/beginner/user-popup",
+    "query": {},
+    "postData": {},
+    "timestamp": 1769148097726,
+    "category": "unknown"
+  },
+  "response": {
+    "code": "000000",
+    "message": null,
+    "messageDetail": null,
+    "data": null,
+    "success": true
+  }
+}

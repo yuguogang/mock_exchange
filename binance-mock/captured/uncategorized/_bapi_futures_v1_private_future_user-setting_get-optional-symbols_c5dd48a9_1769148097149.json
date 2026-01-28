@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "url": "https://www.binance.com/bapi/futures/v1/private/future/user-setting/get-optional-symbols",
+    "method": "POST",
+    "pathname": "/bapi/futures/v1/private/future/user-setting/get-optional-symbols",
+    "query": {},
+    "postData": null,
+    "timestamp": 1769148097149,
+    "category": "unknown"
+  },
+  "response": {
+    "code": "000000",
+    "message": null,
+    "messageDetail": null,
+    "data": "BTCUSDT,BCHUSDT,ETHUSDT,ETCUSDT,LTCUSDT,XRPUSDT,EOSUSDT",
+    "success": true
+  }
+}

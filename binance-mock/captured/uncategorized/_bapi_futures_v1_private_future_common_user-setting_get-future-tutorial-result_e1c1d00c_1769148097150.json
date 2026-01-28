@@ -1,0 +1,20 @@
+{
+  "meta": {
+    "url": "https://www.binance.com/bapi/futures/v1/private/future/common/user-setting/get-future-tutorial-result",
+    "method": "POST",
+    "pathname": "/bapi/futures/v1/private/future/common/user-setting/get-future-tutorial-result",
+    "query": {},
+    "postData": {
+      "pathFilter": true
+    },
+    "timestamp": 1769148097150,
+    "category": "unknown"
+  },
+  "response": {
+    "code": "000000",
+    "message": null,
+    "messageDetail": null,
+    "data": false,
+    "success": true
+  }
+}

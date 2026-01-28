@@ -1,0 +1,23 @@
+{
+  "meta": {
+    "url": "https://www.binance.com/bapi/futures/v1/public/future/common/futures-stable-assets",
+    "method": "GET",
+    "pathname": "/bapi/futures/v1/public/future/common/futures-stable-assets",
+    "query": {},
+    "postData": null,
+    "timestamp": 1769148171557,
+    "category": "unknown"
+  },
+  "response": {
+    "code": "000000",
+    "message": null,
+    "messageDetail": null,
+    "data": [
+      "USDT",
+      "USDC",
+      "FDUSD",
+      "BNFCR"
+    ],
+    "success": true
+  }
+}

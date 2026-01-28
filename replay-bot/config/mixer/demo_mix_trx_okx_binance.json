@@ -1,0 +1,169 @@
+{
+  "mixer_name": "demo_mix_trx_okx_binance",
+  "timezone": "Asia/Shanghai",
+  "description": "测试 16:00 开仓，17:00 平仓的闭环场景",
+  "legs": [
+    {
+      "exchange": "binance",
+      "symbol": "TRXUSDT"
+    },
+    {
+      "exchange": "okx",
+      "symbol": "TRX-USDT-SWAP"
+    }
+  ],
+  "alignment": {
+    "time_source": "binance",
+    "tolerance_ms": 30000
+  },
+  "segments": [
+    {
+      "id": "seg_C",
+      "start_local": "2026-01-27 16:20",
+      "end_local": "2026-01-27 16:23",
+      "target": {
+        "exchange": "okx",
+        "symbol": "TRX-USDT-SWAP",
+        "metrics": [
+          "funding",
+          "price"
+        ]
+      },
+      "ops": {
+        "funding": [
+          {
+            "type": "scale",
+            "value": 2
+          },
+          {
+            "type": "clamp",
+            "min": -0.01,
+            "max": 0.01
+          }
+        ],
+        "price": [
+          {
+            "type": "target_spread_pct",
+            "value": -0.02
+          }
+        ]
+      },
+      "priority": 210,
+      "notes": "段C - 极端价差场景（测试用）"
+    },
+    {
+      "id": "default",
+      "start_local": "2026-01-27 16:20",
+      "end_local": "2026-01-27 16:23",
+      "target": {
+        "exchange": "okx",
+        "symbol": "TRX-USDT-SWAP",
+        "metrics": [
+          "funding",
+          "price"
+        ]
+      },
+      "ops": {
+        "funding": [],
+        "price": []
+      },
+      "priority": 210,
+      "notes": "默认模式 - 停止所有干预，回归真实市场"
+    },
+    {
+      "id": "seg_close_17",
+      "start_local": "2026-01-26 17:00",
+      "end_local": "2026-01-26 18:00",
+      "target": {
+        "exchange": "okx",
+        "symbol": "TRX-USDT-SWAP",
+        "metrics": [
+          "funding",
+          "price"
+        ]
+      },
+      "ops": {
+        "funding": [
+          {
+            "type": "scale",
+            "value": 0
+          }
+        ],
+        "price": [
+          {
+            "type": "target_spread_pct",
+            "value": 0
+          }
+        ]
+      },
+      "priority": 110,
+      "notes": "2026-01-26 17:00 收敛平仓，价差回到0"
+    },
+    {
+      "id": "seg_open_07",
+      "start_local": "2026-01-26 07:00",
+      "end_local": "2026-01-26 17:00",
+      "target": {
+        "exchange": "okx",
+        "symbol": "TRX-USDT-SWAP",
+        "metrics": [
+          "funding",
+          "price"
+        ]
+      },
+      "ops": {
+        "funding": [],
+        "price": [
+          {
+            "type": "target_spread_pct",
+            "value": 0.02
+          }
+        ]
+      },
+      "priority": 100,
+      "notes": "2026-01-26 07:00-17:00 放大价差制造对冲开仓机会"
+    },
+    {
+      "id": "seg_funding_only",
+      "start_local": "2026-01-26 16:05",
+      "end_local": "2026-01-26 16:09",
+      "target": {
+        "exchange": "okx",
+        "symbol": "TRX-USDT-SWAP",
+        "metrics": [
+          "funding",
+          "price"
+        ]
+      },
+      "ops": {
+        "funding": [
+          {
+            "type": "scale",
+            "value": 5
+          },
+          {
+            "type": "offset",
+            "value": 0.0005
+          }
+        ],
+        "price": []
+      },
+      "priority": 30,
+      "notes": "仅强力提升资金费，保持真实市场价差"
+    }
+  ],
+  "outputs": {
+    "dir": "data_mixed/demo_mix_trx_okx_binance",
+    "files": [
+      "binance_TRXUSDT.json",
+      "binance_funding_TRXUSDT.json",
+      "okx_TRX-USDT-SWAP.json",
+      "okx_funding_TRX-USDT-SWAP.json"
+    ]
+  },
+  "audit": {
+    "include_stats": true,
+    "include_samples": true,
+    "spread_target_tolerance_pct": 0.00001
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "meta": {
+    "url": "https://www.binance.com/bapi/futures/v1/private/future/copy-trade/home-page/user-info",
+    "method": "POST",
+    "pathname": "/bapi/futures/v1/private/future/copy-trade/home-page/user-info",
+    "query": {},
+    "postData": null,
+    "timestamp": 1769148096986,
+    "category": "unknown"
+  },
+  "response": {
+    "code": "000000",
+    "message": null,
+    "messageDetail": null,
+    "data": {
+      "leadPortfolioId": null,
+      "leadPortfolioStatus": null,
+      "privateLeadPortfolioId": null,
+      "privateLeadPortfolioStatus": null,
+      "copyLeadPortfolioIds": null,
+      "totalInvestAsset": "USDT",
+      "totalInvestAmount": 0,
+      "totalPnlAsset": "USDT",
+      "totalPnlAmount": 0
+    },
+    "success": true
+  }
+}

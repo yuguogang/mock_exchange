@@ -1,0 +1,27 @@
+{
+  "meta": {
+    "url": "https://www.binance.com/bapi/accounts/v1/private/account/user/userInfo",
+    "method": "GET",
+    "pathname": "/bapi/accounts/v1/private/account/user/userInfo",
+    "query": {},
+    "postData": null,
+    "timestamp": 1769148098599,
+    "category": "account"
+  },
+  "response": {
+    "code": "000000",
+    "message": null,
+    "messageDetail": null,
+    "data": {
+      "parent": null,
+      "isBindEmail": true,
+      "email": "guogangyu313@gmail.com",
+      "isBindMobile": false,
+      "mobileCode": null,
+      "mobile": null,
+      "userId": "1175667995",
+      "switchAccountShowEntity": null
+    },
+    "success": true
+  }
+}

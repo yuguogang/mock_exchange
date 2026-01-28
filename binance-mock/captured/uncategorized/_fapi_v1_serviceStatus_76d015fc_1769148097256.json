@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "url": "https://www.binance.com/fapi/v1/serviceStatus",
+    "method": "GET",
+    "pathname": "/fapi/v1/serviceStatus",
+    "query": {},
+    "postData": null,
+    "timestamp": 1769148097256,
+    "category": "unknown"
+  },
+  "response": {
+    "marketData": true,
+    "userData": true,
+    "placeOrder": true
+  }
+}

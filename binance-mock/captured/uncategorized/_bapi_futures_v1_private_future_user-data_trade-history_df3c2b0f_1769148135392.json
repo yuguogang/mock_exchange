@@ -1,0 +1,25 @@
+{
+  "meta": {
+    "url": "https://www.binance.com/bapi/futures/v1/private/future/user-data/trade-history",
+    "method": "POST",
+    "pathname": "/bapi/futures/v1/private/future/user-data/trade-history",
+    "query": {},
+    "postData": {
+      "startTime": 1767628800000,
+      "endTime": 1769183999998,
+      "page": 1,
+      "rows": 200,
+      "symbol": "XRPUSDT"
+    },
+    "timestamp": 1769148135392,
+    "category": "unknown"
+  },
+  "response": {
+    "code": "000000",
+    "message": null,
+    "messageDetail": null,
+    "data": [],
+    "total": 0,
+    "success": true
+  }
+}

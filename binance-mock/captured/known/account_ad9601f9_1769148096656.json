@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "url": "https://www.binance.com/bapi/accounts/v2/public/account/ip/country-short",
+    "method": "GET",
+    "pathname": "/bapi/accounts/v2/public/account/ip/country-short",
+    "query": {},
+    "postData": null,
+    "timestamp": 1769148096656,
+    "category": "account"
+  },
+  "response": {
+    "code": "000000",
+    "message": null,
+    "data": "HK",
+    "messageDetail": null,
+    "success": true
+  }
+}

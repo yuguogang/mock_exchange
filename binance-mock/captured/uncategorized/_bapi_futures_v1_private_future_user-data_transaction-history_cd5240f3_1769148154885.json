@@ -1,0 +1,37 @@
+{
+  "meta": {
+    "url": "https://www.binance.com/bapi/futures/v1/private/future/user-data/transaction-history",
+    "method": "POST",
+    "pathname": "/bapi/futures/v1/private/future/user-data/transaction-history",
+    "query": {},
+    "postData": {
+      "startTime": 1769011200000,
+      "endTime": 1769183999998,
+      "page": 1,
+      "rows": 200
+    },
+    "timestamp": 1769148154885,
+    "category": "unknown"
+  },
+  "response": {
+    "code": "000000",
+    "message": null,
+    "messageDetail": null,
+    "data": [
+      {
+        "id": "90161654003738_COMMISSION",
+        "tranId": 90161654003738,
+        "asset": "USDT",
+        "balancetype": "COMMISSION",
+        "balanceDelta": -0.00262752,
+        "balanceTypeStr": "COMMISSION",
+        "balanceDeltaStr": "-0.00262752",
+        "balanceInfo": "654003738",
+        "time": 1769145653000,
+        "symbol": "TRXUSDT"
+      }
+    ],
+    "total": 1,
+    "success": true
+  }
+}

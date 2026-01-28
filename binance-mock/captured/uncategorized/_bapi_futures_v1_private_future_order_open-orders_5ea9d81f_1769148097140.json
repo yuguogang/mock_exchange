@@ -1,0 +1,55 @@
+{
+  "meta": {
+    "url": "https://www.binance.com/bapi/futures/v1/private/future/order/open-orders?",
+    "method": "POST",
+    "pathname": "/bapi/futures/v1/private/future/order/open-orders",
+    "query": {},
+    "postData": {},
+    "timestamp": 1769148097140,
+    "category": "unknown"
+  },
+  "response": {
+    "code": "000000",
+    "message": null,
+    "messageDetail": null,
+    "data": [
+      {
+        "id": "17316958700_TRXUSDT_LONG",
+        "orderId": 17316958700,
+        "symbol": "TRXUSDT",
+        "clientOrderId": "web_coin_hjfcovntcct4iia6ytzqf4s",
+        "origClientOrderId": null,
+        "price": "0.29978",
+        "avgPrice": "0",
+        "origQty": "17",
+        "money": null,
+        "executedQty": "0",
+        "executedQuoteQty": "0",
+        "status": "NEW",
+        "timeInForce": "GTC",
+        "type": "LIMIT",
+        "side": "BUY",
+        "stopPrice": "0",
+        "insertTime": 1769145465187,
+        "updateTime": 1769145465187,
+        "delegateMoney": "5.09626",
+        "targetStrategy": 0,
+        "priceProtect": 0,
+        "reduceOnly": false,
+        "workingType": "CONTRACT_PRICE",
+        "origType": "LIMIT",
+        "positionSide": "LONG",
+        "activatePrice": null,
+        "priceRate": null,
+        "closePosition": false,
+        "strategyId": null,
+        "strategySubId": null,
+        "strategyType": null,
+        "selfProtectionMode": "EXPIRE_MAKER",
+        "goodTillDate": 0,
+        "priceMatch": "NONE"
+      }
+    ],
+    "success": true
+  }
+}

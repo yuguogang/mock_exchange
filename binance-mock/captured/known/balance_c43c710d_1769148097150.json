@@ -1,0 +1,131 @@
+{
+  "meta": {
+    "url": "https://www.binance.com/bapi/asset/v2/private/asset-service/wallet/balance?quoteAsset=USDT",
+    "method": "GET",
+    "pathname": "/bapi/asset/v2/private/asset-service/wallet/balance",
+    "query": {
+      "quoteAsset": "USDT"
+    },
+    "postData": null,
+    "timestamp": 1769148097150,
+    "category": "balance"
+  },
+  "response": {
+    "code": "000000",
+    "message": null,
+    "messageDetail": null,
+    "data": [
+      {
+        "accountType": "MAIN",
+        "activate": true,
+        "balance": "0",
+        "time": 1769148096979,
+        "assetBalances": [],
+        "walletName": "现货账户",
+        "walletIcon": "https://bin.bnbstatic.com/static/images/wallet-account/spot.png",
+        "uniAccountType": "NORMAL"
+      },
+      {
+        "accountType": "CARD",
+        "activate": true,
+        "balance": "0",
+        "time": 1769148096979,
+        "assetBalances": [],
+        "walletName": "资金账户",
+        "walletIcon": "https://bin.bnbstatic.com/static/images/wallet-account/funding.png",
+        "uniAccountType": "NORMAL"
+      },
+      {
+        "accountType": "MARGIN",
+        "activate": true,
+        "balance": "0",
+        "time": 1769148096979,
+        "assetBalances": [],
+        "walletName": "杠杆账户（全仓）",
+        "walletIcon": "https://bin.bnbstatic.com/static/images/wallet-account/margin-cross.png",
+        "uniAccountType": "NORMAL"
+      },
+      {
+        "accountType": "ISOLATED_MARGIN",
+        "activate": true,
+        "balance": "0",
+        "time": 1769148096979,
+        "assetBalances": [],
+        "walletName": "杠杆账户（逐仓）",
+        "walletIcon": "https://bin.bnbstatic.com/static/images/wallet-account/margin-isolated.png",
+        "uniAccountType": "NORMAL"
+      },
+      {
+        "accountType": "FUTURE",
+        "activate": true,
+        "balance": "23.82096197",
+        "time": 1769148096979,
+        "assetBalances": [],
+        "walletName": "合约账户（U本位）",
+        "walletIcon": "https://bin.bnbstatic.com/static/images/wallet-account/futures-usdt-m.png",
+        "uniAccountType": "NORMAL"
+      },
+      {
+        "accountType": "DELIVERY",
+        "activate": true,
+        "balance": "0",
+        "time": 1769148096979,
+        "assetBalances": [],
+        "walletName": "合约账户（币本位）",
+        "walletIcon": "https://bin.bnbstatic.com/static/images/wallet-account/futures-coin-m.png",
+        "uniAccountType": "NORMAL"
+      },
+      {
+        "accountType": "SAVING",
+        "activate": true,
+        "balance": "0",
+        "time": 1769148096979,
+        "assetBalances": [],
+        "walletName": "理财账户",
+        "walletIcon": "https://bin.bnbstatic.com/static/images/wallet-account/earn.png",
+        "uniAccountType": "NORMAL"
+      },
+      {
+        "accountType": "TOPTION",
+        "activate": false,
+        "balance": "0",
+        "time": 1769148096979,
+        "assetBalances": [],
+        "walletName": "期权账户",
+        "walletIcon": "https://bin.bnbstatic.com/static/images/wallet-account/futures-options.png",
+        "uniAccountType": "NORMAL"
+      },
+      {
+        "accountType": "COPY_TRADE",
+        "activate": true,
+        "balance": "0",
+        "time": 1769148096979,
+        "assetBalances": [],
+        "walletName": "跟单交易",
+        "walletIcon": "https://bin.bnbstatic.com/static/wallet_icon/wallet_ic_overview_copy_trade.png",
+        "uniAccountType": "NORMAL"
+      },
+      {
+        "accountType": "STRATEGY",
+        "activate": false,
+        "balance": "0",
+        "time": 1769148096979,
+        "assetBalances": [],
+        "walletName": "交易机器人",
+        "walletIcon": "https://bin.bnbstatic.com/static/images/wallet-account/trading-bot.png",
+        "uniAccountType": "NORMAL"
+      },
+      {
+        "accountType": "LOAN",
+        "activate": true,
+        "balance": "0",
+        "time": 1769148096979,
+        "assetBalances": [],
+        "walletName": "借币",
+        "walletIcon": null,
+        "uniAccountType": "NORMAL"
+      }
+    ],
+    "success": true
+  }
+}

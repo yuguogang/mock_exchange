@@ -1,0 +1,41 @@
+{
+  "meta": {
+    "url": "https://www.binance.com/bapi/accounts/v1/private/account/get-user-base-info",
+    "method": "GET",
+    "pathname": "/bapi/accounts/v1/private/account/get-user-base-info",
+    "query": {},
+    "postData": null,
+    "timestamp": 1769148096989,
+    "category": "account"
+  },
+  "response": {
+    "code": "000000",
+    "message": null,
+    "messageDetail": null,
+    "data": {
+      "userId": "1175667995",
+      "email": "guogangyu313@gmail.com",
+      "mobileNo": "",
+      "mobileCode": "",
+      "level": 2,
+      "mobileSecurity": false,
+      "gauth": false,
+      "tradeLevel": 0,
+      "registerChannel": null,
+      "commissionStatus": 1,
+      "isPortfolioMarginRetailUser": false,
+      "isBindFido": true,
+      "assetSubAccount": false,
+      "enterpriseAccount": false,
+      "bindEmail": true,
+      "enterpriseRoleUser": false,
+      "commonMerchantSubUser": false,
+      "signedLVTRiskAgreement": false,
+      "mobileUser": false,
+      "parentUser": false,
+      "subUser": false,
+      "noEmailSubUser": false
+    },
+    "success": true
+  }
+}

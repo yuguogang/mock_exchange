@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "url": "https://www.binance.com/bapi/futures/v1/private/future/user-data/user-listen-key",
+    "method": "POST",
+    "pathname": "/bapi/futures/v1/private/future/user-data/user-listen-key",
+    "query": {},
+    "postData": {},
+    "timestamp": 1769148097142,
+    "category": "unknown"
+  },
+  "response": {
+    "code": "000000",
+    "message": null,
+    "messageDetail": null,
+    "data": "4e6d99b03f565d2b1123079978b142d6",
+    "success": true
+  }
+}

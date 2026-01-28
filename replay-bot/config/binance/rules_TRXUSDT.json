@@ -1,0 +1,22 @@
+{
+  "exchange": "binance",
+  "symbol": "TRXUSDT",
+  "contractSize": 1,
+  "fundingIntervalHours": 8,
+  "pricePrecision": 5,
+  "quantityPrecision": 0,
+  "filters": [
+    {
+      "filterType": "PRICE_FILTER",
+      "minPrice": "0.00001",
+      "maxPrice": "1000",
+      "tickSize": "0.00001"
+    },
+    {
+      "filterType": "LOT_SIZE",
+      "minQty": "1",
+      "maxQty": "10000000",
+      "stepSize": "1"
+    }
+  ]
+}

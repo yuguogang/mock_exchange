@@ -1,0 +1,25 @@
+{
+    "name": "replay-bot",
+    "version": "1.0.0",
+    "description": "Hedging Strategy Replay Bot for Mock Server",
+    "main": "live_runner_enhanced.js",
+    "scripts": {
+        "start": "node live_runner_enhanced.js",
+        "download": "node download_data.js",
+        "mix": "node mixer_dynamic.js",
+        "signal": "node scheduler.js",
+        "strategy": "node strategy.js",
+        "rule:list": "node rule_manager.js list",
+        "rule:status": "node rule_manager.js status",
+        "lint": "node -c *.js || true",
+        "test": "node test/validator.test.js"
+    },
+    "keywords": [
+        "mock",
+        "trading",
+        "replay",
+        "hedging"
+    ],
+    "author": "",
+    "license": "ISC"
+}

@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "url": "https://www.binance.com/bapi/futures/v1/private/future/user-data/transaction-history",
+    "method": "POST",
+    "pathname": "/bapi/futures/v1/private/future/user-data/transaction-history",
+    "query": {},
+    "postData": {
+      "startTime": 1767196800000,
+      "endTime": 1769183999998,
+      "balanceType": "COMMISSION",
+      "page": 1,
+      "rows": 200
+    },
+    "timestamp": 1769148165242,
+    "category": "unknown"
+  },
+  "response": {
+    "code": "000000",
+    "message": null,
+    "messageDetail": null,
+    "data": [
+      {
+        "id": "90161654003738_COMMISSION",
+        "tranId": 90161654003738,
+        "asset": "USDT",
+        "balancetype": "COMMISSION",
+        "balanceDelta": -0.00262752,
+        "balanceTypeStr": "COMMISSION",
+        "balanceDeltaStr": "-0.00262752",
+        "balanceInfo": "654003738",
+        "time": 1769145653000,
+        "symbol": "TRXUSDT"
+      },
+      {
+        "id": "90160653511142_COMMISSION",
+        "tranId": 90160653511142,
+        "asset": "USDT",
+        "balancetype": "COMMISSION",
+        "balanceDelta": -0.00251387,
+        "balanceTypeStr": "COMMISSION",
+        "balanceDeltaStr": "-0.00251387",
+        "balanceInfo": "653511142",
+        "time": 1768989518000,
+        "symbol": "TRXUSDT"
+      },
+      {
+        "id": "90161652172489_COMMISSION",
+        "tranId": 90161652172489,
+        "asset": "USDT",
+        "balancetype": "COMMISSION",
+        "balanceDelta": -0.0026571,
+        "balanceTypeStr": "COMMISSION",
+        "balanceDeltaStr": "-0.00265710",
+        "balanceInfo": "652172489",
+        "time": 1768651178000,
+        "symbol": "TRXUSDT"
+      },
+      {
+        "id": "90161652165528_COMMISSION",
+        "tranId": 90161652165528,
+        "asset": "USDT",
+        "balancetype": "COMMISSION",
+        "balanceDelta": -0.0026582,
+        "balanceTypeStr": "COMMISSION",
+        "balanceDeltaStr": "-0.00265820",
+        "balanceInfo": "652165528",
+        "time": 1768649400000,
+        "symbol": "TRXUSDT"
+      },
+      {
+        "id": "90160652139382_COMMISSION",
+        "tranId": 90160652139382,
+        "asset": "USDT",
+        "balancetype": "COMMISSION",
+        "balanceDelta": -0.00263483,
+        "balanceTypeStr": "COMMISSION",
+        "balanceDeltaStr": "-0.00263483",
+        "balanceInfo": "652139382",
+        "time": 1768641731000,
+        "symbol": "TRXUSDT"
+      }
+    ],
+    "total": 5,
+    "success": true
+  }
+}

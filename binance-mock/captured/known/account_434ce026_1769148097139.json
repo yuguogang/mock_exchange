@@ -1,0 +1,20 @@
+{
+  "meta": {
+    "url": "https://www.binance.com/bapi/futures/v1/private/future/user-setting/get-account-credit-config",
+    "method": "POST",
+    "pathname": "/bapi/futures/v1/private/future/user-setting/get-account-credit-config",
+    "query": {},
+    "postData": {},
+    "timestamp": 1769148097139,
+    "category": "account"
+  },
+  "response": {
+    "code": "000000",
+    "message": null,
+    "messageDetail": null,
+    "data": {
+      "creditStatus": 0
+    },
+    "success": true
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "api_endpoint": "/bapi/futures/v6/private/future/user-data/user-position",
+  "method": "POST",
+  "description": "获取用户持仓信息",
+  "query_parameters": {},
+  "postData_parameters": {},
+  "response_fields": {
+    "id": "持仓ID",
+    "symbol": "交易对符号",
+    "positionSide": "持仓方向",
+    "positionAmount": "持仓数量",
+    "entryPrice": "开仓价格",
+    "breakEvenPrice": "盈亏平衡价格",
+    "markPrice": "标记价格",
+    "unrealizedProfit": "未实现盈亏",
+    "liquidationPrice": "强平价格",
+    "isolatedMargin": "逐仓保证金",
+    "notionalValue": "名义价值",
+    "collateral": "抵押品",
+    "isolatedWallet": "逐仓钱包",
+    "cumRealized": "累计已实现盈亏",
+    "initialMargin": "初始保证金",
+    "maintMargin": "维持保证金",
+    "positionInitialMargin": "持仓初始保证金",
+    "openOrderInitialMargin": "挂单初始保证金",
+    "adl": "自动减仓等级",
+    "askNotional": "卖单名义价值",
+    "bidNotional": "买单名义价值",
+    "updateTime": "更新时间"
+  },
+  "position_sides": ["LONG", "SHORT"]
+}

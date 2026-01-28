@@ -1,0 +1,16 @@
+{
+    "name": "binance-mock",
+    "version": "1.0.0",
+    "description": "Minimal Binance Mock API Service",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js"
+    },
+    "dependencies": {
+        "@fastify/cors": "^8.5.0",
+        "fastify": "^4.0.0",
+        "puppeteer-core": "^24.35.0"
+    },
+    "author": "",
+    "license": "ISC"
+}

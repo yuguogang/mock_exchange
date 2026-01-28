@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "url": "https://www.binance.com/bapi/futures/v1/private/future/user-data/check-first-trade",
+    "method": "POST",
+    "pathname": "/bapi/futures/v1/private/future/user-data/check-first-trade",
+    "query": {},
+    "postData": null,
+    "timestamp": 1769148097148,
+    "category": "unknown"
+  },
+  "response": {
+    "code": "000000",
+    "message": null,
+    "messageDetail": null,
+    "data": true,
+    "success": true
+  }
+}

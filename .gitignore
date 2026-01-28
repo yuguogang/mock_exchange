@@ -1,0 +1,36 @@
+# Dependencies
+node_modules/
+dist/
+.npm/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Databases
+*.db
+*.sqlite
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+.env.local
+
+# Build outputs
+build/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Project specific
+replay-bot/logs/
+replay-bot/mock_data/
+signal-translator/logs/
+mock-server/*.db

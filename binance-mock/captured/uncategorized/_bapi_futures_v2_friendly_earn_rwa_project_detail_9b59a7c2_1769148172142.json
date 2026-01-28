@@ -1,0 +1,33 @@
+{
+  "meta": {
+    "url": "https://www.binance.com/bapi/futures/v2/friendly/earn/rwa/project/detail",
+    "method": "GET",
+    "pathname": "/bapi/futures/v2/friendly/earn/rwa/project/detail",
+    "query": {},
+    "postData": null,
+    "timestamp": 1769148172142,
+    "category": "unknown"
+  },
+  "response": {
+    "code": "000000",
+    "message": null,
+    "messageDetail": null,
+    "data": {
+      "projectId": "usdcStaking",
+      "normalRedeemFeeRate": "0.00050000",
+      "fastRedeemFeeRate": "0.00100000",
+      "apr": "0.03560000",
+      "minPurchaseAmount": "0.10000000",
+      "normalRedeemPeriod": "3.00000000",
+      "rewardDistributeDay": "1769335200000",
+      "minRewardAmount": "0.01000000",
+      "redeemFreeQuota": "100.00000000",
+      "totalApr": "0.03560000",
+      "hasBoost": false,
+      "boostApr": null,
+      "boostAprDetails": null,
+      "preHeatInfo": null
+    },
+    "success": true
+  }
+}

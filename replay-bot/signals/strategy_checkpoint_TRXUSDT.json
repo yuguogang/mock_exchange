@@ -1,0 +1,11 @@
+{
+  "lastProcessedTs": 1769558400000,
+  "activePosition": {
+    "sessionId": "ARB_FAKE_1769558400000",
+    "entryTs": 1769558400000,
+    "accumulatedIncome": 0,
+    "sideA": "BUY",
+    "sideB": "SELL"
+  },
+  "totalIncome": -109.06741745257337
+}

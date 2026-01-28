@@ -1,0 +1,46 @@
+{
+  "meta": {
+    "url": "https://www.binance.com/bapi/futures/v1/private/future/user-data/trade-history",
+    "method": "POST",
+    "pathname": "/bapi/futures/v1/private/future/user-data/trade-history",
+    "query": {},
+    "postData": {
+      "startTime": 1769011200000,
+      "endTime": 1769183999998,
+      "page": 1,
+      "rows": 200
+    },
+    "timestamp": 1769148150460,
+    "category": "unknown"
+  },
+  "response": {
+    "code": "000000",
+    "message": null,
+    "messageDetail": null,
+    "data": [
+      {
+        "tradeId": 654003738,
+        "orderId": 17316965745,
+        "orderIdStr": "17316965745",
+        "price": "0.30912",
+        "insertTime": 1769145653000,
+        "symbol": "TRXUSDT",
+        "side": "BUY",
+        "activeBuy": true,
+        "qty": "17.00000000",
+        "fee": "0.00262752",
+        "commissionAsset": "USDT",
+        "totalQuota": "5.2550400000000000",
+        "productName": null,
+        "baseAsset": "TRX",
+        "quoteAsset": "USDT",
+        "marginAsset": "USDT",
+        "realizedProfit": "0.00000000",
+        "id": "654003738_TRXUSDT_BUY_LONG",
+        "positionSide": "LONG"
+      }
+    ],
+    "total": 1,
+    "success": true
+  }
+}

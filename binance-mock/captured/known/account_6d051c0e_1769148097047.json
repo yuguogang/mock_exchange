@@ -1,0 +1,21 @@
+{
+  "meta": {
+    "url": "https://www.binance.com/bapi/accounts/v2/private/certificate/onlyAccount/baseDetail/kycStatus",
+    "method": "POST",
+    "pathname": "/bapi/accounts/v2/private/certificate/onlyAccount/baseDetail/kycStatus",
+    "query": {},
+    "postData": null,
+    "timestamp": 1769148097047,
+    "category": "account"
+  },
+  "response": {
+    "code": "000000",
+    "message": null,
+    "messageDetail": null,
+    "data": {
+      "certificateStatus": 1,
+      "firstName": "于国岗"
+    },
+    "success": true
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "strategy_name": "funding_arbitrage_trx_demo",
+  "strategy_type": "funding_arbitrage",
+  "hedge_ref": "demo_hedge_trx_binance_okx",
+  "enabled": true,
+  "description": "TRX 资金费率套利策略（两腿）",
+  "params": {
+    "funding": {
+      "annualize_method": "by_interval",
+      "open_threshold_annualized_pct": 0.30,
+      "close_threshold_annualized_pct": 0.10,
+      "settle_directions": {
+        "legA": "receive_when_short_pay_when_long",
+        "legB": "receive_when_short_pay_when_long"
+      },
+      "position_size_usdt": 100000,
+      "approx_price": 0.15,
+      "contract_size_override": {
+        "legA": 1,
+        "legB": 1000
+      }
+    },
+    "spread": {
+      "open_threshold_pct": 0.0050,
+      "close_threshold_pct": 0.0010,
+      "cooldown_ms": 60000,
+      "filters": {
+        "min_price": 0.01,
+        "max_price": 10.0
+      }
+    }
+  },
+  "execution": {
+    "order_size_usdt": 100000,
+    "taker_fee_override": null
+  },
+  "outputs": {
+    "signals_file": "signals/hedge_signals_TRX.json",
+    "inject_to_mock_server": true,
+    "generate_mock_files": {
+      "trades": {
+        "binance": "service/replay-bot/mock_data/binance_trades.json",
+        "okx": "service/replay-bot/mock_data/okx_trades.json"
+      }
+    }
+  },
+  "audit": {
+    "include_params_snapshot": true,
+    "log_path": "service/replay-bot/logs/strategy_funding_trx.log",
+    "emit_summary": true
+  },
+  "validation": {
+    "verify_signal_binding": true,
+    "check_orders_pairing": true,
+    "check_income_presence": true,
+    "tolerance": {
+      "spread_calc_error_pct": 0.00001,
+      "funding_annualized_delta_pct": 0.001
+    }
+  }
+}

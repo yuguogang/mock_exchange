@@ -1,0 +1,22 @@
+{
+  "meta": {
+    "url": "https://www.binance.com/bapi/futures/v1/private/future/responsible/get-responsible-config",
+    "method": "POST",
+    "pathname": "/bapi/futures/v1/private/future/responsible/get-responsible-config",
+    "query": {},
+    "postData": null,
+    "timestamp": 1769148097148,
+    "category": "unknown"
+  },
+  "response": {
+    "code": "000000",
+    "message": null,
+    "messageDetail": null,
+    "data": {
+      "inCoolingDuration": false,
+      "startTime": 0,
+      "endTime": 0
+    },
+    "success": true
+  }
+}

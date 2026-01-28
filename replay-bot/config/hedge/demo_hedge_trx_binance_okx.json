@@ -1,0 +1,40 @@
+{
+  "hedge_name": "demo_hedge_trx_binance_okx",
+  "description": "TRX 基础对冲资产定义（仅包含交易所与合约规格）",
+  "legs": [
+    {
+      "role": "legA",
+      "exchange": "binance",
+      "symbol": "TRXUSDT",
+      "fee_profile": {
+        "taker_fee_pct": 0.0004,
+        "maker_fee_pct": 0.0002
+      },
+      "contract_profile": {
+        "contract_size": 1,
+        "leverage_default": 10,
+        "quantity_precision": 0,
+        "price_precision": 5
+      }
+    },
+    {
+      "role": "legB",
+      "exchange": "okx",
+      "symbol": "TRX-USDT-SWAP",
+      "fee_profile": {
+        "taker_fee_pct": 0.0005,
+        "maker_fee_pct": 0.0003
+      },
+      "contract_profile": {
+        "contract_size": 1000,
+        "leverage_default": 10,
+        "quantity_precision": 0,
+        "price_precision": 5
+      }
+    }
+  ],
+  "alignment": {
+    "time_source": "legA",
+    "tolerance_ms": 30000
+  }
+}

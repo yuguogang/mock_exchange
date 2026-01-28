@@ -1,0 +1,31 @@
+{
+  "meta": {
+    "url": "https://www.binance.com/fapi/v1/ticker/24hr?symbol=TRXUSDT",
+    "method": "GET",
+    "pathname": "/fapi/v1/ticker/24hr",
+    "query": {
+      "symbol": "TRXUSDT"
+    },
+    "postData": null,
+    "timestamp": 1769148097991,
+    "category": "ticker"
+  },
+  "response": {
+    "symbol": "TRXUSDT",
+    "priceChange": "0.00879",
+    "priceChangePercent": "2.921",
+    "weightedAvgPrice": "0.30344",
+    "lastPrice": "0.30971",
+    "lastQty": "54",
+    "openPrice": "0.30092",
+    "highPrice": "0.31016",
+    "lowPrice": "0.29807",
+    "volume": "243928129",
+    "quoteVolume": "74017734.60963",
+    "openTime": 1769061660000,
+    "closeTime": 1769148089647,
+    "firstId": 653724176,
+    "lastId": 654017014,
+    "count": 292642
+  }
+}

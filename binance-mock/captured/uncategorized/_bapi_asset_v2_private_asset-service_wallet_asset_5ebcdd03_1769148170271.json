@@ -1,0 +1,37 @@
+{
+  "meta": {
+    "url": "https://www.binance.com/bapi/asset/v2/private/asset-service/wallet/asset?needPnl=false&quoteAsset=USDT",
+    "method": "GET",
+    "pathname": "/bapi/asset/v2/private/asset-service/wallet/asset",
+    "query": {
+      "needPnl": "false",
+      "quoteAsset": "USDT"
+    },
+    "postData": null,
+    "timestamp": 1769148170271,
+    "category": "unknown"
+  },
+  "response": {
+    "code": "000000",
+    "message": null,
+    "messageDetail": null,
+    "data": [
+      {
+        "asset": "USDT",
+        "assetName": "TetherUS",
+        "amount": "23.82280426",
+        "logoUrl": "https://bin.bnbstatic.com/image/admin_mgs_image_upload/20240508/6180cdb6-8480-4a3c-a8a9-8a193a89fc5e.png",
+        "valuationAmount": "23.82280426",
+        "profit": null,
+        "profitRatio": null,
+        "avgCost": null,
+        "avgBuyCost": null,
+        "isCexAsset": true,
+        "coinBusinessType": null,
+        "chainId": null,
+        "contractAddress": null
+      }
+    ],
+    "success": true
+  }
+}

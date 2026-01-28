@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "url": "https://www.binance.com/bapi/futures/v1/private/future/announcement/announcement-view-setting",
+    "method": "POST",
+    "pathname": "/bapi/futures/v1/private/future/announcement/announcement-view-setting",
+    "query": {},
+    "postData": null,
+    "timestamp": 1769148097256,
+    "category": "unknown"
+  },
+  "response": {
+    "code": "000000",
+    "message": null,
+    "messageDetail": null,
+    "data": 65535,
+    "success": true
+  }
+}

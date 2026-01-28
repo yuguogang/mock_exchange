@@ -1,0 +1,2575 @@
+{
+  "meta": {
+    "url": "https://www.binance.com/zh-CN/common-widget/all/futures/dark/ssr/aHR0cHM6Ly93d3cuYmluYW5jZS5jb20=",
+    "method": "GET",
+    "pathname": "/zh-CN/common-widget/all/futures/dark/ssr/aHR0cHM6Ly93d3cuYmluYW5jZS5jb20=",
+    "query": {},
+    "postData": null,
+    "timestamp": 1769148098517,
+    "category": "unknown"
+  },
+  "response": {
+    "code": "000000",
+    "success": true,
+    "message": "",
+    "data": {
+      "outVersion": "1.4.18",
+      "commonEnvs": {
+        "API_HOST": "https://www.binance.com",
+        "STATIC_HOST": "https://bin.bnbstatic.com",
+        "STATIC_HOST_SHARE": "https://public.bnbstatic.com",
+        "THEMIS_ADDRESS": "https://api.saasexch.com/bapi/themis/api/",
+        "THEMIS_ENV": "PROD",
+        "GOOGLE_CLIENT_ID": "960821425630-aclsesu662patrhhq95iuuijekgg15p3.apps.googleusercontent.com",
+        "MARKET_STREAM_HOST": "wss://nbstream.binance.com",
+        "domain": "binance.com",
+        "theme": "dark",
+        "business": "futures"
+      },
+      "renderHtml": {
+        "header": "<div class=\"_CWC\"><div class=\"theme-root dark _CWC common-widget-provider\"><header class=\"header-container hidden-in-bnc-app common-widget-css_wrap theme-root bg1 dark-color\"><div class=\"header-leftside menu-aim-enabled\"><a class=\"logo-link\" href=\"https://www.binance.com/zh-CN\"><img width=\"64\" src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAwoSURBVHgB7d3dddtGFsDxOyC567W0J2QFS1cQpYJID5bisw+2KrBSQZwKLFeguILIFVh58sp+sFKBlQrMVED6rOjjXVqYzIwImaRJAAMMQEr8/85x9AUSDHgvMB93QBEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAtfpwevfphzd3nwqwbmzwD043tP1HEqBKSlaMDX4t6nDydyrSh9/c//hMgMBWKgHmBX+CJEAVViYB0oI/QRIgtJVIgDzBnyAJENLSE8An+BMkAUJZagIUCf4ESYAQlpYAZYI/QRKgrKUkQIjgT5AEKKP2BAgZ/AmSAEXVmgBVBH+CJEARkdSkyuC3dKwOKZu4Xfqv2t3+640tqVAtV4Cqg38SV4KbyQa7NEbbkVbfaqVt0G+JlraJ0LP27nBHKlJ5AtQZ/Il1TQIXRInm56vvY2WCKG6777Vyv4uU/pf7UWvzN/N3G2gi7fEj2+29YUdq8uF040grORi/hrn0x1ansz8YSAWaUqFlBL81bg7JspOg/7Ldls3P05dwrbtzNx4HZyIJ0us/i3QnfvjyvZL2l+AZfXlAPPFIPfG9ewlfHvzlbxOv2yRS58GgJzWItfypZHHwO/8YHZj//iIVqCwByga/eV9e2K/m4DyWAlYiCe583lKxfptv4+lI1DrfoyTvdj6iS5u0PanD31vHMho9TbsCqEgeSkUJUEknOETwd/aGB/ZfkgiFnmfZHeM7zXO5iXTclZp0dgYD8z6lv8datqeadwEF7wOUbvYoZTo9F1Odnv7pxnHRK4F7yiX2CQanG+9lsvlyAyglx9/sDn9M22ZwuvnSRGaYEZqpZtzCbQZmm9L9ANPf2O/sDq9PTEGbQAHa/Od62Nyf/aW9EpgkuKHNIWUO9oJ2/4rSdgQmi9Ltqb5IyR3m2Gayo16c7fRPCJYAQYL/Y2tnUW//piaBtp28lVp25PSuv1Pq6ntzhlVau2Mfa/WnrIkgCVB18CduZBJE+rxER7U383N30YZaq+duX+6HaGCieCAN8++ydXVMP8mgqqHEmyxIAsSi7pU4yeUK/kTZJIjjqN7z8eXlmY6az8SeXaOJNuzl+Mw7GaTGouHH/qvNbdOXWTyi1JCTzv3hmcBLkAQoEZRewV92f+Yq9ayzd3EoNeo8+NQzXw4FKylYH6BAUBYK/qL7W0bwr61In5gm2W+yJErLr3m3DToK5BGUpYI/kXd/BH+9dBz9YY73cdo2/Teb25HWj2Md/SYfG2ch+ydm6Dl3AgSfCMsxeRUk+PPuj+BfTSqWn8wI2YGS+KW6O+oPXm+8/XC6eWQTQ2pUyUxwSlAGDf6s/fkEv6vbQS36r+50zbvzaOqXZrZXi35iS0fcHQFf5z+Ll5E7Aca3K3yXN1DmBKVX8NsD4HMQZvfnG/zmLPSW9QT1iBqNzOPsmkY1yDUkODPO7xXI4zKGb32D314e3QvMMS0/uz/zqJ5v8Mt49rOKsgm7qMOcaX6SErSdeY3Vo4UbKDlTAQrYfI51Ef235nj/f/ROUstD1El772JfCkqtG5qZD8lMgAWTXH5JYIKsSPBfv0jPJMhrNviv9xc4CTLH8FdIe29Y6TyJORkcZI3S6Lh1r65y7NQmUMoM75YNnNzNoRLBb9nfhW4TLgp+tz+WV1bGBH/qcbUnu7qC3+1v0R9yljcE69QuCv5Joa4EacE/tb9AV4LbdAUoU5YcNf73UOsota5fK/nxuj6pShfNcxu3c+cBPGp7kitBqSTIE/zW+EpQqp2aN/jd/lZkZdkqUZE7dl0pwAR/5jaueZR7NVBx+o7cM18GX72iAoVtXs2hr/aXM/gTZZpDPsF/vT+aQ7fa1BWgRFXnVrQxOjJfvc7MvsGfKHIlKBL81/ur9krQy33J13p74d+UXXeQd8GI3spcgLImphLAVkqatqoU4YbpPMVaCpfKe9es21dn14wXvLpWVUVqDsGLzm72kK2dPFJR4/3C57ls7uftPNpZV/NlWzA9CtR5cHFoznZFznLn+uJv3u3yomt+i5Q3uLWnrdaO6fafiyfKKW6vr/oABZKgdFWnTxKUCcYiSUDw325zR4FsEpihOzsMmNX5C1fV+Z/NgVI6dbY0RDDaJDCzkTtqZPoDOr0/QPB/zUxS7eTf+nNXNfTL1JteKfluckFQpsZoO3UiTakz0xzMbI0kzcXm4g0ykyBsVecPF0/M/gaL9hcyGPMkAcE/n88klRmoeKrTgt8e490Lryapec7v07px+lK/8HmNqQOzKc2haqo6F+yviqrOtOYQwV+e7bRnjPD15GMzdVKswHMO5FPrRDxkzkzMCcpqqzpn9leoqjPn/uYlAcEfhmpGR2l/17E88z2BZlWRmiHFE9/nzLUibKI59LBoVacZeuvqYWs/z2OT/dn0LFLVafa5lXeeYLI5ZJfxEfzl2YI3iWVh5aotaWk/GB6Lz3O+2dzWsT5I2ya+bHmPYOZeD+DOzAWD39Gy7VVAZ/ZXtKTZ7c5jxtgmQXt3+B3BX56br8goeLM3+u2f/vOR+DxnrNMrSLV6XqSIzmtFWNmqTilZNjFPalWnTYI3G0eC2oybKd3UjezJUOKX9raRNlayPgRj3JzqpmzSE+3Xn0gEXxKZo7whWBLkKW8wbc0n1PLUwzZ9PEtbXKfWXDHe2WSwj5+tNnVX8bSFQDLuTxQsoQ6aAB61PaWToEBVJ0lQsc7u8FhLtC+R8hqJGbNNp19VNHo/OL370iZD3hL5jmd/YlKwBChQ2FY4CajqLEsFa4LO6uz996R9/2Jfx5f3zJnZDkL0xJt6ZJMhRzz14mHrZykhSAIUreqUAkkQoKpzrZPA3ZFBB7qteQp7Rzx7Zm7vDU0iqJ0iNV8ZenZWuuxcVJAEiC9L3U04dxKUCf5E7fcGrZk9Ru7TFees3LJDiSpqpK1MCzqxmTAjemeu5qvUVWFaqDvPBUmAElWkicwkCBH8azHJ1Xartt5ftaU39OS/8cc1dRc+9mpNQWWmrgq2r6CKJ5ytG7P/j24UqcTNtIL1AapMAoI/PzunUTSQbR2NVMgOd/bfbDyx6xHsMGiIRTluFOnqZlrv3Z3lPNcsh703aP4q0kW+WmNM8PszzYzfzeiI7/HqibTOJKDrz/4VsQVsj1zAV7fct+vuLBeNbIKduT7HsJVZGhH8UyJDJoH9geAvoMCHcpgz6fMytyNxwW4/XTKK7azt9+adM+/ZqDv1Ka11cRNtsi0boyPTRDqJlXrRuX9xNm/TSj4mNVQSJN9LQWtb2DaSc5931h2nHy5yzaS69rb9rGOtuvazjG3dlWnLm59HV80Z9/nEAcYZTP9AX6rn5tX1VCTZs8vzmCuOST4z0aYPTBOppyN5Lp/NVWEi0Sv7nOAQSSAlrHNVZ+ffw3Pzhmdt1nMjKVpO7CiN5DXSW6ohR/YIX9+9JOQpPgn8T81fJpovx/1XGweqoR6n3hggnbkyyZGWkX3O4y+7q5hJgsMSSVDIqgW/G3uPmgdz/xjLWZ4AzFwUP3M7wbmdwUCfE2ba2O+yVtN5cyu5bElD+rG4OpaNw4IfkdWzI1BTu5Ua1JkEt/XM75sA1b6WQHe6uwr632fO9jlfg73FevPAvA6bCN08j7FzELNlE7VNCtWRBLe52bNKCWC5W6toz1uruHF/da5jbZpe023xMlzzKLuf8NXZ36qsDzArQJ8gFSu56mXa6c/Me7mduaE9y8fyh+1rmDP9eRUf1To+qx/bK5MZATuY1zyyFaPzHlt7WUAVV4J1CP5VuwJYc64CPTP/cBa7gDeTcRUFfJbrfoKSh27uwSRhe/di7t0sarsCJEJfCdbmzH/nzkCNRseL/qw/Se2BZgZ/fparCbdzM+nUW5UP4h5/NO3BVT+hsS0NvXBmfGmFYSGuBDR7UNZSKyPLJAHBjxCWXhpcJAkIfoSyErXxPklA8COklVkckicJCH6EtlKro9KSgOBHFVZueeC8JCD4sVZsEiTL+Pqnm4cCrBubBAQ/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABTzF9CxiJ7nRmJXAAAAAElFTkSuQmCC\"/></a><div class=\"header-menu-item rwd-1024-hide-flex\"><a class=\"header-menu-item_view typography-Subtitle4\" id=\"ba-tableMarkets\" href=\"https://www.binance.com/zh-CN/markets/overview\">行情</a></div><div class=\"header-menu-item header-dropdown-menu rwd-1024-hide-flex header-menu-item_zh-CN header-menu-align_frist\"><span id=\"ba-trade\" class=\"header-menu-item_view typography-Subtitle4\">交易<svg class=\"bn-svg header-menu-item_dropdown-icon\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M11.432 15.698a.9.9 0 001.205-.061l6-6 .061-.069a.9.9 0 00-1.266-1.266l-.069.061L12 13.727 6.637 8.363a.9.9 0 00-1.274 1.274l6 6 .069.061z\" fill=\"currentColor\"></path></svg></span></div><div class=\"header-menu-item header-dropdown-menu rwd-1024-hide-flex header-menu-item_zh-CN center\"><a class=\"header-menu-item_view typography-Subtitle4\" id=\"ba-Square\" href=\"https://www.binance.com/zh-CN/square\">广场<svg class=\"bn-svg header-menu-item_dropdown-icon\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M11.432 15.698a.9.9 0 001.205-.061l6-6 .061-.069a.9.9 0 00-1.266-1.266l-.069.061L12 13.727 6.637 8.363a.9.9 0 00-1.274 1.274l6 6 .069.061z\" fill=\"currentColor\"></path></svg></a></div><div class=\"header-menu-item header-dropdown-menu rwd-1024-hide-flex header-menu-item_zh-CN header-menu-align_frist\"><span id=\"ba-moreManagement\" class=\"header-menu-item_view typography-Subtitle4\">更多<svg class=\"bn-svg header-menu-item_dropdown-icon\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M11.432 15.698a.9.9 0 001.205-.061l6-6 .061-.069a.9.9 0 00-1.266-1.266l-.069.061L12 13.727 6.637 8.363a.9.9 0 00-1.274 1.274l6 6 .069.061z\" fill=\"currentColor\"></path></svg></span></div></div></header><div class=\"header-global-js-top-alert\"><div class=\"header-global-js-top-alert__inner\" id=\"header_global_js_wxgy34nj\"></div></div></div></div>",
+        "footer": "<div class=\"_CWC\"><div class=\"theme-root dark _CWC common-widget-provider\"><footer class=\"hidden-in-bnc-app footer-wrapper dark-color common-widget-css_wrap theme-root\"><div class=\"footer-content\"><div class=\"footer-community\"><h3 class=\"footer-navlist-title\">社区</h3><div class=\"footer-icongroup\"><a href=\"https://discord.gg/jE4wt8g2H2\" target=\"_self\"><svg class=\"footer-icon\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"currentColor\"><use xlink:href=\"#icon-h-discord\"></use></svg></a><a href=\"https://www.binance.com/zh-CN/community\" target=\"_self\"><svg class=\"footer-icon\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"currentColor\"><use xlink:href=\"#icon-social-telegram-f\"></use></svg></a><a href=\"https://www.tiktok.com/@binance?lang=en\" target=\"_self\"><svg class=\"footer-icon\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"currentColor\"><use xlink:href=\"#icon-h-tiktok\"></use></svg></a><a href=\"https://www.facebook.com/binance\" target=\"_self\"><svg class=\"footer-icon\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"currentColor\"><use xlink:href=\"#icon-h-facebook\"></use></svg></a><a href=\"https://twitter.com/binance\" target=\"_self\"><svg class=\"footer-icon\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"currentColor\"><use xlink:href=\"#icon-social-x-f\"></use></svg></a><a href=\"https://www.reddit.com/r/binance\" target=\"_self\"><svg class=\"footer-icon\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"currentColor\"><use xlink:href=\"#icon-h-reddit\"></use></svg></a><a href=\"https://www.instagram.com/Binance/\" target=\"_self\"><svg class=\"footer-icon\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"currentColor\"><use xlink:href=\"#icon-h-instagram\"></use></svg></a><a href=\"https://coinmarketcap.com/exchanges/binance/\" target=\"_self\"><svg class=\"footer-icon\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"currentColor\"><use xlink:href=\"#icon-h-coinmarketcap\"></use></svg></a><a href=\"https://www.youtube.com/binanceyoutube\" target=\"_self\"><svg class=\"footer-icon\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"currentColor\"><use xlink:href=\"#icon-h-youtube\"></use></svg></a><a href=\"https://www.binance.com/zh-CN/community\" target=\"_self\"><svg class=\"footer-icon\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"currentColor\"><use xlink:href=\"#icon-more-f\"></use></svg></a></div></div><div class=\"footer-navlist\"><div class=\"footer-navlist-group\"><div class=\"footer-navlist-sub\"><h3 class=\"footer-navlist-title\">关于我们<div class=\"footer-navlist-expand-icon\"><svg viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\" class=\"bn-svg\"><path d=\"M11.1 19.5v-6.6H4.5a.9.9 0 010-1.8h6.6V4.5a.9.9 0 011.8 0v6.6h6.6l.092.005a.9.9 0 010 1.79l-.092.005h-6.6v6.6a.9.9 0 01-1.8 0z\" fill=\"currentColor\"></path></svg></div></h3><ul class=\"footer-navlist-item-list\"><li class=\"footer-navlist-item\"><a id=\"footer_menu_item_ba-About\" href=\"https://www.binance.com/zh-CN/about\" target=\"_self\" class=\"typography-Body3 color-textprimary\">关于我们</a></li><li class=\"footer-navlist-item\"><a id=\"footer_menu_item_ba-joinUs\" href=\"https://www.binance.com/zh-CN/careers\" target=\"_self\" class=\"typography-Body3 color-textprimary\">职业机会</a></li><li class=\"footer-navlist-item\"><a id=\"footer_menu_item_ba-Announcement\" href=\"https://www.binance.com/zh-CN/support/announcement\" target=\"_self\" class=\"typography-Body3 color-textprimary\">公告中心</a></li><li class=\"footer-navlist-item\"><a id=\"footer_menu_item_ba-news\" href=\"https://www.binance.com/zh-CN/square/news/all\" target=\"_self\" class=\"typography-Body3 color-textprimary\">行业动态</a></li><li class=\"footer-navlist-item\"><a id=\"footer_menu_item_ba-Press\" href=\"https://www.binance.com/zh-CN/press\" target=\"_self\" class=\"typography-Body3 color-textprimary\">新闻中心</a></li><li class=\"footer-navlist-item\"><a id=\"footer_menu_item_footer-legal\" href=\"https://www.binance.com/zh-CN/legal/home\" target=\"_self\" class=\"typography-Body3 color-textprimary\">法律</a></li><li class=\"footer-navlist-item\"><a id=\"footer_menu_item_ba-Terms\" href=\"https://www.binance.com/zh-CN/terms\" target=\"_self\" class=\"typography-Body3 color-textprimary\">服务协议</a></li><li class=\"footer-navlist-item\"><a id=\"footer_menu_item_ba-Privacy\" href=\"https://www.binance.com/zh-CN/about-legal/privacy-portal\" target=\"_self\" class=\"typography-Body3 color-textprimary\">隐私说明</a></li><li class=\"footer-navlist-item\"><a id=\"footer_menu_item_footer-building-trust\" href=\"https://www.binance.com/zh-CN/land/building_trust\" target=\"_self\" class=\"typography-Body3 color-textprimary\">建立信任</a></li><li class=\"footer-navlist-item\"><a id=\"footer_menu_item_ba-binanceBlog\" href=\"https://www.binance.com/zh-CN/blog\" target=\"_self\" class=\"typography-Body3 color-textprimary\">博客</a></li><li class=\"footer-navlist-item\"><a id=\"footer_menu_item_ba-Community\" href=\"https://www.binance.com/zh-CN/community\" target=\"_self\" class=\"typography-Body3 color-textprimary\">社区</a></li><li class=\"footer-navlist-item\"><a id=\"footer_menu_item_ba-risk-warning\" href=\"https://www.binance.com/zh-CN/risk-warning\" target=\"_self\" class=\"typography-Body3 color-textprimary\">风险提示</a></li><li class=\"footer-navlist-item\"><a id=\"footer_menu_item_ba-Download\" href=\"https://www.binance.com/zh-CN/download\" target=\"_self\" class=\"typography-Body3 color-textprimary\">下载</a></li><li class=\"footer-navlist-item\"><a id=\"footer_menu_item_ba-Desktop Application\" href=\"https://www.binance.com/zh-CN/desktop-download\" target=\"_self\" class=\"typography-Body3 color-textprimary\">桌面客户端</a></li><li class=\"footer-navlist-item\"><a id=\"footer_menu_item_ba-whistleblowing\" href=\"https://www.binance.com/zh-CN/whistleblowing/welcome\" target=\"_self\" class=\"typography-Body3 color-textprimary\">安全的内部通信渠道</a></li></ul></div></div><div class=\"footer-navlist-group\"><div class=\"footer-navlist-sub\"><h3 class=\"footer-navlist-title\">产品<div class=\"footer-navlist-expand-icon\"><svg viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\" class=\"bn-svg\"><path d=\"M11.1 19.5v-6.6H4.5a.9.9 0 010-1.8h6.6V4.5a.9.9 0 011.8 0v6.6h6.6l.092.005a.9.9 0 010 1.79l-.092.005h-6.6v6.6a.9.9 0 01-1.8 0z\" fill=\"currentColor\"></path></svg></div></h3><ul class=\"footer-navlist-item-list\"><li class=\"footer-navlist-item\"><a id=\"footer_menu_item_ba-Exchange\" href=\"https://www.binance.com/zh-CN/trade\" target=\"_self\" class=\"typography-Body3 color-textprimary\">交易所</a></li><li class=\"footer-navlist-item\"><a id=\"footer_menu_item_ba-creditCard\" href=\"https://www.binance.com/zh-CN/crypto/buy\" target=\"_self\" class=\"typography-Body3 color-textprimary\">一键买币</a></li><li class=\"footer-navlist-item\"><a id=\"footer_menu_item_ba-Binance Pay\" href=\"https://www.binance.com/zh-CN/my/wallet/account/payment\" target=\"_self\" class=\"typography-Body3 color-textprimary\">支付</a></li><li class=\"footer-navlist-item\"><a id=\"footer_menu_item_ba-Academy\" href=\"https://academy.binance.com/zh-CN\" target=\"_self\" class=\"typography-Body3 color-textprimary\">学院</a></li><li class=\"footer-navlist-item\"><a id=\"footer_menu_item_ba-GiftCard\" href=\"https://www.binance.com/zh-CN/gift-card\" target=\"_self\" class=\"typography-Body3 color-textprimary\">礼品卡</a></li><li class=\"footer-navlist-item\"><a id=\"footer_menu_item_ba-launchpad-launchpool\" href=\"https://www.binance.com/zh-CN/launchpool\" target=\"_self\" class=\"typography-Body3 color-textprimary\">Launchpool</a></li><li class=\"footer-navlist-item\"><a id=\"footer_menu_item_ba-auto-invest\" href=\"https://www.binance.com/zh-CN/auto-invest\" target=\"_blank\" class=\"typography-Body3 color-textprimary\">定投计划</a></li><li class=\"footer-navlist-item\"><a id=\"footer_menu_item_ba-eth2\" href=\"https://www.binance.com/zh-CN/eth2\" target=\"_blank\" class=\"typography-Body3 color-textprimary\">ETH 质押</a></li><li class=\"footer-navlist-item\"><a id=\"footer_menu_item_ba-NFT\" href=\"https://www.binance.com/zh-CN/nft/home\" target=\"_self\" class=\"typography-Body3 color-textprimary\">NFT</a></li><li class=\"footer-navlist-item\"><a id=\"footer_menu_item_BABT\" href=\"https://www.binance.com/zh-CN/BABT?source=footer\" target=\"_self\" class=\"typography-Body3 color-textprimary\">BABT</a></li><li class=\"footer-navlist-item\"><a id=\"footer_menu_item_ba-Research\" href=\"https://www.binance.com/zh-CN/research\" target=\"_self\" class=\"typography-Body3 color-textprimary\">研究院</a></li><li class=\"footer-navlist-item\"><a id=\"footer_menu_item_ba-Charity\" href=\"https://www.binance.charity\" target=\"_self\" class=\"typography-Body3 color-textprimary\">慈善</a></li></ul></div></div><div class=\"footer-navlist-group\"><div class=\"footer-navlist-sub\"><h3 class=\"footer-navlist-title\">商业<div class=\"footer-navlist-expand-icon\"><svg viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\" class=\"bn-svg\"><path d=\"M11.1 19.5v-6.6H4.5a.9.9 0 010-1.8h6.6V4.5a.9.9 0 011.8 0v6.6h6.6l.092.005a.9.9 0 010 1.79l-.092.005h-6.6v6.6a.9.9 0 01-1.8 0z\" fill=\"currentColor\"></path></svg></div></h3><ul class=\"footer-navlist-item-list\"><li class=\"footer-navlist-item\"><a id=\"footer_menu_item_ba-applyP2P\" href=\"https://c2c.binance.com/zh-CN/merchantApplication\" target=\"_self\" class=\"typography-Body3 color-textprimary\">申请CNY认证广告方</a></li><li class=\"footer-navlist-item\"><a id=\"footer_menu_item_ba-p2pro\" href=\"https://p2p.binance.com/zh-CN/p2pro\" target=\"_self\" class=\"typography-Body3 color-textprimary\">P2Pro广告方App</a></li><li class=\"footer-navlist-item\"><a id=\"footer_menu_item_ba-ListingApplication\" href=\"https://www.binance.com/zh-CN/my/coin-apply\" target=\"_self\" class=\"typography-Body3 color-textprimary\">上币申请</a></li><li class=\"footer-navlist-item\"><a id=\"footer_menu_item_ba-institutional\" href=\"https://www.binance.com/zh-CN/vip-institutional-services\" target=\"_self\" class=\"typography-Body3 color-textprimary\">机构和VIP服务</a></li><li class=\"footer-navlist-item\"><a id=\"footer_menu_item_ba-Labs\" href=\"https://labs.binance.com/\" target=\"_self\" class=\"typography-Body3 color-textprimary\">Labs</a></li><li class=\"footer-navlist-item\"><a id=\"footer_menu_item_header-title-bifinity\" href=\"https://www.binance.com/zh-CN/binance-connect\" target=\"_self\" class=\"typography-Body3 color-textprimary\">Binance Connect</a></li></ul></div><div class=\"footer-navlist-sub\"><h3 class=\"footer-navlist-title\">学习<div class=\"footer-navlist-expand-icon\"><svg viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\" class=\"bn-svg\"><path d=\"M11.1 19.5v-6.6H4.5a.9.9 0 010-1.8h6.6V4.5a.9.9 0 011.8 0v6.6h6.6l.092.005a.9.9 0 010 1.79l-.092.005h-6.6v6.6a.9.9 0 01-1.8 0z\" fill=\"currentColor\"></path></svg></div></h3><ul class=\"footer-navlist-item-list\"><li class=\"footer-navlist-item\"><a id=\"footer_menu_item_ba-learn-earn-title\" href=\"https://academy.binance.com/zh-CN/learn-and-earn\" target=\"_self\" class=\"typography-Body3 color-textprimary\">学习赚币</a></li><li class=\"footer-navlist-item\"><a id=\"footer_menu_item_ba-footer-pricepage\" href=\"https://www.binance.com/zh-CN/price\" target=\"_self\" class=\"typography-Body3 color-textprimary\">浏览加密货币价格</a></li><li class=\"footer-navlist-item\"><a id=\"footer_menu_item_footer_bitcoin_price\" href=\"https://www.binance.com/zh-CN/price/bitcoin\" target=\"_self\" class=\"typography-Body3 color-textprimary\">比特币价格</a></li><li class=\"footer-navlist-item\"><a id=\"footer_menu_item_footer_ethereum_price\" href=\"https://www.binance.com/zh-CN/price/ethereum\" target=\"_self\" class=\"typography-Body3 color-textprimary\">以太坊价格</a></li><li class=\"footer-navlist-item\"><a id=\"footer_menu_item_ba-eth-upgrade-pectra\" href=\"https://www.binance.com/zh-CN/ethereum-upgrade\" target=\"_self\" class=\"typography-Body3 color-textprimary\">以太坊 Pectra 升级</a></li><li class=\"footer-navlist-item\"><a id=\"footer_menu_item_footer_price_predictions\" href=\"https://www.binance.com/zh-CN/price-prediction\" target=\"_blank\" class=\"typography-Body3 color-textprimary\">浏览加密货币价格预测</a></li><li class=\"footer-navlist-item\"><a id=\"footer_menu_item_footer_bitcoin_price_prediction\" href=\"https://www.binance.com/zh-CN/price-prediction/bitcoin\" target=\"_blank\" class=\"typography-Body3 color-textprimary\">比特币价格预测</a></li><li class=\"footer-navlist-item\"><a id=\"footer_menu_item_footer_ethereum_price_prediction\" href=\"https://www.binance.com/zh-CN/price-prediction/ethereum\" target=\"_blank\" class=\"typography-Body3 color-textprimary\">以太坊价格预测</a></li><li class=\"footer-navlist-item\"><a id=\"footer_menu_item_ba-buy-bitcoin\" href=\"https://www.binance.com/zh-CN/how-to-buy/bitcoin\" target=\"_self\" class=\"typography-Body3 color-textprimary\">购买比特币</a></li><li class=\"footer-navlist-item\"><a id=\"footer_menu_item_ba-buybnb\" href=\"https://www.binance.com/zh-CN/how-to-buy/bnb\" target=\"_self\" class=\"typography-Body3 color-textprimary\">购买 BNB</a></li><li class=\"footer-navlist-item\"><a id=\"footer_menu_item_ba-buyRipple\" href=\"https://www.binance.com/zh-CN/how-to-buy/xrp\" target=\"_self\" class=\"typography-Body3 color-textprimary\">购买 XRP</a></li><li class=\"footer-navlist-item\"><a id=\"footer_menu_item_ba-buydogecoin\" href=\"https://www.binance.com/zh-CN/how-to-buy/dogecoin\" target=\"_self\" class=\"typography-Body3 color-textprimary\">购买狗狗币</a></li><li class=\"footer-navlist-item\"><a id=\"footer_menu_item_ba-buyEthereum\" href=\"https://www.binance.com/zh-CN/how-to-buy/ethereum\" target=\"_self\" class=\"typography-Body3 color-textprimary\">购买以太坊</a></li><li class=\"footer-navlist-item\"><a id=\"footer_menu_item_ba-BuyTradable\" href=\"https://www.binance.com/zh-CN/altcoins/tradable\" target=\"_self\" class=\"typography-Body3 color-textprimary\">更多热门币种</a></li></ul></div></div><div class=\"footer-navlist-group\"><div class=\"footer-navlist-sub\"><h3 class=\"footer-navlist-title\">服务<div class=\"footer-navlist-expand-icon\"><svg viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\" class=\"bn-svg\"><path d=\"M11.1 19.5v-6.6H4.5a.9.9 0 010-1.8h6.6V4.5a.9.9 0 011.8 0v6.6h6.6l.092.005a.9.9 0 010 1.79l-.092.005h-6.6v6.6a.9.9 0 01-1.8 0z\" fill=\"currentColor\"></path></svg></div></h3><ul class=\"footer-navlist-item-list\"><li class=\"footer-navlist-item\"><a id=\"footer_menu_item_ba-affiliate-title\" href=\"https://www.binance.com/zh-CN/activity/referral?stopRedirectToActivity=true\" target=\"_self\" class=\"typography-Body3 color-textprimary\">超级返佣</a></li><li class=\"footer-navlist-item\"><a id=\"footer_menu_item_ba-referral\" href=\"https://www.binance.com/zh-CN/activity/referral\" target=\"_self\" class=\"typography-Body3 color-textprimary\">邀请奖励</a></li><li class=\"footer-navlist-item\"><a id=\"footer_menu_item_ba-binanceCoin\" href=\"https://www.binance.com/zh-CN/bnb\" target=\"_self\" class=\"typography-Body3 color-textprimary\">币安币</a></li><li class=\"footer-navlist-item\"><a id=\"footer_menu_item_ba-otctrading\" href=\"https://www.binance.com/zh-CN/otc\" target=\"_self\" class=\"typography-Body3 color-textprimary\">场外大宗交易</a></li><li class=\"footer-navlist-item\"><a id=\"footer_menu_item_landing-data-title\" href=\"https://data.binance.vision\" target=\"_self\" class=\"typography-Body3 color-textprimary\">历史行情数据</a></li><li class=\"footer-navlist-item\"><a id=\"footer_menu_item_footer-trading-insight\" href=\"https://www.binance.com/zh-CN/trading_insight/glass?id=22&amp;token=BTC\" target=\"_self\" class=\"typography-Body3 color-textprimary\">交易洞察</a></li><li class=\"footer-navlist-item\"><a id=\"footer_menu_item_ba-Proof-of-Reserves\" href=\"https://www.binance.com/zh-CN/proof-of-reserves\" target=\"_self\" class=\"typography-Body3 color-textprimary\">储备金证明</a></li></ul></div><div class=\"footer-navlist-sub\"><h3 class=\"footer-navlist-title\">帮助<div class=\"footer-navlist-expand-icon\"><svg viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\" class=\"bn-svg\"><path d=\"M11.1 19.5v-6.6H4.5a.9.9 0 010-1.8h6.6V4.5a.9.9 0 011.8 0v6.6h6.6l.092.005a.9.9 0 010 1.79l-.092.005h-6.6v6.6a.9.9 0 01-1.8 0z\" fill=\"currentColor\"></path></svg></div></h3><ul class=\"footer-navlist-item-list\"><li class=\"footer-navlist-item\"><a id=\"footer_menu_item_ba-SubmitARequest\" href=\"https://www.binance.com/zh-CN/chat?sourceEntry=4\" target=\"_self\" class=\"typography-Body3 color-textprimary\">全天候聊天支持</a></li><li class=\"footer-navlist-item\"><a id=\"footer_menu_item_ba-SupportCenter\" href=\"https://www.binance.com/zh-CN/support\" target=\"_self\" class=\"typography-Body3 color-textprimary\">帮助中心</a></li><li class=\"footer-navlist-item\"><a id=\"footer_menu_item_footer_support_request_feature\" href=\"https://www.binance.com/zh-CN/my/user-support/feedback/entry\" target=\"_self\" class=\"typography-Body3 color-textprimary\">产品反馈与建议</a></li><li class=\"footer-navlist-item\"><a id=\"footer_menu_item_ba-Fees\" href=\"https://www.binance.com/zh-CN/fee\" target=\"_self\" class=\"typography-Body3 color-textprimary\">费率标准</a></li><li class=\"footer-navlist-item\"><a id=\"footer_menu_item_header-tier2-api\" href=\"https://www.binance.com/zh-CN/binance-api\" target=\"_self\" class=\"typography-Body3 color-textprimary\">API</a></li><li class=\"footer-navlist-item\"><a id=\"footer_menu_item_ba-official-verification\" href=\"https://www.binance.com/zh-CN/official-verification\" target=\"_self\" class=\"typography-Body3 color-textprimary\">官方验证渠道</a></li><li class=\"footer-navlist-item\"><a id=\"footer_menu_item_ba-tradeRules\" href=\"https://www.binance.com/zh-CN/trade-parameters\" target=\"_self\" class=\"typography-Body3 color-textprimary\">交易参数</a></li><li class=\"footer-navlist-item\"><a id=\"footer_menu_item_ba-airdrop\" href=\"https://www.binance.com/zh-CN/airdrop\" target=\"_self\" class=\"typography-Body3 color-textprimary\">币安空投门户</a></li><li class=\"footer-navlist-item\"><a id=\"footer_menu_item_ba-law\" href=\"https://www.binance.com/zh-CN/support/law-enforcement\" target=\"_self\" class=\"typography-Body3 color-textprimary\">执法协助申请</a></li><li class=\"footer-navlist-item\"><a id=\"footer_menu_item_ba-raise-complaint\" href=\"https://www.binance.com/zh-CN/learn/how-to-raise-a-complaint\" target=\"_self\" class=\"typography-Body3 color-textprimary\">如何提出投诉</a></li></ul></div></div></div></div><div class=\"footer-copyright\"><div class=\"footer-copyright-line\"></div><div class=\"typography-Caption2 footer-copyright-text footer-copyright-legal\"><div>币安 ADGM 实体受阿布扎比国际金融中心 (ADGM) 金融服务监管局 (FSRA) 监管，具体如下：(1) Nest Exchange Limited 经认定为受官方认可的投资交易平台（衍生品），须运营多边交易系统；(2) Nest Clearing and Custody Limited 经认定为托管及中央证券托管机构，须提供托管服务并运营中央证券托管服务；(3) Nest Trading Limited 获授权开展以下受监管业务：(i) 处理本金投资交易；(ii) 作为代理方处理投资交易；(iii) 撮合投资交易；(iv) 管理资产；(v) 提供资金服务；(vi) 安排托管服务。<br><br>风险提示：虚拟资产价格可能剧烈波动。您的投资价值可能下跌或上涨，且您可能无法收回投资本金。您需对自己的投资决策全权负责，币安对此产生的任何交易损失概不负责。</div></div><div class=\"footer-copyright-text footer-copyright-enterprise typography-Caption2\"><span>Binance</span><span class=\"no-wrap\">© <!-- -->2026</span><span class=\"footer-copyright-cookieprefrence\" data-ot-trigger=\"true\">Cookie偏好设置</span></div></div></footer></div></div>"
+      },
+      "i18nData": {
+        "200003971": "请在7月21日之前向我们提供新加坡境外的最新居住地址证明。如果您无法在规定的时间内提供，您的账户将被限制，提币功能除外。",
+        "200003972": "请在7月21日之前向我们提供新加坡境外的最新居住地址证明。如果您无法在规定的时间内提供，您的账户将被限制，提币功能除外。",
+        "200004039": "请尽快完成企业认证(KYB)。请注意，如果您未能及时通过认证，您的账户将被限制为仅提现。",
+        "200004040": "请尽快完成企业认证(KYB)。请注意，如果您不能尽快提交验证，您的账户将被限制为仅提现。",
+        "ba-Basic-content": "简洁版交易工具，适合新手使用",
+        "ba-Currency": "汇率",
+        "ba-advanced-content": "专业交易界面，可自定义布局",
+        "ba-creditCard": "一键买币",
+        "ba-m": "月",
+        "ba-lendingHistory": "币安宝历史",
+        "ba-marginOrders": "杠杆订单",
+        "ba-logOut": "退出",
+        "ba-lendingAssets": "币安宝账户",
+        "ba-lending": "币安宝",
+        "ba-launchpad": "代币发售平台",
+        "ba-labs": "顶尖区块链项目孵化器",
+        "ba-keyAccountCoverage": "大客户尊享权益",
+        "ba-justNow": "刚刚",
+        "ba-joinUs": "职业机会",
+        "ba-jexfutrue": "JEX合约",
+        "ba-identification": "身份认证",
+        "ba-iUnderstand": "我知道了",
+        "ba-h": "小时",
+        "ba-futureWallet": "合约账户",
+        "ba-faitTitle": "法币",
+        "ba-futureOrders": "合约订单",
+        "ba-futrue": "合约",
+        "ba-exchangeWallet": "现货账户",
+        "ba-exchangeWalletMsg": "（充值/提现）",
+        "ba-exchangeOrders": "现货订单",
+        "ba-estimatedValue": "总当前估值",
+        "ba-education": "区块链及数字资产学习平台",
+        "ba-earn": "理财账户",
+        "ba-distributionHistory": "分发记录",
+        "ba-depositWithdrawHistory": "充值提现记录",
+        "ba-deposit": "充值",
+        "ba-d": "天",
+        "ba-continue": "继续",
+        "ba-chooseLang": "请根据国家或地区选择语言。",
+        "ba-buySellHistory": "快捷买币历史",
+        "ba-buy-bitcoin": "购买比特币",
+        "ba-buy": "买",
+        "ba-busd": "买BUSD",
+        "ba-buyDeFi": "买 DeFi",
+        "ba-binanceFutrue": "合约",
+        "ba-binanceCoin": "币安币",
+        "ba-binanceBlog": "博客",
+        "ba-balances": "资产",
+        "ba-binance": "币安",
+        "ba-assetExchange": "区块链和数字货币交易所",
+        "ba-applyToList": "申请上币",
+        "ba-ago": "前",
+        "ba-aboutUs": "关于我们",
+        "ba-Volume": "成交额",
+        "ba-TrustWallet": "Trust钱包",
+        "ba-Verified": "已认证",
+        "ba-Terms": "服务协议",
+        "ba-SupportCenter": "帮助中心",
+        "ba-Service": "服务",
+        "ba-Research": "研究院",
+        "ba-Support": "帮助",
+        "ba-SubmitARequest": "全天候聊天支持",
+        "ba-Register": "注册",
+        "ba-Products": "产品",
+        "ba-Privacy": "隐私说明",
+        "ba-Prices": "价格",
+        "ba-OldSite": "返回旧版",
+        "ba-Notification": "通知",
+        "ba-NotVerified": "未认证",
+        "ba-LogIn": "登录",
+        "ba-ListingApplication": "上币申请",
+        "ba-Learn": "学习",
+        "ba-Labs": "Labs",
+        "ba-Info": "区块链资产信息",
+        "ba-Fees": "费率标准",
+        "ba-FAQ": "常见问题",
+        "ba-Exchange": "交易所",
+        "ba-Download": "下载",
+        "ba-ContactUs": "商务联络",
+        "ba-Community": "社区",
+        "ba-Career": "职业机会",
+        "ba-Basic": "标准版",
+        "ba-BCF": "币安慈善",
+        "ba-Announcement": "公告中心",
+        "ba-Advanced": "专业版",
+        "ba-Academy": "学院",
+        "ba-About": "关于我们",
+        "ba-APIDocuments": "API文档",
+        "ba-APIManagement": "API管理",
+        "ba-APIDocumentation": "API文档",
+        "ba-win-dwon": "查看桌面版下载",
+        "ba-trade": "交易",
+        "ba-staking-content": "服务Staking用户，提高Staking收益",
+        "ba-spot": "现货交易",
+        "ba-margin-content": "借币交易，放大收益",
+        "ba-ocbs-content": "使用信用卡 / 借记卡购买数字货币",
+        "ba-lending-content": "存入数字货币，即可收取利息",
+        "ba-language": "语言",
+        "ba-futrue-content": "超百倍杠杆，放大利润",
+        "ba-vanillaoptions": "欧式期权账户",
+        "ba-exchange-spot": "我们将Exchange修改为Spot",
+        "ba-fait": "法币",
+        "ba-derivatives": "衍生品",
+        "ba-content": "现货",
+        "ba-c2c-content": "快速买卖币，支持银行转账等800多种选择",
+        "ba-OTC-content": "大宗交易，更优报价，快速结算",
+        "ba-DepositSubtitle9": "银行转账",
+        "ba-margin": "杠杆交易",
+        "Channel Advcash4": "Epay",
+        "ba-DepositSubtitle6": "Advcash",
+        "ba-DepositSubtitle8": "Faster Payment, Epay",
+        "ba-DepositSubtitle7": "Epay",
+        "ba-DepositSubtitle5": "Papara",
+        "ba-DepositSubtitle4": "Advcash, Payeer",
+        "ba-DepositSubtitle2": "SEPA, Advcash, Payeer, Epay",
+        "Channel Advcash2": "SEPA, Advcash, Payeer, Epay",
+        "ba-DepositSubtitle3": "Advcash",
+        "ba-DepositSubtitle1": "银行转账，银行卡支付",
+        "ba-ThirdPartyPaymentvSubtitle12": "BANXA",
+        "ba-ThirdPartyPaymentvSubtitle10": "BANXA, Simplex, BPAY, Poli, Binance Lite",
+        "ba-ThirdPartyPaymentvSubtitle9": "BANXA, Simplex",
+        "ba-ThirdPartyPaymentvSubtitle11": "Simplex, Koinal",
+        "ba-ThirdPartyPaymentvSubtitle5": "Simplex, Koinal, WazirX",
+        "ba-CreditCardTitle": "信用卡/借记卡",
+        "ba-ThirdPartyPaymentvSubtitle8": "Simplex",
+        "ba-ThirdPartyPaymentvSubtitl7": "Simplex, Koinal, Latamex",
+        "ba-ThirdPartyPaymentvSubtitle6": "Simplex, Koinal, Latamex",
+        "ba-ThirdPartyPaymentvSubtitle4": "Satang",
+        "ba-ThirdPartyPaymentvSubtitle1": "Koinal",
+        "ba-CashBalanceSubtitleB": "资产",
+        "ba-CashBalanceSubtitleA": "通过您的……支付",
+        "ba-CrediCardSubtitle2": "维萨卡",
+        "ba-CrediCardSubtitle": "维萨卡，万事达卡",
+        "ba-BankTransferSubtitle": "快速转账并支持100多种支付方式",
+        "ba-OTC": "场外大宗交易",
+        "ba-loan-history": "借币历史",
+        "ba-CryptoLoans": "质押借币",
+        "ba-Getaninstantloan": "借贷数字货币，即刻到账",
+        "ba-card1": "卡",
+        "ba-tutorial": "导航",
+        "ba-tour": "浏览",
+        "ba-Reward": "卡券中心",
+        "ba-gateway": "法币合作申请",
+        "ba-oldWebsite": "旧版网站",
+        "ba-perference": "设置",
+        "ba-tradingData": "交易数据",
+        "ba-indexPrice": "指数",
+        "ba-insuranceFundH": "风险保障基金",
+        "ba-futureFeeH": "资金费率历史",
+        "ba-guide": "指南",
+        "ba-earnbonus": "赚取佣金",
+        "ba-apiAccess": "API",
+        "ba-information": "合约信息",
+        "ba-futures": "合约",
+        "ba-status": "系统状态",
+        "ba-cwallet": "C2C账户",
+        "ba-p2pcontent": "Web端已上线",
+        "ba-otctrading": "场外大宗交易",
+        "ba-corder": "C2C订单",
+        "ba-exscontent": "企业级交易平台解决方案",
+        "binancecould": "币安云",
+        "ba-cloud": "币安云",
+        "binancecloud": "企业级交易平台解决方案",
+        "binance-base-Volume": "成交额",
+        "ba-partner-wallet": "WazirX 账户",
+        "exchangeWallet": "现货账户",
+        "fait-titile": "法币",
+        "ba-withdraw": "提现",
+        "exchange-inmail-markAllread": "全部已读",
+        "ba-y": "年",
+        "ba-wallet": "钱包",
+        "ba-viewMore": "查看更多",
+        "ba-viewAll": "查看更多",
+        "ba-trustWallet": "币安官方数字货币钱包",
+        "ba-tradeRules": "交易参数",
+        "ba-tradeHistory": "历史成交",
+        "ba-titile2-2": "一键买币",
+        "ba-titile2-1": "C2C",
+        "ba-titile1": "法币",
+        "ba-testnet": "测试网络",
+        "ba-tableMarkets": "行情",
+        "ba-supportSubmit": "提交工单",
+        "ba-staking": "质押挖矿",
+        "ba-signIn": "登录",
+        "ba-scanToDownload": "iOS & Android 扫码下载",
+        "ba-security": "账户安全",
+        "ba-referFriendsToEarn": "超级高返佣",
+        "ba-referral": "邀请奖励",
+        "ba-prev": "前一条",
+        "ba-research": "机构级的分析、深度的洞悉和更多",
+        "ba-pendingNotifications": "条新通知",
+        "ba-others": "订单",
+        "ba-orderHistory": "历史委托",
+        "ba-orders": "订单",
+        "ba-openOrder": "当前委托",
+        "ba-official-verification": "官方验证渠道",
+        "ba-next": "下一条",
+        "ba-notificationDetail": "通知详情",
+        "ba-moreManagement": "更多",
+        "ba-noLatestNotification": "没有新通知",
+        "ba-min": "分钟",
+        "ba-marginWallet": "杠杆账户",
+        "ba-CashBalanceTitle": "余额",
+        "ba-ThirdpaymentTitle": "第三方支付",
+        "ba-BanktransferTitle": "C2C快捷区",
+        "ba-finance": "金融业务",
+        "ba-BankTransferSubtitle2": "快速转账并支持100多种支付方式",
+        "ba-DebitCard-content": "在全球9000万家商户消费可获得高达8％的现金返还",
+        "ba-DebitCard": "币安VISA卡",
+        "ba-BankTransferSubtitle3": "快速转账并支持100多种支付方式",
+        "ba-p2ptitle3": "银行转账，支付宝，微信",
+        "ba-p2ptitle2": "C2C加密货币交易中心",
+        "ba-walletDepositSubtitle1": "Papara",
+        "ba-walletDepositSubtitle": "Advcash, Payeer",
+        "ba-p2ptiitlle": "C2C加密货币交易中心",
+        "ba-TRY": "用您的TRY资产一键买币",
+        "ba-walletDepositSubtitl3": "Epay",
+        "ba-RUB": "用您的RUB资产一键买币",
+        "ba-walletDepositSubtitle2": "Advcash",
+        "ba-EUR": "用您的EUR资产一键买币",
+        "ba-NGN": "用您的NGN资产一键买币",
+        "ba-HKD": "用您的HKD资产一键买币",
+        "ba-GBD": "用您的GBP资产一键买币",
+        "ba-KZT": "用您的KZT资产一键买币",
+        "ba-UAH": "用您的UAH资产一键买币",
+        "ba-BankDepositTransfer2": "银行转账",
+        "ba-ZAR": "用您的ZAR资产一键买币",
+        "ba-BankDepositFasterPayment": "通过Faster Payment充值GBP",
+        "ba-deposit-tips2": "充值%currency%",
+        "ba-BankDepositSEPA": "通过SEPA充值EUR",
+        "ba-BankDepositTransfer": "银行转账",
+        "ba-walletDepositSubtitle4": "通过银行转账充值NGN",
+        "ba-walletDepositSubtitle6": "Advcash, Payeer, Epay",
+        "ba-walletDepositSubtitle3": "Epay",
+        "ba-dex": "最受欢迎的区块链，支持构建您自己的DApp",
+        "ba-walletDepositSubtitle5": "通过银行转账充值ZAR",
+        "ba-pool": "矿池",
+        "ba-deposit-tips": "银行充值",
+        "exchange-check": "已创建成功，可在页面下方查看。",
+        "ba-BasicCONVERT-content": "大小额交易轻松完成",
+        "ba-BasicCONVERT": "币安闪兑",
+        "ba-levaragedtoken": "杠杆代币",
+        "ba-futuress-content": "双向持仓，杠杆高达125倍",
+        "ba-poolaccouts": "矿池账户",
+        "ba-pool-content": "服务矿工群体，提高挖矿收益",
+        "ba-levaragedtoken-content": "杠杆配置零爆仓，财富凝聚轻松享",
+        "ba-buyLitecoin": "买 Litecoin",
+        "ba-buyRipple": "购买 XRP",
+        "ba-buyBitcion": "购买比特币",
+        "ba-buyEthereum": "购买以太坊",
+        "ba-futureRealTimeFee": "实时资金费率",
+        "ba-perpetualFutures-content": "多种以USDT和USDC结算的合约",
+        "ba-perpetualFutures": "U本位合约",
+        "ba-broker-subtitle": "低成本交易终端解决方案",
+        "ba-broker-main-title": "经纪商",
+        "ba-buyBitcoinCash": "买 Bitcoin Cash",
+        "ba-quarterlyFutures-content": "以加密货币结算的合约",
+        "ba-news": "行业动态",
+        "ba-quarterlyFutures": "币本位合约",
+        "ba-DeliveryOrder": "币本位合约订单",
+        "ba-PerpetualOrder": "U本位合约订单",
+        "ba-Perpetual": "U本位合约",
+        "ba-DeliveryWallet": "币本位合约",
+        "ba-PerpetualWallet": "U本位合约",
+        "ba-ThirdPartyPaymentvSubtitle": "Mercuryo, Simplex, Koinal, BANXA",
+        "common-th-account": "我的",
+        "ba-Quarterly": "币本位合约",
+        "na-assetPR": "访问",
+        "ba-CHF": "用您的CHF资产一键买币",
+        "ba-MXN": "用您的MXN资产一键买币",
+        "ba-ThirdPartyPaymentvSubtitle3": "Mercuryo, Simplex, Koinal, BANXA",
+        "ba-NOK": "用您的NOK资产一键买币",
+        "ba-SEK": "用您的SEK资产一键买币",
+        "ba-HUF": "用您的HUF资产一键买币",
+        "ba-CAD": "用您的CAD资产一键买币",
+        "ba-AUD": "用您的AUD资产一键买币",
+        "ba-NZD": "用您的NZD资产一键买币",
+        "ba-DKK": "用您的DKK资产一键买币",
+        "ba-PLN": "用您的PLN资产一键买币",
+        "ba-CZK": "用您的CZK资产一键买币",
+        "ba-historicalData": "历史数据",
+        "ba-USDTPerpetual": "USDT永续",
+        "ba-usdtFutures": "U本位合约",
+        "ba-BankDepositTransferduitku": "通过Permata/Maybank/CIMB Niaga充值IDR",
+        "ba-COIN-MPerpetual": "币本位永续",
+        "ba-BUSDPerpetual": "BUSD永续",
+        "ba-GridTrading": "合约网格",
+        "ba-COIN-MDelivery": "币本位交割",
+        "ba-USDTDelivery": "USDT交割",
+        "ba-inverseFuturesWallet": "币本位合约",
+        "ba-usdtFuturesWallet": "U本位合约",
+        "ba-inverseFuturesOrder": "币本位合约订单",
+        "ba-usdtFuturesOrder": "U本位合约订单",
+        "ba-inverseFutures": "币本位合约",
+        "pos-type-ahead": "提前赎回",
+        "pos-type-mature": "到期赎回",
+        "ba-BankDeposit4bill": "通过银行卡充值UAH",
+        "pos-type-transferred": "已转换",
+        "ba-nav-otc": "闪兑历史",
+        "ba-BankDepositAUD": "通过PayID充值AUD",
+        "ba-UGX": "用您的UGX资产一键买币",
+        "ba-leaderboard": "排行榜",
+        "ba-wallet-overview": "钱包总览",
+        "ba-deposit-MXN": "充值MXN",
+        "ba-deposit-RUB": "充值RUB",
+        "ba-BankDepositUGX": "通过Flutterwave充值UGX",
+        "ba-deposit-TRY": "充值TRY",
+        "ba-fiat-payWith": "支付方式",
+        "ba-deposit-HUF": "充值HUF",
+        "ba-deposit-CHF": "充值CHF",
+        "ba-deposit-NGN": "充值NGN",
+        "ba-deposit-SEK": "充值SEK",
+        "ba-deposit-NOK": "充值NOK",
+        "ba-deposit-PLN": "充值PLN",
+        "ba-deposit-UAH": "充值UAH",
+        "ba-deposit-GBP": "充值GBP",
+        "ba-deposit-HKD": "充值HKD",
+        "ba-deposit-CAD": "充值CAD",
+        "ba-deposit-KZT": "充值KZT",
+        "ba-deposit-NZD": "充值NZD",
+        "ba-deposit-CZK": "充值CAK",
+        "ba-deposit-DKK": "充值DKK",
+        "ba-deposit-ZAR": "充值ZAR",
+        "ba-deposit-UGX": "充值UGX",
+        "ba-walletDepositSubtitle9": "移动支付",
+        "ba-deposit-tips1": "银行卡充值",
+        "ba-deposit-tips3": "币安卡充值",
+        "ba-ThirdPartyPaymentvSubtitle16": "Koinal",
+        "ba-swap-title": "流动性挖矿",
+        "ba-duocoin-sidebarTitle": "双币投资订单",
+        "bottom-keyclient": "大客户权益",
+        "ba-swap-desc": "添加流动性，享做市收益。",
+        "ba-fiat-search": "搜索",
+        "ba-Earndeatil": "一站式投资服务",
+        "ba-Earntitle": "理财",
+        "common-th-24hChange": "24h涨跌",
+        "common-th-lastPrice": "最新价",
+        "common-th-name": "币种",
+        "action-tradeNow": "开始交易",
+        "exchange-wallet-fee": "手续费：",
+        "action-registerNow": "立即购买",
+        "tradeGuide-startTrading": "立即交易",
+        "action-trade": "交易",
+        "common-th-marketCap": "市值",
+        "share-poster-future": "合约",
+        "share-poster-highReferral": "返佣高达",
+        "share-poster-slectSize": "选择尺寸",
+        "share-poster-share": "分享",
+        "share-poster-download": "下载",
+        "share-poster-spot": "现货",
+        "share-poster-inviteFrends": "邀请好友",
+        "share-poster-notDream": "不是梦",
+        "share-poster-lieEarn": "躺着赚钱",
+        "share-poster-mining": "矿池",
+        "ba-activities": "活动",
+        "share-poster-trade": "交易",
+        "share-poster-commonEarn": "共同赚币",
+        "share-poster-high": "高达",
+        "ba-desktop": "桌面端",
+        "share-poster-oneBillion": "实现一个小目标，赚他一个亿",
+        "ba-wallet-card": "币安卡账户",
+        "ba-battle": "合约对战",
+        "ba-deposit-GHS": "享受0费率充值GHS",
+        "ba-give-us-feedback": "建议及反馈",
+        "ba-earnAssets": "理财账户",
+        "ba-battlecontent": "预测涨跌并赢得积分",
+        "ba-PEN": "用您的PEN余额买币",
+        "ba-headerbattle": "合约对战",
+        "ba-launchpadhistory": "Launchpad 历史",
+        "ba-task-taskCenter": "任务中心",
+        "ba-earnHistory": "理财历史",
+        "ba-promotion-deposit": "首次充值将获得7 BUSD现金返还",
+        "ba-voptions": "期权",
+        "ba-deposit-vnd": "通过越南电信银行充值越南盾",
+        "ba-0fee": "0费率 - 仅限3天！",
+        "ba-promotion-card": "首次购买将获得7 BUSD现金返还",
+        "ba-voptionscontent": "以可控的风险轻松进场USDT期权交易",
+        "ba-newyear-newuser": "$10,000 奖金活动，2021年1月11日至14日",
+        "ba-newyear": "20,000 BUSD 新年馈赠 - 最高可得 2,000 BUSD",
+        "ba-languageRegion": "语言和地区",
+        "ba-chooseLanguageRegion": "选择语言和地区",
+        "ba-downloadoptions": "更多下载选择",
+        "ba-applyP2P": "申请CNY认证广告方",
+        "ba-downloadapp": "1. 扫码下载\n2. 发任意邮件至download@binance.com, 自动获取下载链接",
+        "ba-download": "下载",
+        "ba-suggest": "推荐",
+        "ba-chooseCurrency": "选择汇率",
+        "ba-fut-exchange": "现货交易",
+        "ba-creditcard": "信用卡",
+        "ba-pnlAnalysis": "资产盈亏",
+        "ba-futures-home": "合约首页",
+        "ba-futures-content": "快速导航到我们的最新产品，服务和资源",
+        "ba-stock-token-desc": "用加密货币交易股票",
+        "ba-stock-token": "股票代币",
+        "ba-buybnb": "购买 BNB",
+        "ba-buydogecoin": "购买狗狗币",
+        "ba-buy-DeFi-tokens": "购买DeFi代币",
+        "ba-battle-cm": "币本位合约对战",
+        "ba-battle-um": "U本位合约对战",
+        "landing-data-title": "历史行情数据",
+        "ba-dashboard": "总览",
+        "ba-transactionhistory": "资产历史记录",
+        "ba-institutional": "机构和VIP服务",
+        "ba-subaccount": "子账户",
+        "ba-institutional-content": "量身定制专业和专属服务",
+        "ba-clearAll": "清除全部",
+        "ba-support": "帮助",
+        "ba-law": "执法协助申请",
+        "ba-BCFcontnet": "区块链助力慈善更加透明、高效、可追溯",
+        "ba-overview": "合约总览",
+        "ba-overviewcontent": "查看数字货币衍生品的所有产品",
+        "ba-Theme": "黑夜模式",
+        "ba-ResponsibleTrading": "尽责交易",
+        "ba-tournament": "合约团赛",
+        "ba-fiat-under-fiat-maintenance": "法币相关服务目前正在维护中。",
+        "ba-reponsible": "尽责交易",
+        "ba-reponsible-content": "了解如何在币安合约进行负责任的交易",
+        "ba-Binance Pay": "支付",
+        "ba-Binance Pay-content": "发送、接收和支付加密货币",
+        "ba-viewmore": "查看更多",
+        "ba-countdown": "我们已停止向受限国家/地区的用户提供此服务。请在 {{ time }} 前提取您的资金，否则您的账户将被锁定，无法再提现。",
+        "ba-BuyTradable": "更多热门币种",
+        "ba-FundingWallet": "资金账户",
+        "ba-Onboarding": "新手挑战",
+        "ba-TWAP": "分时委托",
+        "ba-USDM": "U本位",
+        "ba-COINM": "币本位",
+        "ba-StrategyTrading": "交易机器人",
+        "ba-Activity": "活动",
+        "ba-BUSDBonus": "BUSD返利",
+        "ba-Deposit-EUR": "用卡充值 EUR",
+        "ba-Deposit-GBP": "用卡充值 GBP",
+        "ba-Deposit-HKD": "用卡充值 HKD",
+        "ba-buy-new": "银行卡买币",
+        "ba-Deposit-UAH": "用卡充值 UAH",
+        "ba-Deposit-PEN": "用卡充值 PEN",
+        "ba-Deposit-RUB": "用卡充值 RUB",
+        "ba-NFT": "NFT",
+        "ba-Trust Wallet": "Trust Wallet",
+        "ba-DEX": "DEX",
+        "ba-Card": "Card",
+        "ba-Featured.market": "Featured.market",
+        "ba-Affiliate": "Affiliate",
+        "ba-Desktop Application": "桌面客户端",
+        "ba-Cloud": "Cloud",
+        "ba-Charity": "慈善",
+        "com_account_guide_learn_more": "了解更多",
+        "com_account_guide_kyc": "您需要完成身份认证后才可以使用币安的产品和服务。",
+        "com_account_guide_kyc_Voucher": "完成KYC后可在任务中心内领取面值500BUSD 的体验金券。",
+        "com_account_guide_verify": "去验证",
+        "ba-tableMarkets-content": "Trade Bitcoin & Other Cryptos",
+        "ba-Dual": "双币投资",
+        "ba-BNBVault-content  ": "Earn Multi-benefits with BNB",
+        "ba-BNBVault ": "BNB Vault",
+        "ba-staking-con": "轻松质押，更高回报",
+        "ba-Dual-content    ": "Commit your crypto holdings and enjoy high returns",
+        "ba-Earn": "理财账户",
+        "ba-Staking": "质押",
+        "ba-lending-con": "您的专属存钱罐",
+        "ba-FanToken\t": "粉丝代币",
+        "ba-FanToken-content": "探索全新粉丝空间，解锁无限粉丝权益",
+        "ba-GiftCard": "礼品卡",
+        "ba-GiftCard-content": "可定制化的数字货币礼品卡",
+        "ba-Fantoken": "粉丝代币",
+        "ba-SpotGrid": "现货网格",
+        "ba-StrategyTrading-desc": "提供多种自动化策略，助力您简单、快速、可靠地开展智能交易",
+        "ba-AccountStatement": "账户结单",
+        "ba-margin-title": "杠杆交易",
+        "ba-futures-title": "U本位合约",
+        "ba-delivery-title": "币本位合约",
+        "ba-spot-title": "现货账户",
+        "ba-payment history": "Pay 历史交易",
+        "ba-5tournament": "合约锦标赛",
+        "ba-live": "直播",
+        "ba-swapfarming": "交易挖矿",
+        "ba-swapfarming-desc": "交易即挖矿，稳赚BNB。",
+        "ba-live-desc": "把区块链直播，带进您的生活",
+        "ba-submenutitle-staking": "Staking",
+        "ba-Dualtitle-content": "投入所持数字货币享受更高收益",
+        "ba-BNBVaulttitle-content": "一键获得BNB多重收益。",
+        "ba-BNBVault-title": "BNB收益池",
+        "ba-auto-invest": "定投计划",
+        "ba-auto-invest-con": "定投数字货币，享受自动生息。",
+        "bn-pop-cancel": "取消",
+        "bn-pop-content3": "您提供的资产来源证明不符合要求，服务已暂停，请您重新提交。",
+        "bn-pop-content2": "请您先提供资产来源证明，在您提供资产来源证明前，平台无法为您提供服务。",
+        "bn-pop-title-2": "需要提供资产来源证明",
+        "bn-pop-close": "关闭",
+        "bn-pop-verifyNow": "立即认证",
+        "bn-pop-linkContent": "新身份认证",
+        "bn-pop-title-1": "未完成身份认证",
+        "bn-pop-content1": "请在 2021-12-01 之前完成新身份验证以获得奖励。如果您在此日期之前没有通过验证，您的账户将被限制为： 仅提现。",
+        "bn-pop-continue": "继续",
+        "bn-pop-title-3": "资产来源证明验证失败",
+        "bn-pop-startNow": "立即开始",
+        "bn-pop-tryAgain": "重试",
+        "ba-futures-mock": "模拟交易",
+        "ba-Futures-Service-Agreement": "合约服务协议",
+        "ba-derivatives-vip-portal": "VIP衍生品专区",
+        "ba-derivatives-vip-portal-con": "VIP专属，离市场更近一步。",
+        "ba-derivatives-vip-portal-new": "VIP专区",
+        "ba-one-trust-cookie": "Cookie偏好设置",
+        "ba-recurring-buy-subtitle": "通过银行卡常规定期购买加密货币",
+        "ba-recurring-buy-title": "定投",
+        "ba-footer-pricepage": "浏览加密货币价格",
+        "ba-GBP-FPS-card": "通过Faster Payments或银行卡充值GBP",
+        "ba-GBP-deposit": "银行卡充值",
+        "ba-futures-reward-hub": "奖励中心",
+        "ba-EUR-SEPA-card": "通过SEPA或银行卡充值欧元",
+        "VIP_0": "普通用户",
+        "ba-full-creen-content": "全屏版",
+        "ba-full-creen-title": "在全屏版使用更大的图表进行交易",
+        "ba-learn-earn-content": "通过学习区块链知识，免费赚取加密货币",
+        "ba-learn-earn-title": "学习赚币",
+        "ba-apis": "一组API Key，打开无限机会之门",
+        "ba-spot-only-content": "快速买卖加密货币",
+        "ba-spot-only": "现货交易",
+        "ba-spot-only-subtitle": "使用先进工具，在现货市场交易加密货币",
+        "ba-eur-mobilum-subtitle": "通过SEPA购买BUSD",
+        "ba-eur-mobilum-title": "银行转账",
+        "com_header_btn_try_again": "重试",
+        "com_header_contnet_56": "我们无法为注册国家/地区来自受限制国家/地区的用户提供服务。如果您的公司信息有变化，请联系客服处理。",
+        "com_header_btn_start_now": "立即验证",
+        "com_header_contnet_52": "我们无法为受限国家/地区的用户提供服务。若您当前已不在该地区，您可以重新进行地址认证。若您无法提供非受限地区的地址证明，您可以将您的资产提现。",
+        "com_header_btn_support": "联系客服",
+        "com_header_btn_upload_now": "立即上传",
+        "com_header_contnet_54": "您的地址认证正在审核中，请您耐心等待。",
+        "com_header_contnet_53": "您的 IP 地址显示您正试图从受限司法管辖区访问我们的服务。若您当前已不在该地区，您可以通过完成地址认证以使用平台服务。",
+        "com_header_contnet_55": "您的地址认证审核未通过，请通过认证失败邮件查看失败原因并重新提交。",
+        "ba-gift-binance": "币安礼品卡",
+        "ba-safetypay-subtitle": "通过网上银行购买加密货币",
+        "ba-safetypay-title": "网上银行",
+        "homepage-br-ip-switch-lan": "如需查看所在地区的具体内容，我们建议您在选择国家时勾选巴西。",
+        "ba-hot-happyhour": "热门",
+        "homepage-br-ip-switch-lan-continue": "继续",
+        "EDD_false_200003962": "您提供的资产来源证明不符合要求，请您重新提交。",
+        "EDD_none_200003961": "尊敬的用户，请注意您的账户可能要接受一些额外的验证措施。我们恳请您确认您是否是政治风险人物，并提供关于您收入来源的信息。",
+        "ba-risk-warning": "风险提示",
+        "ba-strategy-overview": "总览",
+        "com_header_contnet_68": "我们目前正在审查您的文件，以便在您交易些产品之前确认您是专业用户。",
+        "com_header_contnet_69": "您目前没有资格访问您所在地区的某些产品/功能，如果您需要进一步的帮助，请联系Binance客服。",
+        "com_header_contnet_70": "我们无法确认您是专业用户，请选择下一步操作。",
+        "com_header_contnet_67": "在交易这些产品之前，您必须完成专业评估。",
+        "com_header_contnet_66": "您需要在交易前完成该产品的申请和专业评估。",
+        "com_header_contnet_72": "请在7月21日之前向我们提供新加坡境外的最新居住地址证明。如果您无法在规定的时间内提供，除提币功能外，您的账户将被限制。",
+        "com_header_contnet_71": "请在7月21日之前向我们提供新加坡境外的最新居住地址证明。如果您无法在规定的时间内提供，除提币功能外，您的账户将被限制。",
+        "ba-binance-otc-content": "为执行大宗交易，提供充足流动性",
+        "ba-binance-otc": "大宗交易",
+        "ba-rateArbitrage": "套利数据",
+        "ba-card-new": "币安卡",
+        "ba-p2pro": "P2Pro广告方App",
+        "ba-happyhour": "欢乐时光",
+        "earn-eth2": "一键质押，收益天天发",
+        "ba-eth2-content": "一键质押，收益天天发",
+        "ba-proof-asset": "Btoken代币资产证明",
+        "ba-broker-link": "经纪商",
+        "exchange-fiat-zar-stitch": "网上银行",
+        "exchange-fiat-zar-stitch-subtitle": "通过顶尖银行充值ZAR",
+        "Navigation-fiat-zar-stitch-subtitle": "实时电子资金转账(EFT)",
+        "Navigation-fiat-zar-stitch": "网上银行",
+        "ba-back-0812": "现已回归",
+        "ba-institutional-title": "机构用户",
+        "ba-header-loyality1_2-gp3": "立即注册并完成认证 - 最高可享100美元的迎新奖励！",
+        "ba-footer-signup-title": "随时随地通过币安交易",
+        "ba-footer-download": "扫一扫下载App",
+        "ba-BanktransferTitle-p2p": "C2C交易",
+        "ba-p2p-NZD": "在币安C2C轻松买卖加密货币",
+        "ba-airdrop": "币安空投门户",
+        "ba-ZAR-deposit": "零费率",
+        "ba-eth-merge": "以太坊合并",
+        "ba-optionsWallet": "期权账户",
+        "ba-happy-hour": "欢乐时光",
+        "ba-close": "关闭",
+        "ba-fiat-challenge-0922": "法币挑战",
+        "ba-defi-staking-con": "轻松质押去中心化产品",
+        "ba-simple-earn-con": "存币生息",
+        "ba-simple-earn-title": "保本赚币",
+        "ba-defi-staking-title": "DeFi挖矿",
+        "ba-defi-staking-title-correct": "DeFi质押挖矿",
+        "ba-binance-legal": "币安法律（法院材料提交）",
+        "ba-inswitch-title-mxn": "银行转账(SPEI)",
+        "ba-inswitch-subtitle-mxn": "通过银行转账买币",
+        "ba-inswitch-title-uyu": "网上银行",
+        "ba-inswitch-subtitle-uyu": "通过网上银行买币",
+        "ba-inswitch-subtitle-usd": "通过银行支付买币",
+        "ba-inswitch-title-cop": "银行转账",
+        "ba-inswitch-subtitle-cop": "通过银行转账买币",
+        "ba-inswitch-title-usd": "银行支付",
+        "ba-bhd-cash": "用BHD余额买币",
+        "ba-aed-cash": "用AED余额买币",
+        "ba-huf-cash": "用您的HUF资产一键买币",
+        "ba-czk-cash": "用您的CZK资产一键买币",
+        "ba-ron-cash": "用您的RON资产一键买币",
+        "ba-bonus": "奖励",
+        "ba-header-loyality-redeem": "兑换好礼",
+        "webPushAlert-btnText": "允许",
+        "webPushAlert-title": "点击此处，获取币安官网的桌面通知和更新",
+        "com_header_contnet_3987": "为完善我们的服务，确保您账户信息的准确性，您需要向我们提供一些其他信息。请点击“立即开始”，开始流程。",
+        "no_need_sign_agreement": "您无需填写声明。",
+        "ba-deposit-ZEN-RON": "通过ZEN充值RON",
+        "ba-deposit-ZEN": "充值",
+        "ba-deposit-ZEN-CZK": "通过ZEN充值CZK",
+        "ba-deposit-ZEN-HUF": "通过ZEN充值HUF",
+        "ba-deposit-ZEN-PLN": "通过ZEN充值PLN",
+        "ba-contract-info": "合约信息",
+        "ba-contrac-info-desc": "指数、套利和交割数据",
+        "com_header_contnet_3992 content": "个人账户的部分余额已暂时冻结。限制原因可能是出于安全考虑或账户违反了我们的使用条款。请24小时后重试。",
+        "com_header_btn_details": "详情",
+        "ba-header-register-popup-title": "立即开启数字之旅",
+        "ba-safetypay-title-PEN": "PagoEfectivo（二维码）",
+        "bn-pop-reset-kyc-content": "为避免账户受限，请完成最新的身份认证流程。请立即前往认证中心，开始认证。5-10分钟即可完成。",
+        "bn-pop-verify-now": "立即验证",
+        "ba-inswitch-title-ars": "银行转账(DEBIN)",
+        "ba-inswitch-subtitle-ars": "通过银行转账买币",
+        "ba-cashlink-subtitle": "通过Cashlink即时充值",
+        "ba-cashlink-title": "银行转账",
+        "header-tier2-leaderboard": "排行榜",
+        "header-tier2-leaderboard-desc": "币安用户专属排行榜，跟随顶级交易员策略",
+        "com_header_contnet_4002": "您的身份证件已过期。请立即上传新的身份证件，否则您的币安账户将在原证件到期后30天内被限制为“仅限提现”。",
+        "com_header_contnet_4001": "您的身份证件即将过期。请在现有证件到期前上传新的身份证件，否则您的币安账户将被限制为“仅限提现”。",
+        "ba-optionsOrder": "期权订单",
+        "ba-tap-credit-card": "信用卡",
+        "header-tier1-feed": "广场",
+        "header-tier2-vip-historical-market": "历史行情数据",
+        "description-tier2-vip-loan": "全面覆盖的定制化机构贷款",
+        "header-tier2-vip-loan": "VIP借币",
+        "header-tier2-institutional-homepage": "机构主页",
+        "header-tier1-institutional": "机构用户",
+        "header-tier2-custody": "托管",
+        "Secure digital assets with leading infrastructure": "description-tier2-custody",
+        "description-tier2-institutional-homepage": "为机构提供优质的数字资产解决方案",
+        "description-tier2-api": "一组API Key，打开无限机会之门",
+        "header-tier2-api": "API",
+        "description-tier2-execution-otc": "提供一流的场外交易流动性和执行服务",
+        "header-tier2-execution-otc": "交易执行和OTC服务",
+        "header-tier2-assets-management": "资产管理解决方案",
+        "description-tier2-vip": "为VIP和机构打造的一站式服务",
+        "header-tier2-vip": "VIP专区",
+        "description-tier2-link-program": "选择币安流动性解决方案，助力企业成长",
+        "description-tier2-assets-management": "探索多种资产管理解决方案",
+        "header-tier2-link-program": "经纪商",
+        "description-tier2-custody": "通过顶尖基础设施为数字资产保驾护航",
+        "description-tier2-vip-historical-market": "您的一站式交易数据存储库",
+        "ba-BHD-deposit": "银行转账或使用银行卡",
+        "footer_buy_xrp": "购买 XRP",
+        "footer_buy_dogecoin": "购买狗狗币",
+        "footer_bitcoin_price": "比特币价格",
+        "footer_price_predictions": "浏览加密货币价格预测",
+        "footer_ethereum_price": "以太坊价格",
+        "footer_sitemap": "网站地图",
+        "com_header_contnet_4003": "请提交补充认证，以免账户受限。",
+        "com_header_contnet_4004": "您所提交的信息已被拒，请重新提交所需信息。",
+        "com_header_contnet_3983": "如需使用此项服务，请先完成地址验证。",
+        "com_header_contnet_3984": "您的地址认证正在审核中，请您耐心等待。",
+        "com_header_contnet_4005": "您提交的补充认证信息正在审核中。",
+        "com_header_contnet_3986": "很遗憾，出于合规考虑或国家/地区限制，我们目前无法为您的账户提供服务。为您带来的不便，我们深表歉意。您可以将资产从binance.com提现至binance.ca。",
+        "com_header_contnet_3985": "您的地址验证失败。我们已将失败原因通过邮件发送给您，请查看失败原因并重新提交。",
+        "footer_service_proof_b_tokens": "B-Tokens代币质押证明",
+        "tnc_agree_terms": "我同意本条款",
+        "tnc_receive_marketing": "我同意接收来自币安的市场营销资讯。",
+        "babt_description": "经过验证的Web3时代用户凭证信息",
+        "com_header_contnet_4014": "我们发现您尚未提供税号。请注意，根据法律要求，币安必须采集该信息。",
+        "com_header_contnet_4013": "为满足我们的全球标准，我们需要您更新您的信息。您需要提供此信息，才能继续正常使用法币渠道。所有其他产品和服务均可继续正常使用。",
+        "header-tier2-audit": "审计",
+        "header-tier1-deposit": "充值",
+        "footer-legal": "法律",
+        "ba-cookie-policy": "Cookie政策",
+        "universal-link-download": "下载币安App",
+        "universal-link-ok": "好的",
+        "universal-link-appOnlyNotice": "该页面仅在币安App中可用",
+        "universal-link-viewApp": "打开币安App查看",
+        "universal-link-stayWeb": "留在此处",
+        "ba-optionsData": "期权数据",
+        "ba-markets": "行情",
+        "footer_proof_of_reserves": "储备金证明(PoR)",
+        "header-tier2-wallet-verification": "储备证明报告",
+        "ba-blogdescription": "拓展您的知识储备，获取最新见解",
+        "ba-blog": "博客",
+        "ba-card-GP": "通过银行卡、Google Pay买币",
+        "ba-card-AP-GP": "通过银行卡、Apple Pay、Google Pay买币",
+        "ba-card-AP": "通过银行卡、Apple Pay买币",
+        "ba-inswitch-title-XOF-mobilemoney": "Mobile Money",
+        "ba-inswitch-subtitle-XOF-mobilebanking": "用XOF余额买币",
+        "ba-inswitch-title-XOF-mobilebanking": "Mobile Banking",
+        "ba-inswitch-subtitle-XOF-mobilemoney": "通过Mobile Money买币",
+        "tax-ui-footer-risk-warnings": "Binance Tax风险提示",
+        "referral_tag": "解锁奖励",
+        "footer_support_request_feature": "产品反馈与建议",
+        "header_title_binance_tax": "帮助您计算加密货币税款的免费税务工具",
+        "ba-futures-binancehome": "币安主页",
+        "ba-strategy-order": "交易机器人订单",
+        "ba-strategywallet": "交易机器人",
+        "ba-strategy-rebalancingBot": "智能持仓",
+        "ba-Proof-of-Reserves": "储备金证明",
+        "footer-building-trust": "建立信任",
+        "ba-markets-overview": "市场概览",
+        "ba-markets-data": "交易数据",
+        "ba-download-slogan": "安全、快速、简洁",
+        "ba-open": "打开",
+        "ba-binance-app": "币安APP",
+        "ba-tap-BHD-subtitle": "BENIFIT卡买币",
+        "ba-tap-title": "ATM/借记卡",
+        "ba-tap-KWD-subtitle": "KNET卡买币",
+        "ba-Range-Bound-Desc": "利用市场盘整赚取高收益",
+        "ba-Range-Bound-Title": "区间收益宝",
+        "ba-futures-markets": "合约市场",
+        "ba-futures-markets-desc": "交易前查看合约市场中的趋势与机会",
+        "ba-deliverydata": "交割数据",
+        "tnc_receive_marketing_v2": "同意！我期待能第一时间获知专属优惠和币安独家活动。",
+        "com_header_btn_click_here": "点击这里",
+        "com_header_contnet_marketing_consent": "最新动态，千万不要错过！获得您的同意后，我们将向您不定期发送特殊优惠和独家活动更新。点击下方即可实时紧跟最新动态。",
+        "ba-markets-overview-desc": "总览加密市场的实时价格和关键数据",
+        "ba-markets-data-desc": "查看市场排行和价格表现",
+        "ba-defi-wallet-desc": "轻松访问和浏览 Web3",
+        "ba-defi-wallet": "DeFi钱包",
+        "ba-Press": "新闻中心",
+        "com_header_title_4042": "诚挚邀请您成为认证协作人员",
+        "com_header_contnet_4042_2": "如果您想成为认证协作人员，请点击下方的“查看详情”。您将跳转到企业认证流程的开始页面。",
+        "com_header_contnet_4042_1": "有企业邀请您成为认证协作人员。作为协作人员，您将能提供所需特定信息，帮助该企业通过企业认证流程。",
+        "ba-otc-block-trading-desc": "以最小滑点轻松执行大额交易",
+        "ba-otc-trading-desc": "现货、期权与算法订单等",
+        "ba-otc-block-trading": "大宗交易",
+        "ba-otc-trading": "场外交易",
+        "ba-loyalty-hub": "奖励中心",
+        "ba-accept-crypto-payment-desc": "支持客户用加密货币支付",
+        "ba-accept-crypto-payment": "接受加密货币支付",
+        "ba-gridtradingbonus": "网格交易奖励",
+        "ba-eth2": "ETH 质押",
+        "com_header_contnet_pep": "请提供所需信息。向我们提供更多信息，可以加快审核流程。",
+        "ba-gift-binance-grid": "币安礼品卡",
+        "ba-Spend": "消费",
+        "ba-Payment": "支付",
+        "com_header_later": "下次再试",
+        "com_header_contnet_pep_title": "请提交信息",
+        "com_header_btn_view_details": "查看详情",
+        "ba-capital-connect-desc": "连接投资者和投资经理",
+        "ba-capital-connect": "Capital Connect",
+        "bn-hk-limit-popup-checkbox-content": "我知道了",
+        "bn-hk-limit-popup-content": "本网站提供的产品与服务不适用于香港居民。本网站上的任何内容均不得解释为对香港任何个人的邀请。",
+        "bn-pop-proceed": "我知道了",
+        "com_header_content_200004045": "由于监管要求，您需要提供更多信息。",
+        "ba-eoptions-ExpiryDate": "到期日",
+        "ba-eoptions-MaxPain": "最大痛点",
+        "ba-eoptions-Options": "期权",
+        "ba-eoptions-OptionsData": "期权数据",
+        "ba-eoptions-OpenInterestAndVolume": "持仓量与成交量",
+        "ba-eoptions-ExercisedHistory": "行权历史",
+        "ba-eoptions-OptionsDataOverview": "期权数据总览",
+        "ba-eoptions-EasyOptions": "简版期权",
+        "ba-eoptions-PNLCalculator": "损益模拟计算器",
+        "ba-eoptions-Beginner": "初学者",
+        "ba-fundingandtrade": "资金费用与交易手续费分析",
+        "ba-common-all": "全部",
+        "ba-volatilityIndex": "波动率指数",
+        "ba-DA5-subtitle": "通过电子钱包、银行转账等买币",
+        "ba-DA5-title": "本地支付方式",
+        "ba-KZT-card": "使用银行卡充值KZT",
+        "header-link-twitter": "绑定 X",
+        "header-linked": "已绑定",
+        "ba-spotdca": "现货DCA",
+        "ba-Notices": "提示",
+        "ba-business-footer": "商业",
+        "ba-algo-orders": "算法订单",
+        "ba-algo-orders-desc": "使用TWAP和POV算法订单进行交易",
+        "footer_bitcoin_price_prediction": "比特币价格预测",
+        "footer_ethereum_price_prediction": "以太坊价格预测",
+        "ba-feed-description": "及时了解加密货币的最新资讯",
+        "ba-nft-description": "探索来自全球创作者的NFT",
+        "ba-tax": "Tax",
+        "ba-BasicConvert": "闪兑",
+        "ba-JPY-bank": "通过银行转账充值日元",
+        "ba-JPY-deposit": "银行卡充值",
+        "ba-JPY": "用日元余额买币",
+        "ba-liquidswap": "流动性挖矿",
+        "ba-meda-btitle-mxn": "Medá（电子钱包)",
+        "ba-meda-subtitle-mxn": "通过MXN付款，请使用Medá钱包",
+        "ba-more": "更多",
+        "ba-data": "数据",
+        "ba-faq": "常见问题",
+        "ba-fundingrates": "资金费率",
+        "ba-futures-referral": "合约推荐",
+        "ba-heatmap": "热力图",
+        "ba-AED-deposit": "银行卡充值",
+        "ba-AED": "用AED余额买币",
+        "ba-AED-bank": "通过银行转账充值AED",
+        "ba-new-user-zone": "领取100 USDT",
+        "ba-BHD-bank": "通过银行转账充值巴林第纳尔(BHD)",
+        "terms-200004079-global-tou": "我们对币安<a href=\"https://www.{{suffixOrigin}}/{{locale}}/terms\">使用条款</a>进行了更新。<br/><br/>自2023年8月31日起自动生效。<br/><br/>您无需进一步操作。<br/><br/>继续使用我们的服务，即表示您接受更新后的<a href=\"https://www.{{suffixOrigin}}/{{locale}}/terms\">使用条款</a>。",
+        "ba-copy-trading": "跟单交易",
+        "futures_social_trading": "社交交易",
+        "futures_copy_trading": "跟单交易",
+        "ba_social_trading": "社交交易",
+        "ba_copy_trading": "跟单交易",
+        "ba-WalletTitle": "钱包({{currency}})",
+        "com_header_btn_disagree": "我不同意",
+        "com_header_contnet_200004082": "请注意，由于您的C2C订单存在争议，您的交易与提现功能暂停使用。我们对造成的不便表示歉意。请点击下方的“我不同意”，我们的客服团队将立即为您提供帮助。",
+        "ba-copy-trading-desc": "一键跟单交易达人",
+        "ba-wallet-title-AED": "钱包(AED)",
+        "ba-wallet-title-ARS": "钱包(ARS)",
+        "ba-wallet-title-ZAR": "钱包(ZAR)",
+        "ba-wallet-title-AUD": "钱包(AUD)",
+        "ba-wallet-title-TRY": "钱包(TRY)",
+        "ba-wallet-title-UGX": "钱包(UGX)",
+        "ba-wallet-title-RUB": "钱包(RUB)",
+        "ba-wallet-title-UAH": "钱包(UAH)",
+        "ba-wallet-title-RON": "钱包(RON)",
+        "ba-wallet-title-PHP": "钱包(PHP)",
+        "ba-wallet-title-NGN": "钱包(NGN)",
+        "ba-wallet-title-KZT": "钱包(KZT)",
+        "ba-wallet-title-KWD": "钱包(KWD)",
+        "ba-wallet-title-GHS": "钱包(GHS)",
+        "ba-wallet-title-JPY": "钱包(JPY)",
+        "ba-wallet-title-HUF": "钱包(HUF)",
+        "ba-wallet-title-BRL": "钱包(BRL)",
+        "ba-wallet-title-EUR": "钱包(EUR)",
+        "ba-wallet-title-DKK": "钱包(DKK)",
+        "ba-wallet-title-BHD": "钱包(BHD)",
+        "ba-wallet-title-HKD": "钱包(HKD)",
+        "ba-wallet-title-GBP": "钱包(GBP)",
+        "ba-inswitch-title-CRC-sinpeMovil": "Sinpe Móvil",
+        "ba-inswitch-subtitle-CRC-sinpeMovil": "通过Sinpe Móvil买币",
+        "ba-inswitch-title-GTQ-fri": "Fri",
+        "ba-inswitch-subtitle-GTQ-fri": "通过Fri买币",
+        "ba-futures-4th": "合约四周年",
+        "ba-eoptions-OptionsHome": "期权首页",
+        "ba-bnbchain": "BNB Chain",
+        "ba-web3-wallet": "币安钱包",
+        "ba-vip-institutional": "VIP和机构",
+        "ba-spot-margin": "现货及杠杆",
+        "ba-spot-margin-desc": "使用杠杆工具或直接交易加密货币",
+        "ba-basic": "基础版",
+        "ba-p2p-desc": "快速买卖币，支持银行转账等100多种选择",
+        "ba-academy-le": "学院（边学边赚）",
+        "ba-convert-desc": "一键兑换不同加密货币",
+        "ba-eoptions-IV": "隐含波动率",
+        "ba-vip-institutional-desc": "值得VIP与机构信赖的数字资产平台",
+        "ba-launchpad-launchpool-desc": "第一时间发现新代币发行",
+        "ba-launchpad-launchpool": "Launchpool",
+        "ba-convert-block": "闪兑与大宗交易",
+        "ba-Square": "广场",
+        "ba-getstarted": "新手指引",
+        "ba-futuresdata": "合约数据",
+        "ba-options-rfq": "期权场外交易",
+        "Register now and receive up to 100 USDT in rewards": "立即注册并获得价值高达 100 美元的奖励",
+        "Register Now": "注册",
+        "com_header_contnet_wck": "为继续使用我们的服务，请您配合提供关于您有可能成为政治公众人物(PEP)的补充信息。该问卷只需一分钟即可完成。请点击“立即开始”，启动该流程。",
+        "ba-applypay": "支付商户申请",
+        "ba-pm": "统一账户",
+        "nc-campaign": "活动",
+        "nc-chat": "聊天",
+        "nc-announcement": "公告",
+        "nc-system_message": "系统消息",
+        "uc-settings": "设置",
+        "uc-account": "账户",
+        "uc-assets": "资产",
+        "uc-orders": "订单",
+        "download-bar-downloadIOS": "iOS 下载",
+        "download-bar-downloadAndroid": "安卓APK",
+        "ba-signup": "注册",
+        "ba-futures-challenge": "合约挑战赛",
+        "ba-download-slogan-new": "获取<h>专享200 USDT</h>首单价格保护",
+        "ba-portfolio-margin": "统一账户",
+        "ba-isolated-margin": "逐仓杠杆账户",
+        "ba-megadrop-subtitle": "锁定 BNB 并完成 Web3 任务，赚取更多空投奖励",
+        "ba-arbitrageBot": "套利机器人",
+        "price-alert-milestone-rise": "{{symbol}} 涨破 {{price}} {{coin}}",
+        "price-alert-milestone-drop": "{{symbol}} 跌破 {{price}} {{coin}}",
+        "price-alert-fluctuation-rise": "{{symbol}} 在过去 24 小时内上涨了 {{pricePercent}}，涨至 {{price}} {{coin}}",
+        "nc-no-news": "暂无新的消息",
+        "ba-header-nuz": "新用户专区",
+        "price-alert-fluctuation-drop": "{{symbol}} 在过去 24 小时内下跌了 {{pricePercent}}，跌至 {{price}} {{coin}}",
+        "ba-downloadapp-cn": "1. 扫码下载 2. 发邮件至 download@binance.com，自动获取下载链接",
+        "tnc_accept_btn": "我接受",
+        "home_market_consent_popup_title_planB": "了解最新资讯",
+        "home_market_consent_popup_title": "随时关注",
+        "home_market_consent_popup_content": "您想关注相关优惠、活动和市场洞察吗？",
+        "home_market_consent_popup_content_planC": "您想接收有关代币空投、活动和特别奖励的最新消息？",
+        "home_market_consent_popup_content_planD": "向我发送专属活动优惠、在线内容、活动和赠品派送通知",
+        "home_market_consent_popup_No": "否",
+        "home_market_consent_popup_Yes": "是",
+        "home_market_consent_popup_content_planB": "您想了解有关专属优惠、活动、赠品派送和奖励的最新动态吗？",
+        "ba-php-wallet": "用您的PHP余额购买加密货币",
+        "footer_country_region_selector": "国家/地区选择器",
+        "ba-yes": "是",
+        "terms-200004079": "我们对币安使用条款和隐私声明进行了更新，将自2023年8月31日起自动生效。您无需进一步操作。继续使用我们的服务，即表示您接受更新后的使用条款和隐私声明。",
+        "footer-community": "社区",
+        "ba-USDSPerpetual": "USD(s)永续合约",
+        "footer_transparency": "信任与透明",
+        "ba-marketing-consent-popup-title1": "随时关注",
+        "ba-php-deposit": "银行转账",
+        "ba-marketing-consent-popup-title2": "了解最新资讯",
+        "tax-ui-footer-send-feedback": "请将您的反馈发送至：",
+        "ba-marketing-consent-popup-title4": "为您提供最新消息",
+        "ba-marketing-consent-popup-title3": "敬请关注",
+        "ba-marketing-consent-popup-desc4": "告诉我专属活动优惠、在线内容、活动和赠品派送。",
+        "ba-marketing-consent-popup-desc2": "您想了解有关专属优惠、活动、赠品派送和奖励的最新动态吗？",
+        "ba-no": "否",
+        "ba-marketing-consent-popup-desc1": "您是否想关注相关优惠、活动和市场洞察？",
+        "ba-marketing-consent-popup-desc3": "您想收到有关代币空投、活动和特别奖励的最新消息吗？",
+        "nc-chat-file": "[文件]",
+        "gcc_registration_bh": "币安巴林站",
+        "ba-footer-token-unlock": "代币解锁",
+        "ba-optionsBLOCK": "大宗交易",
+        "ba-header-switch-accounts": "切换账户",
+        "ba-eth-upgrade-pectra": "以太坊 Pectra 升级",
+        "JP": "日本",
+        "BINANCE_BAHRAIN_BSC": "巴林",
+        "ba-USDF": "BFUSD",
+        "header-title-bifinity": "Binance Connect",
+        "ph-send-header": "币安转账",
+        "ba-binance-send": "币安转账",
+        "ba-earn-highyield": "高收益",
+        "ba-earn-overview": "总览",
+        "ba-earn-simpleearn": "保本赚币",
+        "ba-earn-simpleearn-sub": "支持 300 + 加密货币，活期定期随心选，坐享被动收入",
+        "ba-earn-overview-sub": "所有理财产品的一站式门户",
+        "ba-earn-highyield-sub": "智能规划先进收益产品，助力收入最大化",
+        "ba-earn-loans": "质押借币",
+        "ba-earn-loans-sub": "轻松快速借币，费率优势明显",
+        "ba-earn-advancedearn": "进阶赚币",
+        "gcc_registration_jp": "币安日本",
+        "price-alert-history-rise-limit": "{{symbol}} 创下历史新高，已突破 {{price}} {{quote}}。分析市场趋势，完善交易策略。立即探索 ➡️️",
+        "footer-trading-insight": "交易洞察",
+        "service_group_placeholder_bestwishes": "新年快乐 to da moon！",
+        "service_group_card_binanceredpacket_allclaimed": "已全部领取",
+        "service_group_placeholder_giftwishes_regular": "财富自由，HODL 到月球！",
+        "ba-affiliate-title": "超级返佣",
+        "ba-affiliate-subtitle": "邀请好友，每笔交易最高可赚取 50% 的佣金",
+        "ba-whistleblowing": "安全的内部通信渠道",
+        "ba-referral-title": "邀请好友",
+        "ba-referral-subtitle": "邀请好友可获邀请人返佣或一次性奖励",
+        "todo-tips": "您有 {{count}} 个待处理的操作请求。",
+        "header-todolist": "您有 {{count}} 个待处理的操作请求。",
+        "ba-travel-rule": "转账规则",
+        "ba-travel-rule-desc": "提高透明度，打击洗钱、恐怖主义融资等金融犯罪",
+        "ba-Alpha": "Alpha",
+        "ba-Alpha-desc": "通过 Alpha 交易快速开启 Web3 之旅",
+        "ba-new": "新",
+        "futures_smart_money": "聪明钱",
+        "Message_P2p_Chat_New_Message_Image_Placeholder": "【图片】",
+        "Message_P2p_Chat_New_Message_Video_Placeholder": "【视频】",
+        "Message_P2p_Chat_New_Message_TransferAsset_Placeholder": "【加密货币转账】",
+        "Message_P2p_Chat_New_Message_Payment_Placeholder": "【支付详情】",
+        "Message_P2p_Chat_New_Message_File_Placeholder": "【文件】",
+        "Message_P2p_Chat_New_Message_System_Placeholder": "【系统提醒】",
+        "Message_P2p_Chat_New_Message_Recall_Placeholder": "【撤回消息】",
+        "Message_P2p_Chat_New_Message_AdCard_Placeholder": "【广告插页】",
+        "ba-DEX-desc": "使用币安钱包进行链上交易",
+        "ba-beta-tag": "测试版",
+        "demo-tag": "模拟交易",
+        "demo-trading-api": "API",
+        "demo-trading": "模拟交易",
+        "back-to-live": "返回实盘",
+        "Message_Group_Chat_Welcome_Placeholder": "【欢迎卡】",
+        "Message_Group_Chat_FAQ_Placeholder": "【常见问题卡片】",
+        "Message_Group_Chat_Reward_Card_Placeholder": "【奖励卡】",
+        "ba-spot-demo": "现货",
+        "Message_Group_Chat_New_Message_AssetCard_Placeholder": "【资产和盈亏卡】",
+        "Message_P2p_Chat_New_Message_AssetCard_Placeholder": "【资产和盈亏卡】",
+        "Message_P2p_Chat_New_Message_TradeCard_Placeholder": "【仓位和交易历史卡】",
+        "Message_Group_Chat_New_Message_TradeCard_Placeholder": "【仓位和交易历史卡】",
+        "Message_P2p_Chat_New_Message_AdditionalKyc_Placeholder": "【认证】",
+        "Message_Group_Chat_Red_Packet_Received_Placeholder": "红包已领取",
+        "Message_Group_Chat_New_Message_Placeholder": "您收到了一条新消息",
+        "ba-demo-trading-desc": "使用虚拟资金体验真实的交易场景，零风险。",
+        "ba-demo-trading-title": "模拟交易",
+        "ba-card-desc": "轻松将您的加密货币转化为现实世界的消费",
+        "ba-card": "币安卡",
+        "ba-academy-desc": "免费加密货币和区块链教育",
+        "ba-binance-academy": "币安学院",
+        "ba-binance-junior": "币安初级",
+        "ba-binance-junior-desc": "由家长监督的青少年加密货币账户",
+        "subnavbar-positionSnowball": "滚仓宝",
+        "ba-crypto-payments": "加密支付",
+        "ba-raise-complaint": "如何提出投诉",
+        "footer-atgm-global": "币安 ADGM 实体受阿布扎比国际金融中心 (ADGM) 金融服务监管局 (FSRA) 监管，具体如下：(1) Nest Exchange Limited 经认定为受官方认可的投资交易平台（衍生品），须运营多边交易系统；(2) Nest Clearing and Custody Limited 经认定为托管及中央证券托管机构，须提供托管服务并运营中央证券托管服务；(3) Nest Trading Limited 获授权开展以下受监管业务：(i) 处理本金投资交易；(ii) 作为代理方处理投资交易；(iii) 撮合投资交易；(iv) 管理资产；(v) 提供资金服务；(vi) 安排托管服务。<br><br>风险提示：虚拟资产价格可能剧烈波动。您的投资价值可能下跌或上涨，且您可能无法收回投资本金。您需对自己的投资决策全权负责，币安对此产生的任何交易损失概不负责。",
+        "Message_Group_Chat_Red_Packet_Placeholder": "[红包]",
+        "ba-Launchpad": "Launchpad",
+        "ba-ThirdPartyPaymentvSubtitle7": "Mercuryo, Simplex, Koinal, Latamex",
+        "ba-ThirdPartyPaymentvSubtitle2": "Mercuryo, Simplex, Koinal",
+        "ba-walletDepositSubtitle8": "Etana",
+        "ba-walletDepositSubtitle7": "Etana, Epay",
+        "ba-ThirdPartyPaymentvSubtitle13": "Mercuryo, Koinal",
+        "ba-ThirdPartyPaymentvSubtitle14": "Latamex",
+        "ba-ThirdPartyPaymentvSubtitle15": "Mercuryo",
+        "exchange-wallet-minDeposit": "Deposit amount must be greater than <strong>##</strong>",
+        "ba-BRL": "Buy Crypto with your BRL balance",
+        "ba-imprint": "Imprint",
+        "exchange-wallet-matchedNetworksTip": "该地址自动匹配网络 ## , 建议您选择",
+        "ba-BankDepositSEPAiDEAL": "Deposit EUR with SEPA, iDEAL",
+        "ba-CrediCardSubtitleNGN": "Visa, Mastercard, Verve",
+        "ba-KES": "Buy Crypto with your KES balance",
+        "ba-deposit-KES": "Deposit KES",
+        "ba-BankDepositFasterPayment0": "0 fee via Faster Payments deposit",
+        "ba-GHS": "Buy Crypto with your GHS balance",
+        "ba-SWIFT Bank Transfer": "SWIFT Bank Transfer",
+        "ba-trbinance": "TRBINANCE.COM",
+        "ba-FanToken": "Fan Token",
+        "uk-navi": "You are required to complete self certification to access several Binance products.",
+        "uk-do-it": "Do it.",
+        "ba-submenu-staking": "Staking",
+        "ba-execution-solutions": "Execution Solutions",
+        "com_header_contnet_jp_tip": "Binance.com services will remain available even if you complete the verification process (until Nov 30th 2023, or earlier (if advised)).",
+        "com_header_contnet_4070": "Please convert, liquidate, or withdraw any impermissible assets by Nov 30th 2023, or earlier (if advised).",
+        "com_header_contnet_4069": "Action Required: Please complete the Binance Japan Verification Process.",
+        "com_header_contnet_please_go_here": "Please Go Here",
+        "com_header_contnet_jp_4070": "Binance.com services will remain available until Nov 30th 2023, or earlier (if advised).",
+        "ba-travel-rule-gtr": "GTR",
+        "ba-travel-rule-title": "Travel Rule Partner",
+        "ba-footer-kz-disclaimer": "Binance Kazakhstan is authorised by the financial regulator of the AIFC, Astana Financial Services Authority (“AFSA”), to conduct the activities of Operating Digital Asset Trading Platform and Providing Custody. Status of the licence and its validity may be verified at the AFSA website (www.afsa.kz).<br/><br/>Risk Warning: Digital Asset prices can be volatile. The value of your investment may go down or up and you may not get back the amount invested. You are solely responsible for your investment decisions and Binance Kazakhstan is not liable for any losses you may incur.",
+        "ba-buy-and-sell": "Buy & Sell",
+        "ba-trading-fees": "Trading Fees",
+        "ba-trading-rules-desc": "View the trading rules and limits",
+        "ba-support-center-desc": "Access Support FAQ articles",
+        "ba-chat-support-desc": "Chat with Customer Support",
+        "ba-trading-fees-desc": "View the trading fees",
+        "ba-qrcode-tip": "Send email to download@binance.com, obtain stable/fast App download links automatically.",
+        "KZ": "Binance Kazakhstan"
+      },
+      "widgetConfig": {
+        "scenes": [
+          {
+            "sceneName": "isExistFutureAccount",
+            "visibleType": "all",
+            "validate": "isExistFutureAccount",
+            "themisInfo": {}
+          },
+          {
+            "sceneName": "parentUser",
+            "visibleType": "all",
+            "validate": "parentUser",
+            "themisInfo": {}
+          },
+          {
+            "sceneName": "show-new-user-zone",
+            "visibleType": "all",
+            "themisInfo": {
+              "authHeader": "MTI4NTE4NDgxMTptd3dXU2x5bkR2dTBkbXpxT1d0NEhta0hhZmg2ZGVmaw==",
+              "expression": "showentry=NewUserZone"
+            }
+          },
+          {
+            "sceneName": "futures-showPortfolioIsolatedMargin",
+            "visibleType": "all",
+            "validate": "isPortfolioMarginRetailUser",
+            "themisInfo": {}
+          },
+          {
+            "sceneName": "futures-showMarginFutures",
+            "visibleType": "all",
+            "validate": "!isPortfolioMarginRetailUser",
+            "themisInfo": {}
+          },
+          {
+            "sceneName": "vip_user",
+            "visibleType": "all",
+            "validate": "tradeLevel",
+            "themisInfo": {}
+          },
+          {
+            "sceneName": "corporate-user",
+            "visibleType": "login",
+            "validate": "enterpriseAccount",
+            "themisInfo": {}
+          },
+          {
+            "sceneName": "individual-user",
+            "visibleType": "all",
+            "validate": "!enterpriseAccount",
+            "themisInfo": {}
+          }
+        ],
+        "header": {
+          "logo": {
+            "link": "https://www.binance.com/zh-CN"
+          },
+          "menus": [
+            {
+              "menuType": "text",
+              "subMenuFlow": "row",
+              "menuItem": {
+                "type": "text",
+                "icon": "crypto-f",
+                "title": "ba-titile2-2",
+                "link": "https://c2c.binance.com/zh-CN/express/buy",
+                "linkTarget": "_self",
+                "langMapping": "",
+                "sceneNames": "individual-user",
+                "businessKeys": "buycrypto",
+                "businessKeysIsWhite": false
+              },
+              "subMenuSize": "normal"
+            },
+            {
+              "menuType": "text",
+              "subMenuFlow": "row",
+              "menuItem": {
+                "type": "text",
+                "icon": "crypto-f",
+                "title": "ba-titile2-2",
+                "link": "https://www.binance.com/zh-CN/crypto/buy",
+                "linkTarget": "_self",
+                "langMapping": "",
+                "sceneNames": "corporate-user",
+                "businessKeys": "buycrypto",
+                "businessKeysIsWhite": false
+              },
+              "subMenuSize": "normal",
+              "subMenus": []
+            },
+            {
+              "menuType": "text",
+              "subMenuFlow": "row",
+              "menuItem": {
+                "type": "text",
+                "icon": "market-s24",
+                "title": "ba-tableMarkets",
+                "link": "https://www.binance.com/zh-CN/markets/overview",
+                "linkTarget": "_self",
+                "langMapping": "",
+                "businessKeysIsWhite": false
+              },
+              "subMenuSize": "large",
+              "subMenus": [
+                {
+                  "icon": "market-overview-g",
+                  "title": "ba-markets-overview",
+                  "link": "https://www.binance.com/zh-CN/markets/overview",
+                  "linkTarget": "_self",
+                  "langMapping": "",
+                  "type": "normal",
+                  "content": "ba-markets-overview-desc",
+                  "columnNumber": 1
+                },
+                {
+                  "icon": "trading-data-g",
+                  "title": "ba-markets-data",
+                  "link": "https://www.binance.com/zh-CN/markets/trading_data",
+                  "linkTarget": "_self",
+                  "langMapping": "",
+                  "type": "normal",
+                  "content": "ba-markets-data-desc",
+                  "columnNumber": 1
+                }
+              ]
+            },
+            {
+              "menuType": "gird",
+              "subMenuFlow": "column",
+              "menuItem": {
+                "type": "text",
+                "icon": "trade-f",
+                "title": "ba-trade",
+                "linkTarget": "_self",
+                "langMapping": "",
+                "businessKeysIsWhite": false
+              },
+              "subMenuSize": "large",
+              "subMenus": [
+                {
+                  "title": "ba-basic",
+                  "link": "ba-basic",
+                  "linkTarget": "_self",
+                  "langMapping": "",
+                  "type": "subTitle",
+                  "columnNumber": 1
+                },
+                {
+                  "icon": "Spot2C",
+                  "title": "ba-spot-only",
+                  "link": "https://www.binance.com/zh-CN/trade/BTC_USDT?type=spot",
+                  "linkTarget": "_self",
+                  "langMapping": "",
+                  "type": "normal",
+                  "content": "ba-spot-only-subtitle",
+                  "columnNumber": 1
+                },
+                {
+                  "icon": "Margin2C",
+                  "title": "ba-margin",
+                  "link": "https://www.binance.com/zh-CN/trade?type=cross",
+                  "linkTarget": "_self",
+                  "langMapping": "",
+                  "type": "normal",
+                  "content": "ba-margin-content",
+                  "sceneNames": "mg-ex-bg",
+                  "columnNumber": 1,
+                  "businessKeys": "marginTrade"
+                },
+                {
+                  "icon": "P2P2C",
+                  "title": "ba-titile2-1",
+                  "link": "https://p2p.binance.com/zh-CN",
+                  "linkTarget": "_self",
+                  "langMapping": "",
+                  "type": "normal",
+                  "content": "ba-c2c-content",
+                  "sceneNames": "trade-p2p-hide",
+                  "columnNumber": 1,
+                  "businessKeys": "tradeC2C"
+                },
+                {
+                  "icon": "Convert2C",
+                  "title": "ba-convert-block",
+                  "link": "https://www.binance.com/zh-CN/convert/BNB/USDT",
+                  "linkTarget": "_self",
+                  "langMapping": "",
+                  "type": "normal",
+                  "content": "ba-BasicCONVERT-content",
+                  "columnNumber": 1,
+                  "businessKeys": "tradeConvert"
+                },
+                {
+                  "icon": "fea-title-demo-trading",
+                  "title": "ba-demo-trading-title",
+                  "link": "https://demo.binance.com/zh-CN",
+                  "linkTarget": "_self",
+                  "langMapping": "",
+                  "type": "normal",
+                  "content": "ba-demo-trading-desc",
+                  "columnNumber": 1
+                },
+                {
+                  "title": "ba-Advanced",
+                  "link": "ba-Advanced",
+                  "linkTarget": "_self",
+                  "langMapping": "",
+                  "type": "subTitle",
+                  "columnNumber": 2
+                },
+                {
+                  "icon": "icdex-wallet-2c",
+                  "title": "ba-DEX",
+                  "link": "https://web3.binance.com/zh-CN",
+                  "linkTarget": "_self",
+                  "langMapping": "",
+                  "type": "normal",
+                  "content": "ba-DEX-desc",
+                  "suffixTips": "Beta",
+                  "columnNumber": 2,
+                  "businessKeys": "web3_web_entrance"
+                },
+                {
+                  "icon": "alpha-2c",
+                  "title": "ba-Alpha",
+                  "link": "https://www.binance.com/zh-CN/alpha",
+                  "linkTarget": "_self",
+                  "langMapping": "",
+                  "type": "normal",
+                  "content": "ba-Alpha-desc",
+                  "columnNumber": 2,
+                  "businessKeys": "BinanceAlpha"
+                },
+                {
+                  "icon": "TradingBot2C",
+                  "title": "ba-StrategyTrading",
+                  "link": "https://www.binance.com/zh-CN/trading-bots",
+                  "linkTarget": "_self",
+                  "langMapping": "",
+                  "type": "normal",
+                  "content": "ba-StrategyTrading-desc",
+                  "columnNumber": 2,
+                  "businessKeys": "Spot_Grid"
+                },
+                {
+                  "icon": "CopyTrading2C",
+                  "title": "ba-copy-trading",
+                  "link": "https://www.binance.com/zh-CN/copy-trading",
+                  "linkTarget": "_self",
+                  "langMapping": "",
+                  "type": "normal",
+                  "content": "ba-copy-trading-desc",
+                  "columnNumber": 2,
+                  "businessKeys": "all_copy_trading"
+                },
+                {
+                  "icon": "Api2C",
+                  "title": "header-tier2-api",
+                  "link": "https://www.binance.com/zh-CN/binance-api",
+                  "linkTarget": "_self",
+                  "langMapping": "",
+                  "type": "normal",
+                  "content": "description-tier2-api",
+                  "columnNumber": 2
+                }
+              ]
+            },
+            {
+              "menuType": "gird",
+              "subMenuFlow": "column",
+              "menuItem": {
+                "type": "text",
+                "icon": "futures-f",
+                "title": "ba-binanceFutrue",
+                "link": "https://www.binance.com/zh-CN/futures/home",
+                "linkTarget": "_self",
+                "langMapping": "",
+                "businessKeys": "Derivatives",
+                "businessKeysIsWhite": false
+              },
+              "subMenuSize": "large",
+              "subMenus": [
+                {
+                  "icon": "FuturesUsdtM2C",
+                  "title": "ba-perpetualFutures",
+                  "link": "https://www.binance.com/zh-CN/futures",
+                  "linkTarget": "_self",
+                  "langMapping": "it(en)",
+                  "type": "normal",
+                  "content": "ba-perpetualFutures-content",
+                  "columnNumber": 1,
+                  "businessKeys": "umTrade"
+                },
+                {
+                  "icon": "FuturesCoinM2C",
+                  "title": "ba-quarterlyFutures",
+                  "link": "https://www.binance.com/zh-CN/delivery",
+                  "linkTarget": "_self",
+                  "langMapping": "it(en)",
+                  "type": "normal",
+                  "content": "ba-quarterlyFutures-content",
+                  "columnNumber": 1,
+                  "businessKeys": "cmTrade"
+                },
+                {
+                  "icon": "FuturesOptionsEuropean2C",
+                  "title": "ba-voptions",
+                  "link": "https://www.binance.com/zh-CN/eoptions",
+                  "linkTarget": "_self",
+                  "langMapping": "",
+                  "type": "normal",
+                  "content": "ba-voptionscontent",
+                  "sceneNames": "Option-exclude-lang",
+                  "columnNumber": 1
+                }
+              ]
+            },
+            {
+              "menuType": "gird",
+              "subMenuFlow": "row",
+              "menuItem": {
+                "type": "text",
+                "icon": "earn-jar-2cF",
+                "title": "ba-Earntitle",
+                "link": "https://www.binance.com/zh-CN/earn",
+                "linkTarget": "_self",
+                "langMapping": "",
+                "businessKeys": "earnHome",
+                "businessKeysIsWhite": false
+              },
+              "subMenuSize": "normal",
+              "subMenus": [
+                {
+                  "icon": "earn-jar-2c",
+                  "title": "ba-earn-overview",
+                  "link": "https://www.binance.com/zh-CN/earn",
+                  "linkTarget": "_self",
+                  "langMapping": "",
+                  "type": "normal",
+                  "content": "ba-earn-overview-sub",
+                  "columnNumber": 1,
+                  "businessKeys": "earnEarnOverviewWeb"
+                },
+                {
+                  "icon": "earn-simple-earn",
+                  "title": "ba-earn-simpleearn",
+                  "link": "https://www.binance.com/zh-CN/earn/simple-earn",
+                  "linkTarget": "_self",
+                  "langMapping": "",
+                  "type": "normal",
+                  "content": "ba-earn-simpleearn-sub",
+                  "columnNumber": 1,
+                  "businessKeys": "earnSimpleEarn"
+                },
+                {
+                  "icon": "earn-high-yield",
+                  "title": "ba-earn-advancedearn",
+                  "link": "https://www.binance.com/zh-CN/earn/advanced-earn",
+                  "linkTarget": "_self",
+                  "langMapping": "",
+                  "type": "normal",
+                  "content": "ba-earn-highyield-sub",
+                  "columnNumber": 1,
+                  "businessKeys": "earnHighYield"
+                },
+                {
+                  "icon": "earn-loans",
+                  "title": "ba-earn-loans",
+                  "link": "https://www.binance.com/zh-CN/loan",
+                  "linkTarget": "_self",
+                  "langMapping": "",
+                  "type": "normal",
+                  "content": "ba-earn-loans-sub",
+                  "columnNumber": 1,
+                  "businessKeys": "earnLoanFlexibleRate"
+                }
+              ]
+            },
+            {
+              "menuType": "gird",
+              "subMenuFlow": "row",
+              "menuItem": {
+                "type": "text",
+                "icon": "rules-f",
+                "title": "ba-Square",
+                "link": "https://www.binance.com/zh-CN/square",
+                "linkTarget": "_self",
+                "langMapping": "",
+                "businessKeysIsWhite": false
+              },
+              "subMenuSize": "large",
+              "subMenus": [
+                {
+                  "icon": "Feed2C",
+                  "title": "ba-Square",
+                  "link": "https://www.binance.com/zh-CN/square",
+                  "linkTarget": "_self",
+                  "langMapping": "",
+                  "type": "normal",
+                  "content": "ba-feed-description",
+                  "columnNumber": 1
+                },
+                {
+                  "icon": "Academy2C",
+                  "title": "ba-academy-le",
+                  "link": "https://academy.binance.com/zh-CN/learn-and-earn",
+                  "linkTarget": "_self",
+                  "langMapping": "el(en),en-IN(en),en-KZ(en),en-NG(en),es-AR(es),es-ES(es),es-LA(es),es-MX(es),fr-AF(en),fr-FR(en),hi(en),kk-KZ(en),pt-PT(pt),ru-UA(en),sl(en),uk-UA(uk),zh-TC(zt)",
+                  "type": "normal",
+                  "content": "ba-learn-earn-content",
+                  "columnNumber": 1
+                },
+                {
+                  "icon": "Blog2C",
+                  "title": "ba-blog",
+                  "link": "https://www.binance.com/zh-CN/blog",
+                  "linkTarget": "_self",
+                  "langMapping": "sl(en),hi(en),en-KZ(en),hu(en)",
+                  "type": "normal",
+                  "content": "ba-blogdescription",
+                  "columnNumber": 1
+                },
+                {
+                  "icon": "Research2C",
+                  "title": "ba-Research",
+                  "link": "https://www.binance.com/zh-CN/research",
+                  "linkTarget": "_self",
+                  "langMapping": "",
+                  "type": "normal",
+                  "content": "ba-research",
+                  "columnNumber": 1
+                }
+              ]
+            },
+            {
+              "menuType": "gird",
+              "subMenuFlow": "row",
+              "menuItem": {
+                "type": "text",
+                "icon": "list-grid-f",
+                "title": "ba-moreManagement",
+                "linkTarget": "_self",
+                "langMapping": "",
+                "businessKeysIsWhite": false
+              },
+              "subMenuSize": "large",
+              "subMenus": [
+                {
+                  "icon": "Institutions2C",
+                  "title": "ba-vip-institutional",
+                  "link": "https://www.binance.com/zh-CN/vip-institutional-services",
+                  "linkTarget": "_self",
+                  "langMapping": "",
+                  "type": "normal",
+                  "content": "ba-vip-institutional-desc",
+                  "columnNumber": 1
+                },
+                {
+                  "icon": "affiliates-entry-2c",
+                  "title": "ba-affiliate-title",
+                  "link": "https://www.binance.com/zh-CN/activity/referral?stopRedirectToActivity=true",
+                  "linkTarget": "_self",
+                  "langMapping": "",
+                  "type": "normal",
+                  "content": "ba-affiliate-subtitle",
+                  "columnNumber": 1
+                },
+                {
+                  "icon": "referral2-2c",
+                  "title": "ba-referral",
+                  "link": "https://www.binance.com/zh-CN/activity/referral",
+                  "linkTarget": "_self",
+                  "langMapping": "",
+                  "type": "normal",
+                  "content": "ba-referral-subtitle",
+                  "columnNumber": 1
+                },
+                {
+                  "icon": "Launchpad2C",
+                  "title": "ba-launchpad-launchpool",
+                  "link": "https://www.binance.com/zh-CN/launchpool",
+                  "linkTarget": "_self",
+                  "langMapping": "",
+                  "type": "normal",
+                  "content": "ba-launchpad-launchpool-desc",
+                  "sceneNames": "earn-launchpad-hide",
+                  "columnNumber": 1,
+                  "businessKeys": "launchpad"
+                },
+                {
+                  "icon": "megadrop-2c-blk",
+                  "title": "Megadrop",
+                  "link": "https://www.binance.com/zh-CN/megadrop",
+                  "linkTarget": "_self",
+                  "langMapping": "",
+                  "type": "normal",
+                  "content": "ba-megadrop-subtitle",
+                  "columnNumber": 1,
+                  "businessKeys": "fea-title-megadrop"
+                },
+                {
+                  "icon": "CloudMining2C",
+                  "title": "ba-pool",
+                  "link": "https://pool.binance.com/zh-CN",
+                  "linkTarget": "_self",
+                  "langMapping": "",
+                  "type": "normal",
+                  "content": "ba-pool-content",
+                  "sceneNames": "earnMiningPool",
+                  "columnNumber": 1
+                },
+                {
+                  "icon": "Pay2C",
+                  "title": "ba-Binance Pay",
+                  "link": "https://www.binance.com/zh-CN/my/wallet/account/payment",
+                  "linkTarget": "_self",
+                  "langMapping": "vi(en)",
+                  "type": "normal",
+                  "content": "ba-Binance Pay-content",
+                  "columnNumber": 2,
+                  "businessKeys": "binancepay"
+                },
+                {
+                  "icon": "NftFi2C",
+                  "title": "ba-NFT",
+                  "link": "https://www.binance.com/zh-CN/nft/home?utm_source=binance-header&utm_medium=header",
+                  "linkTarget": "_self",
+                  "langMapping": "",
+                  "type": "normal",
+                  "content": "ba-nft-description",
+                  "columnNumber": 2
+                },
+                {
+                  "icon": "FanToken2C",
+                  "title": "ba-Fantoken",
+                  "link": "https://www.binance.com/zh-CN/fan-token",
+                  "linkTarget": "_self",
+                  "langMapping": "",
+                  "type": "normal",
+                  "content": "ba-FanToken-content",
+                  "columnNumber": 2,
+                  "businessKeys": "fantoken"
+                },
+                {
+                  "icon": "DefiWallet2C",
+                  "title": "ba-web3-wallet",
+                  "link": "https://www.binance.com/zh-CN/web3wallet",
+                  "linkTarget": "_self",
+                  "langMapping": "",
+                  "type": "normal",
+                  "content": "ba-defi-wallet-desc",
+                  "columnNumber": 2
+                },
+                {
+                  "icon": "BNB1C",
+                  "title": "ba-bnbchain",
+                  "link": "https://www.bnbchain.org",
+                  "linkTarget": "_self",
+                  "langMapping": "",
+                  "type": "normal",
+                  "content": "ba-dex",
+                  "columnNumber": 2
+                },
+                {
+                  "icon": "Charity2C",
+                  "title": "ba-Charity",
+                  "link": "https://www.binance.charity",
+                  "linkTarget": "_self",
+                  "langMapping": "",
+                  "type": "normal",
+                  "content": "ba-BCFcontnet",
+                  "columnNumber": 2
+                },
+                {
+                  "icon": "fea-title-travel",
+                  "title": "ba-travel-rule",
+                  "link": "https://www.binance.com/zh-CN/learn/travel-rule",
+                  "linkTarget": "_self",
+                  "langMapping": "",
+                  "type": "normal",
+                  "content": "ba-travel-rule-desc",
+                  "columnNumber": 2
+                }
+              ]
+            }
+          ],
+          "userInfo": {
+            "noLogged": {
+              "login": "https://accounts.binance.com/zh-CN/login",
+              "register": "https://accounts.binance.com/zh-CN/register",
+              "returnToList": [
+                {
+                  "regexp": "/([a-z]{2})?(-[A-Z]{2})?/?$",
+                  "return_to": ""
+                }
+              ]
+            },
+            "loggedMenu": {
+              "outerMenus": [
+                {
+                  "menuType": "gird",
+                  "subMenuFlow": "row",
+                  "menuItem": {
+                    "type": "text",
+                    "icon": "wallet-f",
+                    "title": "ba-wallet",
+                    "linkTarget": "_self",
+                    "langMapping": "",
+                    "businessKeysIsWhite": false
+                  },
+                  "subMenuSize": "normal",
+                  "subMenus": [
+                    {
+                      "icon": "list-grid-f",
+                      "title": "ba-wallet-overview",
+                      "link": "https://www.binance.com/zh-CN/my/wallet/account/overview",
+                      "linkTarget": "_self",
+                      "langMapping": "",
+                      "type": "normal",
+                      "columnNumber": 1
+                    },
+                    {
+                      "icon": "spot-f",
+                      "title": "ba-spot-title",
+                      "link": "https://www.binance.com/zh-CN/my/wallet/exchange/balance",
+                      "linkTarget": "_self",
+                      "langMapping": "",
+                      "type": "normal",
+                      "content": "ba-exchangeWalletMsg",
+                      "columnNumber": 1
+                    },
+                    {
+                      "icon": "margin-f",
+                      "title": "ba-marginWallet",
+                      "link": "https://www.binance.com/zh-CN/my/wallet/account/margin",
+                      "linkTarget": "_self",
+                      "langMapping": "",
+                      "type": "normal",
+                      "sceneNames": "futures-showMarginFutures",
+                      "columnNumber": 1,
+                      "businessKeys": "marginWallet"
+                    },
+                    {
+                      "icon": "futures-f",
+                      "title": "ba-futureWallet",
+                      "link": "https://www.binance.com/zh-CN/my/wallet/account/futures",
+                      "linkTarget": "_self",
+                      "langMapping": "",
+                      "type": "normal",
+                      "sceneNames": "futures-showMarginFutures",
+                      "columnNumber": 1,
+                      "businessKeys": "futuresWalletTab"
+                    },
+                    {
+                      "icon": "margin-f",
+                      "title": "ba-isolated-margin",
+                      "link": "https://www.binance.com/zh-CN/my/wallet/account/margin/isolated",
+                      "linkTarget": "_self",
+                      "langMapping": "",
+                      "type": "normal",
+                      "sceneNames": "futures-showPortfolioIsolatedMargin",
+                      "columnNumber": 1,
+                      "businessKeys": "marginWallet"
+                    },
+                    {
+                      "icon": "futures-f",
+                      "title": "ba-portfolio-margin",
+                      "link": "https://www.binance.com/zh-CN/my/wallet/account/portfolio-margin",
+                      "linkTarget": "_self",
+                      "langMapping": "",
+                      "type": "normal",
+                      "sceneNames": "futures-showPortfolioIsolatedMargin",
+                      "columnNumber": 1,
+                      "businessKeys": "futuresWalletTab"
+                    },
+                    {
+                      "icon": "futures-options-european-f",
+                      "title": "ba-optionsWallet",
+                      "link": "https://www.binance.com/zh-CN/my/wallet/account/eoptions",
+                      "linkTarget": "_self",
+                      "langMapping": "",
+                      "type": "normal",
+                      "sceneNames": "exclude-local-kz",
+                      "columnNumber": 1,
+                      "businessKeys": "E-option"
+                    },
+                    {
+                      "icon": "trade-trading-bot-f",
+                      "title": "ba-strategywallet",
+                      "link": "https://www.binance.com/zh-CN/my/wallet/account/trading-bots",
+                      "linkTarget": "_self",
+                      "langMapping": "",
+                      "type": "normal",
+                      "columnNumber": 1,
+                      "businessKeys": "Rebalancing_bot_Manual"
+                    },
+                    {
+                      "icon": "earn-jar-2cF",
+                      "title": "ba-earnAssets",
+                      "link": "https://www.binance.com/zh-CN/my/saving/asset",
+                      "linkTarget": "_self",
+                      "langMapping": "",
+                      "type": "normal",
+                      "columnNumber": 1,
+                      "businessKeys": "earnWallet"
+                    },
+                    {
+                      "icon": "coin-f",
+                      "title": "ba-FundingWallet",
+                      "link": "https://www.binance.com/zh-CN/my/wallet/funding",
+                      "linkTarget": "_self",
+                      "langMapping": "",
+                      "type": "normal",
+                      "columnNumber": 1
+                    },
+                    {
+                      "icon": "transaction-history-f",
+                      "title": "ba-transactionhistory",
+                      "link": "https://www.binance.com/zh-CN/my/wallet/history/overview",
+                      "linkTarget": "_self",
+                      "langMapping": "",
+                      "type": "normal",
+                      "columnNumber": 1
+                    },
+                    {
+                      "icon": "ac-statement",
+                      "title": "ba-AccountStatement",
+                      "link": "https://www.binance.com/zh-CN/my/wallet/account/statement",
+                      "linkTarget": "_self",
+                      "langMapping": "",
+                      "type": "normal",
+                      "columnNumber": 1
+                    },
+                    {
+                      "icon": "proof-reserve-f",
+                      "title": "header-tier2-wallet-verification",
+                      "link": "https://www.binance.com/zh-CN/my/wallet/verification",
+                      "linkTarget": "_self",
+                      "langMapping": "",
+                      "type": "normal",
+                      "columnNumber": 1
+                    }
+                  ]
+                }
+              ],
+              "innerMenus": [
+                {
+                  "menuType": "text",
+                  "subMenuFlow": "row",
+                  "menuItem": {
+                    "type": "text",
+                    "icon": "security-f",
+                    "title": "uc-assets",
+                    "link": "https://www.binance.com/zh-CN/my/wallet/account/overview",
+                    "linkTarget": "_self",
+                    "langMapping": "",
+                    "businessKeysIsWhite": false
+                  },
+                  "subMenuSize": "normal"
+                },
+                {
+                  "menuType": "text",
+                  "subMenuFlow": "row",
+                  "menuItem": {
+                    "type": "text",
+                    "icon": "id-f",
+                    "title": "uc-orders",
+                    "link": "https://www.binance.com/zh-CN/my/orders/exchange",
+                    "linkTarget": "_self",
+                    "langMapping": "",
+                    "businessKeysIsWhite": false
+                  },
+                  "subMenuSize": "normal"
+                },
+                {
+                  "menuType": "text",
+                  "subMenuFlow": "row",
+                  "menuItem": {
+                    "type": "text",
+                    "icon": "api-f",
+                    "title": "uc-account",
+                    "link": "https://www.binance.com/zh-CN/my/settings/profile",
+                    "linkTarget": "_self",
+                    "langMapping": "",
+                    "businessKeysIsWhite": false
+                  },
+                  "subMenuSize": "normal"
+                },
+                {
+                  "menuType": "text",
+                  "subMenuFlow": "row",
+                  "menuItem": {
+                    "type": "text",
+                    "icon": "referral-f",
+                    "title": "ba-referral",
+                    "link": "https://www.binance.com/zh-CN/activity/referral",
+                    "linkTarget": "_self",
+                    "langMapping": "",
+                    "businessKeysIsWhite": false
+                  },
+                  "subMenuSize": "normal"
+                },
+                {
+                  "menuType": "text",
+                  "subMenuFlow": "row",
+                  "menuItem": {
+                    "type": "text",
+                    "icon": "reward-center-f",
+                    "title": "ba-loyalty-hub",
+                    "link": "https://www.binance.com/zh-CN/rewards-hub",
+                    "linkTarget": "_self",
+                    "langMapping": "",
+                    "businessKeysIsWhite": false
+                  },
+                  "subMenuSize": "normal"
+                },
+                {
+                  "menuType": "text",
+                  "subMenuFlow": "row",
+                  "menuItem": {
+                    "type": "text",
+                    "icon": "vip-1c",
+                    "title": "header-tier2-vip",
+                    "link": "https://www.binance.com/zh-CN/vip-portal",
+                    "linkTarget": "_self",
+                    "langMapping": "",
+                    "sceneNames": "vip_user",
+                    "businessKeysIsWhite": false
+                  },
+                  "subMenuSize": "normal"
+                },
+                {
+                  "menuType": "text",
+                  "subMenuFlow": "row",
+                  "menuItem": {
+                    "type": "text",
+                    "icon": "subaccount-s24",
+                    "title": "ba-subaccount",
+                    "link": "https://www.binance.com/zh-CN/my/sub-account/account-management",
+                    "linkTarget": "_self",
+                    "langMapping": "",
+                    "sceneNames": "parentUser",
+                    "businessKeysIsWhite": false
+                  },
+                  "subMenuSize": "normal"
+                },
+                {
+                  "menuType": "text",
+                  "subMenuFlow": "row",
+                  "menuItem": {
+                    "type": "text",
+                    "icon": "settings-cog-1c",
+                    "title": "uc-settings",
+                    "link": "https://www.binance.com/zh-CN/my/settings/preference",
+                    "linkTarget": "_self",
+                    "langMapping": "",
+                    "businessKeysIsWhite": false
+                  },
+                  "subMenuSize": "normal"
+                }
+              ]
+            }
+          },
+          "search": {
+            "enable": true
+          },
+          "featuresAlwaysVisible": {
+            "noLogged": {},
+            "loggedMenu": [
+              {
+                "menuType": "cryptoDepositDrawer",
+                "subMenuFlow": "row",
+                "menuItem": {
+                  "type": "text",
+                  "icon": "deposit-new-f",
+                  "title": "header-tier1-deposit",
+                  "linkTarget": "_self",
+                  "langMapping": "",
+                  "businessKeysIsWhite": false
+                },
+                "subMenuSize": "normal"
+              }
+            ]
+          },
+          "extra": {
+            "needLng": true,
+            "needFiat": true,
+            "needNewUserZone": false,
+            "displayNewUserZoneScene": "all",
+            "qrCodeUrl": "https://www.binance.com/zh-CN/download"
+          },
+          "others": {
+            "googleOneTap": {
+              "enabled": true,
+              "excludedRegions": "US,CN"
+            },
+            "accountSwitch": {
+              "enabled": true
+            }
+          },
+          "theme": "inherit"
+        },
+        "footer": {
+          "disabledMenu": false,
+          "copyRight": {
+            "legalRich": "footer-atgm-global",
+            "enterprise": "Binance"
+          },
+          "menu": [
+            {
+              "title": "ba-aboutUs",
+              "columnNumber": 1,
+              "list": [
+                {
+                  "link": "https://www.binance.com/zh-CN/about",
+                  "linkTarget": "_self",
+                  "title": "ba-About",
+                  "langMapping": ""
+                },
+                {
+                  "link": "https://www.binance.com/zh-CN/careers",
+                  "linkTarget": "_self",
+                  "title": "ba-joinUs",
+                  "langMapping": ""
+                },
+                {
+                  "link": "https://www.binance.com/zh-CN/support/announcement",
+                  "linkTarget": "_self",
+                  "title": "ba-Announcement",
+                  "langMapping": ""
+                },
+                {
+                  "link": "https://www.binance.com/zh-CN/square/news/all",
+                  "linkTarget": "_self",
+                  "title": "ba-news",
+                  "langMapping": ""
+                },
+                {
+                  "link": "https://www.binance.com/zh-CN/press",
+                  "linkTarget": "_self",
+                  "title": "ba-Press",
+                  "langMapping": ""
+                },
+                {
+                  "link": "https://www.binance.com/zh-CN/legal/home",
+                  "linkTarget": "_self",
+                  "title": "footer-legal",
+                  "langMapping": ""
+                },
+                {
+                  "link": "https://www.binance.com/zh-CN/terms",
+                  "linkTarget": "_self",
+                  "title": "ba-Terms",
+                  "langMapping": ""
+                },
+                {
+                  "link": "https://www.binance.com/zh-CN/about-legal/privacy-portal",
+                  "linkTarget": "_self",
+                  "title": "ba-Privacy",
+                  "langMapping": ""
+                },
+                {
+                  "link": "https://www.binance.com/zh-CN/land/building_trust",
+                  "linkTarget": "_self",
+                  "title": "footer-building-trust",
+                  "langMapping": ""
+                },
+                {
+                  "link": "https://www.binance.com/zh-CN/blog",
+                  "linkTarget": "_self",
+                  "title": "ba-binanceBlog",
+                  "langMapping": ""
+                },
+                {
+                  "link": "https://www.binance.com/zh-CN/community",
+                  "linkTarget": "_self",
+                  "title": "ba-Community",
+                  "langMapping": ""
+                },
+                {
+                  "link": "https://www.binance.com/zh-CN/risk-warning",
+                  "linkTarget": "_self",
+                  "title": "ba-risk-warning",
+                  "langMapping": ""
+                },
+                {
+                  "link": "https://www.binance.com/zh-CN/download",
+                  "linkTarget": "_self",
+                  "title": "ba-Download",
+                  "langMapping": ""
+                },
+                {
+                  "link": "https://www.binance.com/zh-CN/desktop-download",
+                  "linkTarget": "_self",
+                  "title": "ba-Desktop Application",
+                  "langMapping": ""
+                },
+                {
+                  "link": "https://www.binance.com/zh-CN/whistleblowing/welcome",
+                  "linkTarget": "_self",
+                  "title": "ba-whistleblowing",
+                  "langMapping": ""
+                }
+              ]
+            },
+            {
+              "title": "ba-Products",
+              "columnNumber": 2,
+              "list": [
+                {
+                  "link": "https://www.binance.com/zh-CN/trade",
+                  "linkTarget": "_self",
+                  "title": "ba-Exchange",
+                  "langMapping": ""
+                },
+                {
+                  "link": "https://www.binance.com/zh-CN/crypto/buy",
+                  "linkTarget": "_self",
+                  "title": "ba-creditCard",
+                  "langMapping": ""
+                },
+                {
+                  "link": "https://www.binance.com/zh-CN/my/wallet/account/payment",
+                  "linkTarget": "_self",
+                  "title": "ba-Binance Pay",
+                  "langMapping": ""
+                },
+                {
+                  "link": "https://academy.binance.com/zh-CN",
+                  "linkTarget": "_self",
+                  "title": "ba-Academy",
+                  "langMapping": ""
+                },
+                {
+                  "link": "https://www.binance.com/zh-CN/gift-card",
+                  "linkTarget": "_self",
+                  "title": "ba-GiftCard",
+                  "langMapping": ""
+                },
+                {
+                  "link": "https://www.binance.com/zh-CN/launchpool",
+                  "linkTarget": "_self",
+                  "sceneNames": "exclude-local-kz",
+                  "title": "ba-launchpad-launchpool",
+                  "langMapping": "",
+                  "businessKeys": "launchpad"
+                },
+                {
+                  "link": "https://www.binance.com/zh-CN/auto-invest",
+                  "title": "ba-auto-invest",
+                  "langMapping": ""
+                },
+                {
+                  "link": "https://www.binance.com/zh-CN/eth2",
+                  "title": "ba-eth2",
+                  "langMapping": ""
+                },
+                {
+                  "link": "https://www.binance.com/zh-CN/nft/home",
+                  "linkTarget": "_self",
+                  "sceneNames": "exclude-local-kz",
+                  "title": "ba-NFT",
+                  "langMapping": ""
+                },
+                {
+                  "link": "https://www.binance.com/zh-CN/BABT?source=footer",
+                  "linkTarget": "_self",
+                  "sceneNames": "exclude-local-kz",
+                  "title": "BABT",
+                  "langMapping": ""
+                },
+                {
+                  "link": "https://www.binance.com/zh-CN/research",
+                  "linkTarget": "_self",
+                  "title": "ba-Research",
+                  "langMapping": ""
+                },
+                {
+                  "link": "https://www.binance.charity",
+                  "linkTarget": "_self",
+                  "title": "ba-Charity",
+                  "langMapping": ""
+                }
+              ]
+            },
+            {
+              "title": "ba-Service",
+              "columnNumber": 4,
+              "list": [
+                {
+                  "link": "https://www.binance.com/zh-CN/activity/referral?stopRedirectToActivity=true",
+                  "linkTarget": "_self",
+                  "title": "ba-affiliate-title",
+                  "langMapping": ""
+                },
+                {
+                  "link": "https://www.binance.com/zh-CN/activity/referral",
+                  "linkTarget": "_self",
+                  "title": "ba-referral",
+                  "langMapping": ""
+                },
+                {
+                  "link": "https://www.binance.com/zh-CN/bnb",
+                  "linkTarget": "_self",
+                  "title": "ba-binanceCoin",
+                  "langMapping": ""
+                },
+                {
+                  "link": "https://www.binance.com/zh-CN/otc",
+                  "linkTarget": "_self",
+                  "sceneNames": "exclude-local-kz",
+                  "title": "ba-otctrading",
+                  "langMapping": ""
+                },
+                {
+                  "link": "https://data.binance.vision",
+                  "linkTarget": "_self",
+                  "title": "landing-data-title",
+                  "langMapping": ""
+                },
+                {
+                  "link": "https://www.binance.com/zh-CN/trading_insight/glass?id=22&token=BTC",
+                  "linkTarget": "_self",
+                  "title": "footer-trading-insight",
+                  "langMapping": ""
+                },
+                {
+                  "link": "https://www.binance.com/zh-CN/proof-of-reserves",
+                  "linkTarget": "_self",
+                  "title": "ba-Proof-of-Reserves",
+                  "langMapping": ""
+                }
+              ]
+            },
+            {
+              "title": "ba-business-footer",
+              "columnNumber": 3,
+              "list": [
+                {
+                  "link": "https://c2c.binance.com/zh-CN/merchantApplication",
+                  "linkTarget": "_self",
+                  "sceneNames": "exclude-local-kz",
+                  "title": "ba-applyP2P",
+                  "langMapping": ""
+                },
+                {
+                  "link": "https://p2p.binance.com/zh-CN/p2pro",
+                  "linkTarget": "_self",
+                  "sceneNames": "exclude-local-kz",
+                  "title": "ba-p2pro",
+                  "langMapping": ""
+                },
+                {
+                  "link": "https://www.binance.com/zh-CN/my/coin-apply",
+                  "linkTarget": "_self",
+                  "title": "ba-ListingApplication",
+                  "langMapping": ""
+                },
+                {
+                  "link": "https://www.binance.com/zh-CN/vip-institutional-services",
+                  "linkTarget": "_self",
+                  "sceneNames": "exclude-local-kz",
+                  "title": "ba-institutional",
+                  "langMapping": ""
+                },
+                {
+                  "link": "https://labs.binance.com/",
+                  "linkTarget": "_self",
+                  "title": "ba-Labs",
+                  "langMapping": ""
+                },
+                {
+                  "link": "https://www.binance.com/zh-CN/binance-connect",
+                  "linkTarget": "_self",
+                  "title": "header-title-bifinity",
+                  "langMapping": "",
+                  "businessKeys": "fiat_BinanceConnect"
+                }
+              ]
+            },
+            {
+              "title": "ba-Learn",
+              "columnNumber": 3,
+              "list": [
+                {
+                  "link": "https://academy.binance.com/zh-CN/learn-and-earn",
+                  "linkTarget": "_self",
+                  "title": "ba-learn-earn-title",
+                  "langMapping": ""
+                },
+                {
+                  "link": "https://www.binance.com/zh-CN/price",
+                  "linkTarget": "_self",
+                  "title": "ba-footer-pricepage",
+                  "langMapping": ""
+                },
+                {
+                  "link": "https://www.binance.com/zh-CN/price/bitcoin",
+                  "linkTarget": "_self",
+                  "title": "footer_bitcoin_price",
+                  "langMapping": ""
+                },
+                {
+                  "link": "https://www.binance.com/zh-CN/price/ethereum",
+                  "linkTarget": "_self",
+                  "title": "footer_ethereum_price",
+                  "langMapping": ""
+                },
+                {
+                  "link": "https://www.binance.com/zh-CN/ethereum-upgrade",
+                  "linkTarget": "_self",
+                  "title": "ba-eth-upgrade-pectra",
+                  "langMapping": ""
+                },
+                {
+                  "link": "https://www.binance.com/zh-CN/price-prediction",
+                  "title": "footer_price_predictions",
+                  "langMapping": ""
+                },
+                {
+                  "link": "https://www.binance.com/zh-CN/price-prediction/bitcoin",
+                  "title": "footer_bitcoin_price_prediction",
+                  "langMapping": ""
+                },
+                {
+                  "link": "https://www.binance.com/zh-CN/price-prediction/ethereum",
+                  "title": "footer_ethereum_price_prediction",
+                  "langMapping": ""
+                },
+                {
+                  "link": "https://www.binance.com/zh-CN/how-to-buy/bitcoin",
+                  "linkTarget": "_self",
+                  "title": "ba-buy-bitcoin",
+                  "langMapping": ""
+                },
+                {
+                  "link": "https://www.binance.com/zh-CN/how-to-buy/bnb",
+                  "linkTarget": "_self",
+                  "title": "ba-buybnb",
+                  "langMapping": ""
+                },
+                {
+                  "link": "https://www.binance.com/zh-CN/how-to-buy/xrp",
+                  "linkTarget": "_self",
+                  "sceneNames": "exclude-local-kz",
+                  "title": "ba-buyRipple",
+                  "langMapping": ""
+                },
+                {
+                  "link": "https://www.binance.com/zh-CN/how-to-buy/dogecoin",
+                  "linkTarget": "_self",
+                  "sceneNames": "exclude-local-kz",
+                  "title": "ba-buydogecoin",
+                  "langMapping": ""
+                },
+                {
+                  "link": "https://www.binance.com/zh-CN/how-to-buy/ethereum",
+                  "linkTarget": "_self",
+                  "title": "ba-buyEthereum",
+                  "langMapping": ""
+                },
+                {
+                  "link": "https://www.binance.com/zh-CN/altcoins/tradable",
+                  "linkTarget": "_self",
+                  "title": "ba-BuyTradable",
+                  "langMapping": ""
+                }
+              ]
+            },
+            {
+              "title": "ba-Support",
+              "columnNumber": 4,
+              "list": [
+                {
+                  "link": "https://www.binance.com/zh-CN/chat?sourceEntry=4",
+                  "linkTarget": "_self",
+                  "title": "ba-SubmitARequest",
+                  "langMapping": ""
+                },
+                {
+                  "link": "https://www.binance.com/zh-CN/support",
+                  "linkTarget": "_self",
+                  "title": "ba-SupportCenter",
+                  "langMapping": ""
+                },
+                {
+                  "link": "https://www.binance.com/zh-CN/my/user-support/feedback/entry",
+                  "linkTarget": "_self",
+                  "title": "footer_support_request_feature",
+                  "langMapping": ""
+                },
+                {
+                  "link": "https://www.binance.com/zh-CN/fee",
+                  "linkTarget": "_self",
+                  "title": "ba-Fees",
+                  "langMapping": ""
+                },
+                {
+                  "link": "https://www.binance.com/zh-CN/binance-api",
+                  "linkTarget": "_self",
+                  "title": "header-tier2-api",
+                  "langMapping": ""
+                },
+                {
+                  "link": "https://www.binance.com/zh-CN/official-verification",
+                  "linkTarget": "_self",
+                  "title": "ba-official-verification",
+                  "langMapping": ""
+                },
+                {
+                  "link": "https://www.binance.com/zh-CN/trade-parameters",
+                  "linkTarget": "_self",
+                  "title": "ba-tradeRules",
+                  "langMapping": ""
+                },
+                {
+                  "link": "https://www.binance.com/zh-CN/airdrop",
+                  "linkTarget": "_self",
+                  "sceneNames": "exclude-local-kz",
+                  "title": "ba-airdrop",
+                  "langMapping": ""
+                },
+                {
+                  "link": "https://www.binance.com/zh-CN/support/law-enforcement",
+                  "linkTarget": "_self",
+                  "sceneNames": "exclude-local-kz",
+                  "title": "ba-law",
+                  "langMapping": ""
+                },
+                {
+                  "link": "https://www.binance.com/zh-CN/learn/how-to-raise-a-complaint",
+                  "linkTarget": "_self",
+                  "title": "ba-raise-complaint",
+                  "langMapping": ""
+                }
+              ]
+            }
+          ],
+          "community": {
+            "title": "ba-Community",
+            "needLng": true,
+            "needThemeSwitch": true,
+            "communities": [
+              {
+                "name": "h-discord",
+                "link": "https://discord.gg/jE4wt8g2H2",
+                "linkTarget": "_self"
+              },
+              {
+                "name": "social-telegram-f",
+                "link": "https://www.binance.com/zh-CN/community",
+                "linkTarget": "_self"
+              },
+              {
+                "name": "h-tiktok",
+                "link": "https://www.tiktok.com/@binance?lang=en",
+                "linkTarget": "_self"
+              },
+              {
+                "name": "h-facebook",
+                "link": "https://www.facebook.com/binance",
+                "linkTarget": "_self"
+              },
+              {
+                "name": "social-x-f",
+                "link": "https://twitter.com/binance",
+                "linkTarget": "_self"
+              },
+              {
+                "name": "h-reddit",
+                "link": "https://www.reddit.com/r/binance",
+                "linkTarget": "_self"
+              },
+              {
+                "name": "h-instagram",
+                "link": "https://www.instagram.com/Binance/",
+                "linkTarget": "_self"
+              },
+              {
+                "name": "h-coinmarketcap",
+                "link": "https://coinmarketcap.com/exchanges/binance/",
+                "linkTarget": "_self"
+              },
+              {
+                "name": "h-youtube",
+                "link": "https://www.youtube.com/binanceyoutube",
+                "linkTarget": "_self"
+              },
+              {
+                "name": "more-f",
+                "link": "https://www.binance.com/zh-CN/community",
+                "linkTarget": "_self"
+              }
+            ]
+          },
+          "theme": "inherit"
+        }
+      },
+      "staticResources": {
+        "js": [
+          {
+            "tag": "script",
+            "attrs": {
+              "src": "https://public.bnbstatic.com/unpkg/common-widget/header@1.4.18.min.js"
+            }
+          },
+          {
+            "tag": "script",
+            "attrs": {
+              "src": "https://public.bnbstatic.com/unpkg/common-widget/footer@1.4.18.min.js"
+            }
+          },
+          {
+            "tag": "script",
+            "attrs": {
+              "src": "https://public.bnbstatic.com/unpkg/common-widget/extension@1.4.18.min.js"
+            }
+          }
+        ],
+        "css": [
+          {
+            "tag": "link",
+            "attrs": {
+              "rel": "stylesheet",
+              "href": "https://public.bnbstatic.com/unpkg/common-widget/header@1.4.18.css"
+            }
+          },
+          {
+            "tag": "link",
+            "attrs": {
+              "rel": "stylesheet",
+              "href": "https://public.bnbstatic.com/unpkg/common-widget/footer@1.4.18.css"
+            }
+          },
+          {
+            "tag": "link",
+            "attrs": {
+              "rel": "stylesheet",
+              "href": "https://public.bnbstatic.com/unpkg/common-widget/extension@1.4.18.css"
+            }
+          }
+        ]
+      },
+      "commonResources": {
+        "js": [
+          {
+            "tag": "script",
+            "attrs": {
+              "src": "https://public.bnbstatic.com/unpkg/common-widget/vendor@1.4.18.min.js"
+            }
+          },
+          {
+            "tag": "script",
+            "attrs": {
+              "src": "https://public.bnbstatic.com/unpkg/common-widget/utils@1.4.18.min.js"
+            }
+          },
+          {
+            "tag": "script",
+            "attrs": {
+              "src": "https://public.bnbstatic.com/unpkg/common-widget/data@1.4.18.min.js"
+            }
+          },
+          {
+            "tag": "script",
+            "attrs": {
+              "src": "https://public.bnbstatic.com/unpkg/common-widget/common@1.4.18.min.js"
+            }
+          },
+          {
+            "tag": "script",
+            "attrs": {
+              "src": "https://public.bnbstatic.com/unpkg/web-push-odin/web-push-odin-pre.js"
+            }
+          }
+        ],
+        "css": [
+          {
+            "tag": "link",
+            "attrs": {
+              "rel": "stylesheet",
+              "href": "https://public.bnbstatic.com/unpkg/common-widget/vendor@1.4.18.css"
+            }
+          },
+          {
+            "tag": "link",
+            "attrs": {
+              "rel": "stylesheet",
+              "href": "https://public.bnbstatic.com/unpkg/common-widget/common@1.4.18.css"
+            }
+          }
+        ]
+      },
+      "thirdPartyPackageControl": {
+        "insertPositionHeader": {
+          "js": [
+            "https://bin.bnbstatic.com/static/js/common-widget/globalthis@0.4.4.min.js",
+            "https://bin.bnbstatic.com/static/sw-load/cache-control-load@0.0.5.js"
+          ],
+          "css": [],
+          "styleList": [],
+          "fontsList": [],
+          "fonts": []
+        },
+        "insertPositionBodyBefore": {
+          "js": [],
+          "css": [],
+          "styleList": [],
+          "fontsList": [],
+          "fonts": []
+        },
+        "insertPositionBodyAfter": {
+          "js": [],
+          "css": [],
+          "styleList": [],
+          "fontsList": [],
+          "fonts": []
+        }
+      }
+    }
+  }
+}

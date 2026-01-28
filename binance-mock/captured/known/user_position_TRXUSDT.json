@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "url": "https://www.binance.com/bapi/futures/v6/private/future/user-data/user-position",
+    "method": "POST",
+    "pathname": "/bapi/futures/v6/private/future/user-data/user-position",
+    "query": {},
+    "postData": {},
+    "timestamp": 1769148097811,
+    "category": "user_position"
+  },
+  "response": {
+    "code": "000000",
+    "message": null,
+    "messageDetail": null,
+    "data": [
+      {
+        "id": "1205803002_TRXUSDT_LONG",
+        "symbol": "TRXUSDT",
+        "positionSide": "LONG",
+        "positionAmount": "17",
+        "entryPrice": "0.30912",
+        "breakEvenPrice": "0.30927456",
+        "markPrice": "0.30976000",
+        "unrealizedProfit": "0.01088000",
+        "liquidationPrice": "0",
+        "isolatedMargin": "0",
+        "notionalValue": "5.26592000",
+        "collateral": "USDT",
+        "isolatedWallet": "0",
+        "cumRealized": "-0.28645000",
+        "initialMargin": "0.51810851",
+        "maintMargin": "0.03422848",
+        "positionInitialMargin": "0.26329601",
+        "openOrderInitialMargin": "0.25481250",
+        "adl": 1,
+        "askNotional": "0",
+        "bidNotional": "5.09625000",
+        "updateTime": 1769145653048
+      }
+    ],
+    "success": true
+  }
+}

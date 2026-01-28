@@ -1,0 +1,35 @@
+{
+  "meta": {
+    "url": "https://www.binance.com/bapi/composite/v1/private/bigdata/finance/futures/break-even-price?symbol=TRXUSDT&type=um&side=1",
+    "method": "GET",
+    "pathname": "/bapi/composite/v1/private/bigdata/finance/futures/break-even-price",
+    "query": {
+      "symbol": "TRXUSDT",
+      "type": "um",
+      "side": "1"
+    },
+    "postData": null,
+    "timestamp": 1769148098021,
+    "category": "unknown"
+  },
+  "response": {
+    "code": "000000",
+    "message": null,
+    "messageDetail": null,
+    "data": {
+      "symbol": "TRXUSDT",
+      "type": "um",
+      "price": "0.30912",
+      "time": [
+        2026,
+        1,
+        23,
+        6,
+        0,
+        25,
+        981000000
+      ]
+    },
+    "success": true
+  }
+}

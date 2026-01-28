@@ -1,0 +1,895 @@
+[
+  {
+    "strategy": "FUNDING",
+    "timestamp": 1766707200004,
+    "timeStr": "2025-12-26 00:00",
+    "type": "OPEN",
+    "sessionId": "ARB_FAKE_1766707200004",
+    "action": "BUY_A_SELL_B",
+    "spreadAnnualizedPct": -0.15070069896001048,
+    "veracity": "FAKE"
+  },
+  {
+    "strategy": "FUNDING",
+    "timestamp": 1766736000000,
+    "timeStr": "2025-12-26 08:00",
+    "type": "SETTLE",
+    "sessionId": "ARB_FAKE_1766707200004",
+    "income": 6.45282159836076,
+    "veracity": "FAKE"
+  },
+  {
+    "strategy": "FUNDING",
+    "timestamp": 1766736000001,
+    "timeStr": "2025-12-26 08:00",
+    "type": "SETTLE",
+    "sessionId": "ARB_FAKE_1766707200004",
+    "income": 1.3179986819999998,
+    "veracity": "FAKE"
+  },
+  {
+    "strategy": "FUNDING",
+    "timestamp": 1766764800000,
+    "timeStr": "2025-12-26 16:00",
+    "type": "SETTLE",
+    "sessionId": "ARB_FAKE_1766707200004",
+    "income": -8.4646825928514,
+    "veracity": "FAKE"
+  },
+  {
+    "strategy": "FUNDING",
+    "timestamp": 1766764800007,
+    "timeStr": "2025-12-26 16:00",
+    "type": "CLOSE",
+    "sessionId": "ARB_FAKE_1766707200004",
+    "spreadAnnualizedPct": -0.021274144552830013,
+    "veracity": "FAKE",
+    "pnl": 9.722127271509361
+  },
+  {
+    "strategy": "FUNDING",
+    "timestamp": 1767052800000,
+    "timeStr": "2025-12-30 00:00",
+    "type": "OPEN",
+    "sessionId": "ARB_FAKE_1767052800000",
+    "action": "BUY_A_SELL_B",
+    "spreadAnnualizedPct": -0.17698485000000003,
+    "veracity": "FAKE"
+  },
+  {
+    "strategy": "FUNDING",
+    "timestamp": 1767052800005,
+    "timeStr": "2025-12-30 00:00",
+    "type": "CLOSE",
+    "sessionId": "ARB_FAKE_1767052800000",
+    "spreadAnnualizedPct": 0,
+    "veracity": "FAKE",
+    "pnl": -9.99999
+  },
+  {
+    "strategy": "FUNDING",
+    "timestamp": 1767168000000,
+    "timeStr": "2025-12-31 08:00",
+    "type": "OPEN",
+    "sessionId": "ARB_FAKE_1767168000000",
+    "action": "SELL_A_BUY_B",
+    "spreadAnnualizedPct": 0.22579629122317352,
+    "veracity": "FAKE"
+  },
+  {
+    "strategy": "FUNDING",
+    "timestamp": 1767168000001,
+    "timeStr": "2025-12-31 08:00",
+    "type": "CLOSE",
+    "sessionId": "ARB_FAKE_1767168000000",
+    "spreadAnnualizedPct": 0.03504729122317349,
+    "veracity": "FAKE",
+    "pnl": -7.41999258
+  },
+  {
+    "strategy": "FUNDING",
+    "timestamp": 1767196800000,
+    "timeStr": "2025-12-31 16:00",
+    "type": "OPEN",
+    "sessionId": "ARB_FAKE_1767196800000",
+    "action": "BUY_A_SELL_B",
+    "spreadAnnualizedPct": -0.1401945552913515,
+    "veracity": "FAKE"
+  },
+  {
+    "strategy": "FUNDING",
+    "timestamp": 1767196800001,
+    "timeStr": "2025-12-31 16:00",
+    "type": "SETTLE",
+    "sessionId": "ARB_FAKE_1767196800000",
+    "income": 2.652997347,
+    "veracity": "FAKE"
+  },
+  {
+    "strategy": "FUNDING",
+    "timestamp": 1767225600000,
+    "timeStr": "2026-01-01 00:00",
+    "type": "SETTLE",
+    "sessionId": "ARB_FAKE_1767196800000",
+    "income": 6.4476097441919995,
+    "veracity": "FAKE"
+  },
+  {
+    "strategy": "FUNDING",
+    "timestamp": 1767225600008,
+    "timeStr": "2026-01-01 00:00",
+    "type": "SETTLE",
+    "sessionId": "ARB_FAKE_1767196800000",
+    "income": 0.282999717,
+    "veracity": "FAKE"
+  },
+  {
+    "strategy": "FUNDING",
+    "timestamp": 1767254400000,
+    "timeStr": "2026-01-01 08:00",
+    "type": "CLOSE",
+    "sessionId": "ARB_FAKE_1767196800000",
+    "spreadAnnualizedPct": -0.016309929109317,
+    "veracity": "FAKE",
+    "pnl": 10.588891559809138
+  },
+  {
+    "strategy": "FUNDING",
+    "timestamp": 1767312000000,
+    "timeStr": "2026-01-02 00:00",
+    "type": "OPEN",
+    "sessionId": "ARB_FAKE_1767312000000",
+    "action": "BUY_A_SELL_B",
+    "spreadAnnualizedPct": -0.141749866963719,
+    "veracity": "FAKE"
+  },
+  {
+    "strategy": "FUNDING",
+    "timestamp": 1767312000006,
+    "timeStr": "2026-01-02 00:00",
+    "type": "CLOSE",
+    "sessionId": "ARB_FAKE_1767312000000",
+    "spreadAnnualizedPct": -0.022986166963719003,
+    "veracity": "FAKE",
+    "pnl": -1.778998221
+  },
+  {
+    "strategy": "FUNDING",
+    "timestamp": 1767340800000,
+    "timeStr": "2026-01-02 08:00",
+    "type": "OPEN",
+    "sessionId": "ARB_FAKE_1767340800000",
+    "action": "SELL_A_BUY_B",
+    "spreadAnnualizedPct": 0.155881623511428,
+    "veracity": "FAKE"
+  },
+  {
+    "strategy": "FUNDING",
+    "timestamp": 1767340800007,
+    "timeStr": "2026-01-02 08:00",
+    "type": "CLOSE",
+    "sessionId": "ARB_FAKE_1767340800000",
+    "spreadAnnualizedPct": -0.03582002648857202,
+    "veracity": "FAKE",
+    "pnl": -15.727984272
+  },
+  {
+    "strategy": "FUNDING",
+    "timestamp": 1767744000000,
+    "timeStr": "2026-01-07 00:00",
+    "type": "OPEN",
+    "sessionId": "ARB_FAKE_1767744000000",
+    "action": "BUY_A_SELL_B",
+    "spreadAnnualizedPct": -0.144799266732402,
+    "veracity": "FAKE"
+  },
+  {
+    "strategy": "FUNDING",
+    "timestamp": 1767744000001,
+    "timeStr": "2026-01-07 00:00",
+    "type": "SETTLE",
+    "sessionId": "ARB_FAKE_1767744000000",
+    "income": -1.5359984639999997,
+    "veracity": "FAKE"
+  },
+  {
+    "strategy": "FUNDING",
+    "timestamp": 1767772800000,
+    "timeStr": "2026-01-07 08:00",
+    "type": "SETTLE",
+    "sessionId": "ARB_FAKE_1767744000000",
+    "income": 9.99,
+    "veracity": "FAKE"
+  },
+  {
+    "strategy": "FUNDING",
+    "timestamp": 1767772800001,
+    "timeStr": "2026-01-07 08:00",
+    "type": "CLOSE",
+    "sessionId": "ARB_FAKE_1767744000000",
+    "spreadAnnualizedPct": 0,
+    "veracity": "FAKE",
+    "pnl": -1.5459884640000006
+  },
+  {
+    "strategy": "FUNDING",
+    "timestamp": 1767916800000,
+    "timeStr": "2026-01-09 00:00",
+    "type": "OPEN",
+    "sessionId": "ARB_FAKE_1767916800000",
+    "action": "SELL_A_BUY_B",
+    "spreadAnnualizedPct": 0.16327899365575352,
+    "veracity": "FAKE"
+  },
+  {
+    "strategy": "FUNDING",
+    "timestamp": 1767916800003,
+    "timeStr": "2026-01-09 00:00",
+    "type": "CLOSE",
+    "sessionId": "ARB_FAKE_1767916800000",
+    "spreadAnnualizedPct": -0.00913970634424649,
+    "veracity": "FAKE",
+    "pnl": -5.745994254
+  },
+  {
+    "strategy": "FUNDING",
+    "timestamp": 1767974400000,
+    "timeStr": "2026-01-09 16:00",
+    "type": "OPEN",
+    "sessionId": "ARB_FAKE_1767974400000",
+    "action": "BUY_A_SELL_B",
+    "spreadAnnualizedPct": -0.27747299999999997,
+    "veracity": "FAKE"
+  },
+  {
+    "strategy": "FUNDING",
+    "timestamp": 1767974400001,
+    "timeStr": "2026-01-09 16:00",
+    "type": "CLOSE",
+    "sessionId": "ARB_FAKE_1767974400000",
+    "spreadAnnualizedPct": 0,
+    "veracity": "FAKE",
+    "pnl": -9.99999
+  },
+  {
+    "strategy": "FUNDING",
+    "timestamp": 1768176000000,
+    "timeStr": "2026-01-12 00:00",
+    "type": "OPEN",
+    "sessionId": "ARB_FAKE_1768176000000",
+    "action": "SELL_A_BUY_B",
+    "spreadAnnualizedPct": 0.1661254244202225,
+    "veracity": "FAKE"
+  },
+  {
+    "strategy": "FUNDING",
+    "timestamp": 1768176000005,
+    "timeStr": "2026-01-12 00:00",
+    "type": "SETTLE",
+    "sessionId": "ARB_FAKE_1768176000000",
+    "income": 3.6959963039999995,
+    "veracity": "FAKE"
+  },
+  {
+    "strategy": "FUNDING",
+    "timestamp": 1768204800000,
+    "timeStr": "2026-01-12 08:00",
+    "type": "SETTLE",
+    "sessionId": "ARB_FAKE_1768176000000",
+    "income": -6.480167292383671,
+    "veracity": "FAKE"
+  },
+  {
+    "strategy": "FUNDING",
+    "timestamp": 1768233600000,
+    "timeStr": "2026-01-12 16:00",
+    "type": "CLOSE",
+    "sessionId": "ARB_FAKE_1768176000000",
+    "spreadAnnualizedPct": -0.042485065952736,
+    "veracity": "FAKE",
+    "pnl": -6.664741232564791
+  },
+  {
+    "strategy": "FUNDING",
+    "timestamp": 1768262400000,
+    "timeStr": "2026-01-13 00:00",
+    "type": "OPEN",
+    "sessionId": "ARB_FAKE_1768262400000",
+    "action": "BUY_A_SELL_B",
+    "spreadAnnualizedPct": -0.15921300000000002,
+    "veracity": "FAKE"
+  },
+  {
+    "strategy": "FUNDING",
+    "timestamp": 1768262400007,
+    "timeStr": "2026-01-13 00:00",
+    "type": "SETTLE",
+    "sessionId": "ARB_FAKE_1768262400000",
+    "income": -1.842998157,
+    "veracity": "FAKE"
+  },
+  {
+    "strategy": "FUNDING",
+    "timestamp": 1768291200000,
+    "timeStr": "2026-01-13 08:00",
+    "type": "SETTLE",
+    "sessionId": "ARB_FAKE_1768262400000",
+    "income": -3.70692080779077,
+    "veracity": "FAKE"
+  },
+  {
+    "strategy": "FUNDING",
+    "timestamp": 1768291200009,
+    "timeStr": "2026-01-13 08:00",
+    "type": "CLOSE",
+    "sessionId": "ARB_FAKE_1768262400000",
+    "spreadAnnualizedPct": -0.0083150857404315,
+    "veracity": "FAKE",
+    "pnl": -1.0799234347907696
+  },
+  {
+    "strategy": "FUNDING",
+    "timestamp": 1768377600000,
+    "timeStr": "2026-01-14 08:00",
+    "type": "OPEN",
+    "sessionId": "ARB_FAKE_1768377600000",
+    "action": "SELL_A_BUY_B",
+    "spreadAnnualizedPct": 0.1137924880648275,
+    "veracity": "FAKE"
+  },
+  {
+    "strategy": "FUNDING",
+    "timestamp": 1768377600001,
+    "timeStr": "2026-01-14 08:00",
+    "type": "SETTLE",
+    "sessionId": "ARB_FAKE_1768377600000",
+    "income": -12.647987352,
+    "veracity": "FAKE"
+  },
+  {
+    "strategy": "FUNDING",
+    "timestamp": 1768406400000,
+    "timeStr": "2026-01-14 16:00",
+    "type": "SETTLE",
+    "sessionId": "ARB_FAKE_1768377600000",
+    "income": -9.99,
+    "veracity": "FAKE"
+  },
+  {
+    "strategy": "FUNDING",
+    "timestamp": 1768406400004,
+    "timeStr": "2026-01-14 16:00",
+    "type": "SETTLE",
+    "sessionId": "ARB_FAKE_1768377600000",
+    "income": -0.274999725,
+    "veracity": "FAKE"
+  },
+  {
+    "strategy": "FUNDING",
+    "timestamp": 1768435200000,
+    "timeStr": "2026-01-15 00:00",
+    "type": "CLOSE",
+    "sessionId": "ARB_FAKE_1768377600000",
+    "spreadAnnualizedPct": 0.048481394808547504,
+    "veracity": "FAKE",
+    "pnl": -18.49207477459005
+  },
+  {
+    "strategy": "FUNDING",
+    "timestamp": 1768464000000,
+    "timeStr": "2026-01-15 08:00",
+    "type": "OPEN",
+    "sessionId": "ARB_FAKE_1768464000000",
+    "action": "BUY_A_SELL_B",
+    "spreadAnnualizedPct": -0.13344765,
+    "veracity": "FAKE"
+  },
+  {
+    "strategy": "FUNDING",
+    "timestamp": 1768464000004,
+    "timeStr": "2026-01-15 08:00",
+    "type": "CLOSE",
+    "sessionId": "ARB_FAKE_1768464000000",
+    "spreadAnnualizedPct": -0.016523550000000012,
+    "veracity": "FAKE",
+    "pnl": -8.490991508999999
+  },
+  {
+    "strategy": "FUNDING",
+    "timestamp": 1768809600000,
+    "timeStr": "2026-01-19 08:00",
+    "type": "OPEN",
+    "sessionId": "ARB_FAKE_1768809600000",
+    "action": "BUY_A_SELL_B",
+    "spreadAnnualizedPct": -0.15116475000000001,
+    "veracity": "FAKE"
+  },
+  {
+    "strategy": "FUNDING",
+    "timestamp": 1768809600007,
+    "timeStr": "2026-01-19 08:00",
+    "type": "CLOSE",
+    "sessionId": "ARB_FAKE_1768809600000",
+    "spreadAnnualizedPct": -0.03487575000000001,
+    "veracity": "FAKE",
+    "pnl": -6.814993185
+  },
+  {
+    "strategy": "FUNDING",
+    "timestamp": 1768867200000,
+    "timeStr": "2026-01-20 00:00",
+    "type": "OPEN",
+    "sessionId": "ARB_FAKE_1768867200000",
+    "action": "BUY_A_SELL_B",
+    "spreadAnnualizedPct": -0.10059438312225,
+    "veracity": "FAKE"
+  },
+  {
+    "strategy": "FUNDING",
+    "timestamp": 1768867200005,
+    "timeStr": "2026-01-20 00:00",
+    "type": "SETTLE",
+    "sessionId": "ARB_FAKE_1768867200000",
+    "income": 4.858995140999999,
+    "veracity": "FAKE"
+  },
+  {
+    "strategy": "FUNDING",
+    "timestamp": 1768896000000,
+    "timeStr": "2026-01-20 08:00",
+    "type": "CLOSE",
+    "sessionId": "ARB_FAKE_1768867200000",
+    "spreadAnnualizedPct": 0.012103801154198998,
+    "veracity": "FAKE",
+    "pnl": -1.0994104574515804
+  },
+  {
+    "strategy": "FUNDING",
+    "timestamp": 1768924800009,
+    "timeStr": "2026-01-20 16:00",
+    "type": "OPEN",
+    "sessionId": "ARB_FAKE_1768924800009",
+    "action": "BUY_A_SELL_B",
+    "spreadAnnualizedPct": -0.129916021859652,
+    "veracity": "FAKE"
+  },
+  {
+    "strategy": "FUNDING",
+    "timestamp": 1768953600000,
+    "timeStr": "2026-01-21 00:00",
+    "type": "SETTLE",
+    "sessionId": "ARB_FAKE_1768924800009",
+    "income": -9.33924369249522,
+    "veracity": "FAKE"
+  },
+  {
+    "strategy": "FUNDING",
+    "timestamp": 1768953600001,
+    "timeStr": "2026-01-21 00:00",
+    "type": "SETTLE",
+    "sessionId": "ARB_FAKE_1768924800009",
+    "income": 24.010975989,
+    "veracity": "FAKE"
+  },
+  {
+    "strategy": "FUNDING",
+    "timestamp": 1768982400000,
+    "timeStr": "2026-01-21 08:00",
+    "type": "SETTLE",
+    "sessionId": "ARB_FAKE_1768924800009",
+    "income": -3.5005358737863,
+    "veracity": "FAKE"
+  },
+  {
+    "strategy": "FUNDING",
+    "timestamp": 1768982400011,
+    "timeStr": "2026-01-21 08:00",
+    "type": "SETTLE",
+    "sessionId": "ARB_FAKE_1768924800009",
+    "income": 18.76998123,
+    "veracity": "FAKE"
+  },
+  {
+    "strategy": "FUNDING",
+    "timestamp": 1769011200000,
+    "timeStr": "2026-01-21 16:00",
+    "type": "SETTLE",
+    "sessionId": "ARB_FAKE_1768924800009",
+    "income": 4.0348106864640005,
+    "veracity": "FAKE"
+  },
+  {
+    "strategy": "FUNDING",
+    "timestamp": 1769011200011,
+    "timeStr": "2026-01-21 16:00",
+    "type": "SETTLE",
+    "sessionId": "ARB_FAKE_1768924800009",
+    "income": 10.795989204,
+    "veracity": "FAKE"
+  },
+  {
+    "strategy": "FUNDING",
+    "timestamp": 1769040000000,
+    "timeStr": "2026-01-22 00:00",
+    "type": "SETTLE",
+    "sessionId": "ARB_FAKE_1768924800009",
+    "income": 1.47797675661717,
+    "veracity": "FAKE"
+  },
+  {
+    "strategy": "FUNDING",
+    "timestamp": 1769040000010,
+    "timeStr": "2026-01-22 00:00",
+    "type": "CLOSE",
+    "sessionId": "ARB_FAKE_1768924800009",
+    "spreadAnnualizedPct": -0.0169227455304885,
+    "veracity": "FAKE",
+    "pnl": 46.315954233799644
+  },
+  {
+    "strategy": "FUNDING",
+    "timestamp": 1769097600000,
+    "timeStr": "2026-01-22 16:00",
+    "type": "OPEN",
+    "sessionId": "ARB_FAKE_1769097600000",
+    "action": "BUY_A_SELL_B",
+    "spreadAnnualizedPct": -0.1754409,
+    "veracity": "FAKE"
+  },
+  {
+    "strategy": "FUNDING",
+    "timestamp": 1769097600005,
+    "timeStr": "2026-01-22 16:00",
+    "type": "CLOSE",
+    "sessionId": "ARB_FAKE_1769097600000",
+    "spreadAnnualizedPct": 0,
+    "veracity": "FAKE",
+    "pnl": -9.99999
+  },
+  {
+    "strategy": "FUNDING",
+    "timestamp": 1769184000000,
+    "timeStr": "2026-01-23 16:00",
+    "type": "OPEN",
+    "sessionId": "ARB_FAKE_1769184000000",
+    "action": "SELL_A_BUY_B",
+    "spreadAnnualizedPct": 0.10058910499514702,
+    "veracity": "FAKE"
+  },
+  {
+    "strategy": "FUNDING",
+    "timestamp": 1769184000011,
+    "timeStr": "2026-01-23 16:00",
+    "type": "CLOSE",
+    "sessionId": "ARB_FAKE_1769184000000",
+    "spreadAnnualizedPct": 0.007974004995147001,
+    "veracity": "FAKE",
+    "pnl": 1.5419984580000001
+  },
+  {
+    "strategy": "FUNDING",
+    "timestamp": 1769212800000,
+    "timeStr": "2026-01-24 00:00",
+    "type": "OPEN",
+    "sessionId": "ARB_FAKE_1769212800000",
+    "action": "SELL_A_BUY_B",
+    "spreadAnnualizedPct": 0.105207830440779,
+    "veracity": "FAKE"
+  },
+  {
+    "strategy": "FUNDING",
+    "timestamp": 1769212800011,
+    "timeStr": "2026-01-24 00:00",
+    "type": "SETTLE",
+    "sessionId": "ARB_FAKE_1769212800000",
+    "income": -15.129984869999998,
+    "veracity": "FAKE"
+  },
+  {
+    "strategy": "FUNDING",
+    "timestamp": 1769241600000,
+    "timeStr": "2026-01-24 08:00",
+    "type": "SETTLE",
+    "sessionId": "ARB_FAKE_1769212800000",
+    "income": 8.555894318782439,
+    "veracity": "FAKE"
+  },
+  {
+    "strategy": "FUNDING",
+    "timestamp": 1769241600002,
+    "timeStr": "2026-01-24 08:00",
+    "type": "SETTLE",
+    "sessionId": "ARB_FAKE_1769212800000",
+    "income": -30.64996935,
+    "veracity": "FAKE"
+  },
+  {
+    "strategy": "FUNDING",
+    "timestamp": 1769270400000,
+    "timeStr": "2026-01-24 16:00",
+    "type": "SETTLE",
+    "sessionId": "ARB_FAKE_1769212800000",
+    "income": 8.347693316334299,
+    "veracity": "FAKE"
+  },
+  {
+    "strategy": "FUNDING",
+    "timestamp": 1769270400001,
+    "timeStr": "2026-01-24 16:00",
+    "type": "SETTLE",
+    "sessionId": "ARB_FAKE_1769212800000",
+    "income": -20.218979780999998,
+    "veracity": "FAKE"
+  },
+  {
+    "strategy": "FUNDING",
+    "timestamp": 1769299200000,
+    "timeStr": "2026-01-25 00:00",
+    "type": "SETTLE",
+    "sessionId": "ARB_FAKE_1769212800000",
+    "income": 0.64509185029212,
+    "veracity": "FAKE"
+  },
+  {
+    "strategy": "FUNDING",
+    "timestamp": 1769299200002,
+    "timeStr": "2026-01-25 00:00",
+    "type": "SETTLE",
+    "sessionId": "ARB_FAKE_1769212800000",
+    "income": -12.000987999,
+    "veracity": "FAKE"
+  },
+  {
+    "strategy": "FUNDING",
+    "timestamp": 1769328000000,
+    "timeStr": "2026-01-25 08:00",
+    "type": "SETTLE",
+    "sessionId": "ARB_FAKE_1769212800000",
+    "income": -0.35310035861757,
+    "veracity": "FAKE"
+  },
+  {
+    "strategy": "FUNDING",
+    "timestamp": 1769328000011,
+    "timeStr": "2026-01-25 08:00",
+    "type": "SETTLE",
+    "sessionId": "ARB_FAKE_1769212800000",
+    "income": -13.200986798999999,
+    "veracity": "FAKE"
+  },
+  {
+    "strategy": "FUNDING",
+    "timestamp": 1769356800000,
+    "timeStr": "2026-01-25 16:00",
+    "type": "SETTLE",
+    "sessionId": "ARB_FAKE_1769212800000",
+    "income": -9.99,
+    "veracity": "FAKE"
+  },
+  {
+    "strategy": "FUNDING",
+    "timestamp": 1769356800005,
+    "timeStr": "2026-01-25 16:00",
+    "type": "SETTLE",
+    "sessionId": "ARB_FAKE_1769212800000",
+    "income": 0.277999722,
+    "veracity": "FAKE"
+  },
+  {
+    "strategy": "FUNDING",
+    "timestamp": 1769385600000,
+    "timeStr": "2026-01-26 00:00",
+    "type": "CLOSE",
+    "sessionId": "ARB_FAKE_1769212800000",
+    "spreadAnnualizedPct": -0.004129496721009013,
+    "veracity": "FAKE",
+    "pnl": -84.10715871944049
+  },
+  {
+    "strategy": "FUNDING",
+    "timestamp": 1769414400000,
+    "timeStr": "2026-01-26 08:00",
+    "type": "OPEN",
+    "sessionId": "ARB_FAKE_1769414400000",
+    "action": "BUY_A_SELL_B",
+    "spreadAnnualizedPct": -0.171631945617027,
+    "veracity": "FAKE"
+  },
+  {
+    "strategy": "FUNDING",
+    "timestamp": 1769414400003,
+    "timeStr": "2026-01-26 08:00",
+    "type": "SETTLE",
+    "sessionId": "ARB_FAKE_1769414400000",
+    "income": 10.75998924,
+    "veracity": "FAKE"
+  },
+  {
+    "strategy": "FUNDING",
+    "timestamp": 1769443200000,
+    "timeStr": "2026-01-26 16:00",
+    "type": "CLOSE",
+    "sessionId": "ARB_FAKE_1769414400000",
+    "spreadAnnualizedPct": 0.02376706297481851,
+    "veracity": "FAKE",
+    "pnl": 8.607472876804229
+  },
+  {
+    "strategy": "FUNDING",
+    "timestamp": 1769472000000,
+    "timeStr": "2026-01-27 00:00",
+    "type": "OPEN",
+    "sessionId": "ARB_FAKE_1769472000000",
+    "action": "BUY_A_SELL_B",
+    "spreadAnnualizedPct": -0.2749874698432605,
+    "veracity": "FAKE"
+  },
+  {
+    "strategy": "FUNDING",
+    "timestamp": 1769472000002,
+    "timeStr": "2026-01-27 00:00",
+    "type": "SETTLE",
+    "sessionId": "ARB_FAKE_1769472000000",
+    "income": 2.4509975489999998,
+    "veracity": "FAKE"
+  },
+  {
+    "strategy": "HEDGE",
+    "id": "sig_1769495160000_open",
+    "timestamp": 1769495160000,
+    "timeStr": "2026-01-27T06:26:00.000Z",
+    "type": "OPEN",
+    "sessionId": "HEDGE_1769495160000",
+    "action": "SELL_BINANCE_BUY_OKX",
+    "legA_price": 0.29547,
+    "legB_price": 0.2896096,
+    "spreadPct": 0.020235517054683228,
+    "status": "adopted"
+  },
+  {
+    "strategy": "HEDGE",
+    "id": "sig_1769495400000_close",
+    "timestamp": 1769495400000,
+    "timeStr": "2026-01-27T06:30:00.000Z",
+    "type": "CLOSE",
+    "sessionId": "HEDGE_1769495160000",
+    "legA_price": 0.29545,
+    "legB_price": 0.29543,
+    "spreadPct": 0.00006769793182806245,
+    "status": "adopted"
+  },
+  {
+    "strategy": "FUNDING",
+    "timestamp": 1769500800000,
+    "timeStr": "2026-01-27 08:00",
+    "type": "CLOSE",
+    "sessionId": "ARB_FAKE_1769472000000",
+    "spreadAnnualizedPct": -0.0071497886819760215,
+    "veracity": "FAKE",
+    "pnl": 3.1243592513419176
+  },
+  {
+    "strategy": "HEDGE",
+    "id": "sig_1769501400000_open",
+    "timestamp": 1769501400000,
+    "timeStr": "2026-01-27T08:10:00.000Z",
+    "type": "OPEN",
+    "sessionId": "HEDGE_1769501400000",
+    "action": "SELL_BINANCE_BUY_OKX",
+    "legA_price": 0.29542,
+    "legB_price": 0.28947239999999996,
+    "spreadPct": 0.020546345696515637,
+    "status": "adopted"
+  },
+  {
+    "strategy": "HEDGE",
+    "id": "sig_1769501460000_open",
+    "timestamp": 1769501460000,
+    "timeStr": "2026-01-27T08:11:00.000Z",
+    "type": "OPEN",
+    "sessionId": "HEDGE_1769501460000",
+    "action": "SELL_BINANCE_BUY_OKX",
+    "legA_price": 0.29544,
+    "legB_price": 0.2895312,
+    "spreadPct": 0.020408163265306097,
+    "status": "adopted"
+  },
+  {
+    "strategy": "HEDGE",
+    "id": "sig_1769501580000_close",
+    "timestamp": 1769501580000,
+    "timeStr": "2026-01-27T08:13:00.000Z",
+    "type": "CLOSE",
+    "sessionId": "HEDGE_1769501460000",
+    "legA_price": 0.29544,
+    "legB_price": 0.29544,
+    "spreadPct": 0,
+    "status": "adopted"
+  },
+  {
+    "strategy": "HEDGE",
+    "id": "sig_1769501640000_close",
+    "timestamp": 1769501640000,
+    "timeStr": "2026-01-27T08:14:00.000Z",
+    "type": "CLOSE",
+    "sessionId": "HEDGE_1769501400000",
+    "legA_price": 0.29544,
+    "legB_price": 0.29544,
+    "spreadPct": 0,
+    "status": "adopted"
+  },
+  {
+    "strategy": "HEDGE",
+    "id": "sig_1769502000000_open",
+    "timestamp": 1769502000000,
+    "timeStr": "2026-01-27T08:20:00.000Z",
+    "type": "OPEN",
+    "sessionId": "HEDGE_1769502000000",
+    "action": "SELL_BINANCE_BUY_OKX",
+    "legA_price": 0.29545,
+    "legB_price": 0.28951160000000004,
+    "spreadPct": 0.020511786056240766,
+    "status": "adopted"
+  },
+  {
+    "strategy": "HEDGE",
+    "id": "sig_1769502060000_open",
+    "timestamp": 1769502060000,
+    "timeStr": "2026-01-27T08:21:00.000Z",
+    "type": "OPEN",
+    "sessionId": "HEDGE_1769502060000",
+    "action": "SELL_BINANCE_BUY_OKX",
+    "legA_price": 0.29545,
+    "legB_price": 0.28949199999999997,
+    "spreadPct": 0.0205808796097993,
+    "status": "adopted"
+  },
+  {
+    "strategy": "HEDGE",
+    "id": "sig_1769502120000_open",
+    "timestamp": 1769502120000,
+    "timeStr": "2026-01-27T08:22:00.000Z",
+    "type": "OPEN",
+    "sessionId": "HEDGE_1769502120000",
+    "action": "SELL_BINANCE_BUY_OKX",
+    "legA_price": 0.29538,
+    "legB_price": 0.28949199999999997,
+    "spreadPct": 0.020339076727508894,
+    "status": "adopted"
+  },
+  {
+    "strategy": "HEDGE",
+    "id": "sig_1769502180000_open",
+    "timestamp": 1769502180000,
+    "timeStr": "2026-01-27T08:23:00.000Z",
+    "type": "OPEN",
+    "sessionId": "HEDGE_1769502180000",
+    "action": "SELL_BINANCE_BUY_OKX",
+    "legA_price": 0.29537,
+    "legB_price": 0.28948219999999997,
+    "spreadPct": 0.020339074388684538,
+    "status": "adopted"
+  },
+  {
+    "strategy": "HEDGE",
+    "id": "sig_1769502240000_close",
+    "timestamp": 1769502240000,
+    "timeStr": "2026-01-27T08:24:00.000Z",
+    "type": "CLOSE",
+    "sessionId": "HEDGE_1769502000000",
+    "legA_price": 0.29534,
+    "legB_price": 0.29532,
+    "spreadPct": 0.00006772314777178819,
+    "status": "adopted"
+  },
+  {
+    "strategy": "FUNDING",
+    "timestamp": 1769558400000,
+    "timeStr": "2026-01-28 00:00",
+    "type": "OPEN",
+    "sessionId": "ARB_FAKE_1769558400000",
+    "action": "BUY_A_SELL_B",
+    "spreadAnnualizedPct": -0.2901868468666484,
+    "veracity": "FAKE"
+  }
+]

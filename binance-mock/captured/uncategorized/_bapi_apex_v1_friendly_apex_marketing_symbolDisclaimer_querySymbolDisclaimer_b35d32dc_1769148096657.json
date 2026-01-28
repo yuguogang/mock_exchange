@@ -1,0 +1,30 @@
+{
+  "meta": {
+    "url": "https://www.binance.com/bapi/apex/v1/friendly/apex/marketing/symbolDisclaimer/querySymbolDisclaimer",
+    "method": "POST",
+    "pathname": "/bapi/apex/v1/friendly/apex/marketing/symbolDisclaimer/querySymbolDisclaimer",
+    "query": {},
+    "postData": {
+      "type": "umfutures",
+      "tradingPairs": "BTCUSDT"
+    },
+    "timestamp": 1769148096657,
+    "category": "unknown"
+  },
+  "response": {
+    "code": "000000",
+    "message": null,
+    "messageDetail": null,
+    "data": {
+      "content": null,
+      "title": null,
+      "attachedLink": null,
+      "linkCopy": null,
+      "placement": null,
+      "frequency": null,
+      "id": null,
+      "disclaimerType": null
+    },
+    "success": true
+  }
+}

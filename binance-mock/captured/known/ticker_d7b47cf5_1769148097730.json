@@ -1,0 +1,31 @@
+{
+  "meta": {
+    "url": "https://www.binance.com/fapi/v1/ticker/24hr?symbol=BTCUSDT",
+    "method": "GET",
+    "pathname": "/fapi/v1/ticker/24hr",
+    "query": {
+      "symbol": "BTCUSDT"
+    },
+    "postData": null,
+    "timestamp": 1769148097730,
+    "category": "ticker"
+  },
+  "response": {
+    "symbol": "BTCUSDT",
+    "priceChange": "-451.70",
+    "priceChangePercent": "-0.502",
+    "weightedAvgPrice": "89458.61",
+    "lastPrice": "89539.90",
+    "lastQty": "0.002",
+    "openPrice": "89991.60",
+    "highPrice": "90309.50",
+    "lowPrice": "88465.60",
+    "volume": "101764.129",
+    "quoteVolume": "9103677026.85",
+    "openTime": 1769061660000,
+    "closeTime": 1769148089423,
+    "firstId": 7126519588,
+    "lastId": 7129548879,
+    "count": 3022913
+  }
+}

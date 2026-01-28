@@ -1,0 +1,14 @@
+{
+  "meta": {
+    "url": "https://www.binance.com/fapi/v1/time",
+    "method": "GET",
+    "pathname": "/fapi/v1/time",
+    "query": {},
+    "postData": null,
+    "timestamp": 1769148096668,
+    "category": "unknown"
+  },
+  "response": {
+    "serverTime": 1769148096390
+  }
+}

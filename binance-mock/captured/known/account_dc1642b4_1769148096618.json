@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "url": "https://www.binance.com/bapi/accounts/v1/public/authcenter/auth",
+    "method": "POST",
+    "pathname": "/bapi/accounts/v1/public/authcenter/auth",
+    "query": {},
+    "postData": {},
+    "timestamp": 1769148096618,
+    "category": "account"
+  },
+  "response": {
+    "data": 60,
+    "code": "000000",
+    "success": true
+  }
+}

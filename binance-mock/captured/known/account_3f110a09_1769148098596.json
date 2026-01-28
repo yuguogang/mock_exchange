@@ -1,0 +1,41 @@
+{
+  "meta": {
+    "url": "https://www.binance.com/bapi/accounts/v1/private/account/user-config/get?needLocalRecommend=true",
+    "method": "GET",
+    "pathname": "/bapi/accounts/v1/private/account/user-config/get",
+    "query": {
+      "needLocalRecommend": "true"
+    },
+    "postData": null,
+    "timestamp": 1769148098596,
+    "category": "account"
+  },
+  "response": {
+    "code": "000000",
+    "message": null,
+    "messageDetail": null,
+    "data": [
+      {
+        "configType": "userLastLoginLanguage",
+        "configName": "zh-CN"
+      },
+      {
+        "configType": "COMPLIANCE_ISSUE_COUNTRY",
+        "configName": "CN"
+      },
+      {
+        "configType": "MBX_PERMISSION_ENTITY",
+        "configName": "CN"
+      },
+      {
+        "configType": "REGISTER_LANG",
+        "configName": "zh-CN"
+      },
+      {
+        "configType": "nativeCurrency",
+        "configName": "USD_USD"
+      }
+    ],
+    "success": true
+  }
+}

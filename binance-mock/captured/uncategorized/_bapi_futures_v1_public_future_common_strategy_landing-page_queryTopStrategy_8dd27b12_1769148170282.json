@@ -1,0 +1,31 @@
+{
+  "meta": {
+    "url": "https://www.binance.com/bapi/futures/v1/public/future/common/strategy/landing-page/queryTopStrategy",
+    "method": "POST",
+    "pathname": "/bapi/futures/v1/public/future/common/strategy/landing-page/queryTopStrategy",
+    "query": {},
+    "postData": {
+      "page": 1,
+      "rows": 10,
+      "strategyType": 2,
+      "symbol": "BTCUSDT",
+      "runningTimeMin": 86400,
+      "runningTimeMax": 604800,
+      "sort": "pnl",
+      "leverageMin": 5,
+      "leverageMax": 10,
+      "investmentMin": 0,
+      "investmentMax": 0
+    },
+    "timestamp": 1769148170282,
+    "category": "unknown"
+  },
+  "response": {
+    "code": "000000",
+    "message": null,
+    "messageDetail": null,
+    "data": [],
+    "total": 0,
+    "success": true
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "url": "https://www.binance.com/bapi/futures/v1/private/future/user-setting/get-custom-leverage",
+    "method": "POST",
+    "pathname": "/bapi/futures/v1/private/future/user-setting/get-custom-leverage",
+    "query": {},
+    "postData": null,
+    "timestamp": 1769148097813,
+    "category": "unknown"
+  },
+  "response": {
+    "code": "000000",
+    "message": null,
+    "messageDetail": null,
+    "data": null,
+    "success": true
+  }
+}

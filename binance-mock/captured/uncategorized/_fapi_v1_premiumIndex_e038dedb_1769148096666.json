@@ -1,0 +1,23 @@
+{
+  "meta": {
+    "url": "https://www.binance.com/fapi/v1/premiumIndex?symbol=BTCUSDT",
+    "method": "GET",
+    "pathname": "/fapi/v1/premiumIndex",
+    "query": {
+      "symbol": "BTCUSDT"
+    },
+    "postData": null,
+    "timestamp": 1769148096666,
+    "category": "unknown"
+  },
+  "response": {
+    "symbol": "BTCUSDT",
+    "markPrice": "89540.71751124",
+    "indexPrice": "89580.76630435",
+    "estimatedSettlePrice": "89626.59517536",
+    "lastFundingRate": "0.00002400",
+    "interestRate": "0.00010000",
+    "nextFundingTime": 1769155200000,
+    "time": 1769148096000
+  }
+}

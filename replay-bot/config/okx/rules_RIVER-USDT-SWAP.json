@@ -1,0 +1,11 @@
+{
+  "exchange": "okx",
+  "symbol": "RIVER-USDT-SWAP",
+  "pricePrecision": 3,
+  "quantityPrecision": 0,
+  "tickSize": "0.001",
+  "lotSize": "1",
+  "minSize": "1",
+  "ctVal": "0.1",
+  "settleCcy": "USDT"
+}

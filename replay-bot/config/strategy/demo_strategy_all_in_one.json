@@ -1,0 +1,63 @@
+{
+    "strategy_name": "funding_arbitrage_trx_unified",
+    "strategy_type": "funding_arbitrage",
+    "enabled": true,
+    "description": "TRX 统一配置策略（内嵌对冲参数）",
+    "//": "内嵌对冲底层配置",
+    "hedge_config": {
+        "hedge_name": "demo_hedge_trx_binance_okx",
+        "legs": [
+            {
+                "role": "legA",
+                "exchange": "binance",
+                "symbol": "TRXUSDT",
+                "fee_profile": {
+                    "taker_fee_pct": 0.0004
+                },
+                "contract_profile": {
+                    "contract_size": 1,
+                    "leverage_default": 10
+                }
+            },
+            {
+                "role": "legB",
+                "exchange": "okx",
+                "symbol": "TRX-USDT-SWAP",
+                "fee_profile": {
+                    "taker_fee_pct": 0.0005
+                },
+                "contract_profile": {
+                    "contract_size": 1000,
+                    "leverage_default": 10
+                }
+            }
+        ],
+        "alignment": {
+            "time_source": "legA",
+            "tolerance_ms": 30000
+        },
+        "signal": {
+            "spread_pct_thresholds": {
+                "open": 0.0050,
+                "close": 0.0010
+            }
+        },
+        "outputs": {
+            "signals_file": "signals/hedge_signals_TRX.json",
+            "inject_to_mock_server": true
+        }
+    },
+    "//": "策略运行参数",
+    "params": {
+        "funding": {
+            "open_threshold_annualized_pct": 0.10,
+            "close_threshold_annualized_pct": 0.05,
+            "position_size_usdt": 100000,
+            "approx_price": 0.15,
+            "contract_size_override": {
+                "legA": 1,
+                "legB": 1000
+            }
+        }
+    }
+}

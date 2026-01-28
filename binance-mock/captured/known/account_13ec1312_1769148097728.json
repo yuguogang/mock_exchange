@@ -1,0 +1,20 @@
+{
+  "meta": {
+    "url": "https://www.binance.com/bapi/accounts/v1/private/account/user-personal-config/unified-query",
+    "method": "POST",
+    "pathname": "/bapi/accounts/v1/private/account/user-personal-config/unified-query",
+    "query": {},
+    "postData": {
+      "configType": "PM_UPGRADE"
+    },
+    "timestamp": 1769148097728,
+    "category": "account"
+  },
+  "response": {
+    "code": "000000",
+    "message": null,
+    "messageDetail": null,
+    "data": null,
+    "success": true
+  }
+}

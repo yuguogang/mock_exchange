@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "url": "https://www.binance.com/bapi/futures/v1/private/future/user-data/get-first-trade-time",
+    "method": "POST",
+    "pathname": "/bapi/futures/v1/private/future/user-data/get-first-trade-time",
+    "query": {},
+    "postData": null,
+    "timestamp": 1769148097149,
+    "category": "unknown"
+  },
+  "response": {
+    "code": "000000",
+    "message": null,
+    "messageDetail": null,
+    "data": 1768641731000,
+    "success": true
+  }
+}

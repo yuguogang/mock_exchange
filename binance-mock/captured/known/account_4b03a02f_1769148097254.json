@@ -1,0 +1,33 @@
+{
+  "meta": {
+    "url": "https://www.binance.com/bapi/accounts/v1/private/account/compliance/userComplianceCheck",
+    "method": "POST",
+    "pathname": "/bapi/accounts/v1/private/account/compliance/userComplianceCheck",
+    "query": {},
+    "postData": {
+      "productLine": "USER_KYC_GUIDE",
+      "operation": "KYC_STATUS_CHECK"
+    },
+    "timestamp": 1769148097254,
+    "category": "account"
+  },
+  "response": {
+    "code": "000000",
+    "message": null,
+    "messageDetail": null,
+    "data": {
+      "timeout": false,
+      "ipCountry": null,
+      "kycCountry": null,
+      "errorCode": null,
+      "errorMessage": null,
+      "errorMsgParams": null,
+      "extraInfo": {},
+      "ruleId": null,
+      "duration": null,
+      "startTime": null,
+      "pass": true
+    },
+    "success": true
+  }
+}
