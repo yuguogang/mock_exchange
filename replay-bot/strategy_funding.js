@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const http = require('http');
+const env = require('./config/env');
 
 const args = process.argv.slice(2);
 const dataDirArg = args.find(a => a.startsWith('--data-dir='));
@@ -46,8 +47,8 @@ const CT_VAL_B = params.contract_size_override?.legB || legB.contract_profile.co
 const QTY_A = Math.floor((POSITION_SIZE_USDT / APPROX_PRICE) / CT_VAL_A);
 const QTY_B = Math.floor((POSITION_SIZE_USDT / APPROX_PRICE) / CT_VAL_B);
 
-const MOCK_SERVER_HOST = 'localhost';
-const MOCK_SERVER_PORT = 3000;
+const MOCK_SERVER_HOST = env.mockServer.host;
+const MOCK_SERVER_PORT = env.mockServer.port;
 
 // --- PERSISTENCE PATHS ---
 const SIGNALS_DIR = path.join(__dirname, 'signals');
@@ -180,12 +181,12 @@ async function runStrategy() {
             if (events.rateA !== undefined) {
                 const inc = QTY_A * CT_VAL_A * APPROX_PRICE * lastKnownRateA * (activePosition.sideA === 'SELL' ? 1 : -1);
                 incomeRound += inc;
-                if (ts >= SKIP_BEFORE_TS) await postJSON('/mock/income', { symbol: SYMBOL_A, incomeType: 'FUNDING_FEE', income: inc.toFixed(8), asset: 'USDT', time: ts }).catch(() => { });
+                if (ts >= SKIP_BEFORE_TS) await postJSON('/core/transaction', { exchange: legA.exchange, type: 'FUNDING_FEE', symbol: SYMBOL_A, asset: 'USDT', amount: parseFloat(inc.toFixed(8)), timestamp: ts, info: 'Funding fee (A)' }).catch(() => { });
             }
             if (events.rateB !== undefined) {
                 const inc = QTY_B * CT_VAL_B * APPROX_PRICE * lastKnownRateB * (activePosition.sideB === 'SELL' ? 1 : -1);
                 incomeRound += inc;
-                if (ts >= SKIP_BEFORE_TS) await postJSON('/mock/income', { symbol: SYMBOL_B, incomeType: 'FUNDING_FEE', income: inc.toFixed(8), asset: 'USDT', time: ts }).catch(() => { });
+                if (ts >= SKIP_BEFORE_TS) await postJSON('/core/transaction', { exchange: legB.exchange, type: 'FUNDING_FEE', symbol: SYMBOL_B, asset: 'USDT', amount: parseFloat(inc.toFixed(8)), timestamp: ts, info: 'Funding fee (B)' }).catch(() => { });
             }
             activePosition.accumulatedIncome += incomeRound;
             totalIncome += incomeRound;
@@ -195,27 +196,70 @@ async function runStrategy() {
             if (absSpread >= SPREAD_TRIGGER_OPEN) {
                 const sessionId = `ARB_${veracity}_${ts}`;
                 activePosition = { sessionId, entryTs: ts, accumulatedIncome: 0, sideA: annA > annB ? 'SELL' : 'BUY', sideB: annA > annB ? 'BUY' : 'SELL' };
-                const sig = { strategy: 'FUNDING', timestamp: ts, timeStr, type: 'OPEN', sessionId, action: annA > annB ? 'SELL_A_BUY_B' : 'BUY_A_SELL_B', spreadAnnualizedPct: spread, veracity };
+                const sig = {
+                    strategy: 'FUNDING',
+                    id: `sig_${ts}_open`,
+                    ts: ts,
+                    timeStr: new Date(ts).toISOString(),
+                    type: 'OPEN',
+                    sessionId,
+                    action: annA > annB ? 'SELL_A_BUY_B' : 'BUY_A_SELL_B',
+                    metrics: {
+                        spreadAnnualizedPct: spread
+                    },
+                    legs: [
+                        { exchange: legA.exchange, price: APPROX_PRICE },
+                        { exchange: legB.exchange, price: APPROX_PRICE }
+                    ],
+                    status: "paper",
+                    veracity
+                };
                 newEvents.push(sig);
 
                 if (ts >= SKIP_BEFORE_TS) {
                     console.log(`[${timeStr}] [${veracity}] OPEN | Spread: ${(absSpread * 100).toFixed(1)}% | ${sig.action}`);
-                    await postJSON('/mock/order', { symbol: SYMBOL_A, side: activePosition.sideA, type: 'MARKET', quantity: QTY_A, price: APPROX_PRICE }).catch(() => { });
-                    await postJSON('/mock/order', { symbol: SYMBOL_B, side: activePosition.sideB, type: 'MARKET', quantity: QTY_B, price: APPROX_PRICE }).catch(() => { });
+                    await postJSON('/core/order', { exchange: legA.exchange, symbol: SYMBOL_A, side: activePosition.sideA, type: 'MARKET', quantity: QTY_A, price: APPROX_PRICE, status: 'FILLED', timestamp: ts }).catch(() => { });
+                    await postJSON('/core/order', { exchange: legB.exchange, symbol: SYMBOL_B, side: activePosition.sideB, type: 'MARKET', quantity: QTY_B, price: APPROX_PRICE, status: 'FILLED', timestamp: ts }).catch(() => { });
                 }
             }
         } else {
             if (absSpread < SPREAD_TRIGGER_CLOSE) {
-                const sig = { strategy: 'FUNDING', timestamp: ts, timeStr, type: 'CLOSE', sessionId: activePosition.sessionId, spreadAnnualizedPct: spread, veracity, pnl: activePosition.accumulatedIncome };
+                const sig = {
+                    strategy: 'FUNDING',
+                    id: `sig_${ts}_close`,
+                    ts: ts,
+                    timeStr: new Date(ts).toISOString(),
+                    type: 'CLOSE',
+                    sessionId: activePosition.sessionId,
+                    metrics: {
+                        spreadAnnualizedPct: spread
+                    },
+                    legs: [
+                        { exchange: legA.exchange, price: APPROX_PRICE },
+                        { exchange: legB.exchange, price: APPROX_PRICE }
+                    ],
+                    pnl: activePosition.accumulatedIncome,
+                    status: "paper",
+                    veracity
+                };
                 newEvents.push(sig);
                 if (ts >= SKIP_BEFORE_TS) {
                     console.log(`[${timeStr}] [${veracity}] CLOSE | PnL: ${sig.pnl.toFixed(2)}`);
-                    await postJSON('/mock/order', { symbol: SYMBOL_A, side: activePosition.sideA === 'SELL' ? 'BUY' : 'SELL', type: 'MARKET', quantity: QTY_A, price: APPROX_PRICE }).catch(() => { });
-                    await postJSON('/mock/order', { symbol: SYMBOL_B, side: activePosition.sideB === 'SELL' ? 'BUY' : 'SELL', type: 'MARKET', quantity: QTY_B, price: APPROX_PRICE }).catch(() => { });
+                    await postJSON('/core/order', { exchange: legA.exchange, symbol: SYMBOL_A, side: activePosition.sideA === 'SELL' ? 'BUY' : 'SELL', type: 'MARKET', quantity: QTY_A, price: APPROX_PRICE, status: 'FILLED', timestamp: ts }).catch(() => { });
+                    await postJSON('/core/order', { exchange: legB.exchange, symbol: SYMBOL_B, side: activePosition.sideB === 'SELL' ? 'BUY' : 'SELL', type: 'MARKET', quantity: QTY_B, price: APPROX_PRICE, status: 'FILLED', timestamp: ts }).catch(() => { });
                 }
                 activePosition = null;
             } else if (incomeRound !== 0) {
-                newEvents.push({ strategy: 'FUNDING', timestamp: ts, timeStr, type: 'SETTLE', sessionId: activePosition.sessionId, income: incomeRound, veracity });
+                newEvents.push({
+                    strategy: 'FUNDING',
+                    id: `sig_${ts}_settle`,
+                    ts: ts,
+                    timeStr: new Date(ts).toISOString(),
+                    type: 'SETTLE',
+                    sessionId: activePosition.sessionId,
+                    income: incomeRound,
+                    veracity
+                });
             }
         }
         checkpoint.lastProcessedTs = ts;
@@ -229,14 +273,14 @@ async function runStrategy() {
     // 5. Update History & Display
     const history = loadJSON(HISTORY_PATH, []);
     const updatedHistory = [...history, ...newEvents];
-    updatedHistory.sort((a, b) => a.timestamp - b.timestamp); // Ensure sorted
+    updatedHistory.sort((a, b) => (a.ts || a.timestamp) - (b.ts || b.timestamp)); // Ensure sorted
     atomicWrite(HISTORY_PATH, updatedHistory);
 
     updateDisplayFiles(totalIncome, updatedHistory);
 }
 
 function updateDisplayFiles(totalIncome, historyRecords) {
-    const latestTs = historyRecords.length ? historyRecords[historyRecords.length - 1].timestamp : Date.now();
+    const latestTs = historyRecords.length ? (historyRecords[historyRecords.length - 1].ts || historyRecords[historyRecords.length - 1].timestamp) : Date.now();
     const cutoff = (LOOKBACK_MINUTES !== null) ? latestTs - (LOOKBACK_MINUTES * 60 * 1000) : 0;
     const filterStart = Math.max(cutoff, SKIP_BEFORE_TS) - 1;
 
@@ -250,9 +294,9 @@ function updateDisplayFiles(totalIncome, historyRecords) {
     // Filter out closed sessions to get active signals
     // This ensures consistency with scheduler.js and removes closed sessions from signals_TRX.json
     const activeSignals = historyRecords.filter(s => !closedSessionIds.has(s.sessionId));
-    
+
     // Sort by timestamp
-    activeSignals.sort((a, b) => a.timestamp - b.timestamp);
+    activeSignals.sort((a, b) => (a.ts || a.timestamp) - (b.ts || b.timestamp));
 
     atomicWrite(SIGNALS_PATH, activeSignals);
 

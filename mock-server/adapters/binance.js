@@ -6,6 +6,39 @@ class BinanceAdapter {
         return Date.now();
     }
 
+  /**
+   * Convert core schema position to Binance /fapi/v2/positionRisk format
+   */
+  static formatPosition(corePosition) {
+    const symbol = corePosition.symbol;
+    const entryPrice = parseFloat(corePosition.entry_price ?? corePosition.entryPrice ?? 0);
+    const quantity = parseFloat(corePosition.quantity ?? 0);
+    const side = corePosition.side || 'LONG';
+    const markPrice = parseFloat(corePosition.mark_price ?? corePosition.markPrice ?? entryPrice);
+    const sideMultiplier = side === 'LONG' ? 1 : -1;
+    const unRealizedProfit = (markPrice - entryPrice) * quantity * sideMultiplier;
+    const notional = Math.abs(quantity * markPrice);
+    const updateTime = corePosition.updated_at ?? corePosition.updatedAt ?? BinanceAdapter.getTime();
+
+    return {
+      symbol,
+      positionAmt: String(quantity),
+      entryPrice: String(entryPrice),
+      markPrice: String(markPrice),
+      unRealizedProfit: unRealizedProfit.toFixed(4),
+      liquidationPrice: "0",
+      leverage: String(corePosition.leverage ?? 10),
+      maxNotionalValue: "10000000",
+      marginType: "cross",
+      isolatedMargin: "0.00000000",
+      isAutoAddMargin: "false",
+      positionSide: "BOTH",
+      notional: String(notional),
+      isolatedWallet: "0",
+      updateTime
+    };
+  }
+
     /**
      * Map internal positions to Binance fapi/v2/positionRisk format
      */
@@ -215,6 +248,21 @@ class BinanceAdapter {
                     updateTime: BinanceAdapter.getTime()
                 }
             ]
+        };
+    }
+
+    /**
+     * Map core transaction to Binance income format (fapi/v1/income)
+     */
+    static formatTransaction(tx) {
+        return {
+            symbol: tx.symbol || '',
+            incomeType: tx.type,
+            income: String(tx.amount),
+            asset: tx.asset || 'USDT',
+            info: tx.info || '',
+            time: tx.timestamp,
+            tranId: tx.id
         };
     }
 }

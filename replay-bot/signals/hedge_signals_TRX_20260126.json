@@ -1,0 +1,26 @@
+[
+  {
+    "strategy": "HEDGE",
+    "id": "sig_1769439540000_open",
+    "ts": 1769439540000,
+    "timeStr": "2026-01-26T14:59:00.000Z",
+    "type": "OPEN",
+    "sessionId": "HEDGE_1769439540000",
+    "action": "SELL_BINANCE_BUY_OKX",
+    "metrics": {
+      "spreadPct": 0.02654807853666732
+    },
+    "legs": [
+      {
+        "exchange": "binance",
+        "price": 0.15293
+      },
+      {
+        "exchange": "okx",
+        "price": 0.148975
+      }
+    ],
+    "status": "paper",
+    "veracity": "FAKE"
+  }
+]

@@ -178,15 +178,20 @@ async function runReplay() {
                 signals.push({
                     strategy: 'HEDGE',
                     id: `sig_${ts}_open`,
-                    timestamp: ts,
+                    ts: ts,
                     timeStr: new Date(ts).toISOString(),
                     type: 'OPEN',
                     sessionId: currentSessionId,
                     action: action,
-                    legA_price: priceA,
-                    legB_price: priceB,
-                    spreadPct: spreadPct,
-                    status: "adopted"
+                    metrics: {
+                        spreadPct: spreadPct
+                    },
+                    legs: [
+                        { exchange: legA.exchange, price: priceA },
+                        { exchange: legB.exchange, price: priceB }
+                    ],
+                    status: "paper",
+                    veracity: "FAKE"
                 });
             }
         } else if (state === 'HOLDING') {
@@ -194,14 +199,19 @@ async function runReplay() {
                 signals.push({
                     strategy: 'HEDGE',
                     id: `sig_${ts}_close`,
-                    timestamp: ts,
+                    ts: ts,
                     timeStr: new Date(ts).toISOString(),
                     type: 'CLOSE',
                     sessionId: currentSessionId,
-                    legA_price: priceA,
-                    legB_price: priceB,
-                    spreadPct: spreadPct,
-                    status: "adopted"
+                    metrics: {
+                        spreadPct: spreadPct
+                    },
+                    legs: [
+                        { exchange: legA.exchange, price: priceA },
+                        { exchange: legB.exchange, price: priceB }
+                    ],
+                    status: "paper",
+                    veracity: "FAKE"
                 });
                 state = 'IDLE';
                 currentSessionId = null;
@@ -213,15 +223,15 @@ async function runReplay() {
     // Only use existing active signals for dedup check in active list, but we need global history for comprehensive dedup?
     // Actually, we should check against HISTORY for dedup to be safe.
     const history = loadJSON(UNIFIED_HISTORY_PATH, []);
-    
+
     // 1. Update History (Append Only)
-    const existingHistoryIds = new Set(history.map(s => s.id || `${s.timestamp}_${s.type}_${s.sessionId}`));
+    const existingHistoryIds = new Set(history.map(s => s.id || `${s.ts || s.timestamp}_${s.type}_${s.sessionId}`));
     const closedSessionIdsInHistory = new Set(history.filter(s => s.type === 'CLOSE').map(s => s.sessionId));
-    
+
     const updatedHistory = history.slice();
     for (const sig of signals) {
-        const key = sig.id || `${sig.timestamp}_${sig.type}_${sig.sessionId}`;
-        
+        const key = sig.id || `${sig.ts || sig.timestamp}_${sig.type}_${sig.sessionId}`;
+
         // Prevent duplicate CLOSE signals for the same session
         if (sig.type === 'CLOSE' && closedSessionIdsInHistory.has(sig.sessionId)) {
             continue;
@@ -234,7 +244,7 @@ async function runReplay() {
             }
         }
     }
-    updatedHistory.sort((a, b) => a.timestamp - b.timestamp); // Ensure sorted
+    updatedHistory.sort((a, b) => (a.ts || a.timestamp) - (b.ts || b.timestamp)); // Ensure sorted
     fs.writeFileSync(UNIFIED_HISTORY_PATH, JSON.stringify(updatedHistory, null, 2));
 
     // 2. Update Active Signals (Active Sessions Only)

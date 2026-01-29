@@ -2,6 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const http = require('http');
 const net = require('net');
+const env = require('./config/env');
 
 const args = process.argv.slice(2);
 const configArg = args.find(a => a.startsWith('--config='));
@@ -54,8 +55,8 @@ const FALLBACK_SIGNALS_FILE = hedgeConfig.outputs.signals_file
 const REAL_OUTPUT_DIR = path.join(__dirname, 'mock_data');
 if (!fs.existsSync(REAL_OUTPUT_DIR)) fs.mkdirSync(REAL_OUTPUT_DIR);
 
-const MOCK_SERVER_HOST = 'localhost';
-const MOCK_SERVER_PORT = 3000;
+const MOCK_SERVER_HOST = env.mockServer.host;
+const MOCK_SERVER_PORT = env.mockServer.port;
 
 function checkMockServer() {
     return new Promise((resolve) => {
@@ -105,14 +106,17 @@ async function injectOrder(trade) {
         const quantity = parseFloat(trade.qty || trade.fillSz);
         const price = parseFloat(trade.price || trade.fillPx);
         const clientOrderId = trade.orderId || trade.clOrdId;
-        await postJSON('/mock/order', {
+        const exchange = trade.exchange || (trade.instId ? 'okx' : 'binance');
+        await postJSON('/core/order', {
+            exchange,
             symbol,
             side,
-            type: 'LIMIT',
+            type: 'MARKET',
             quantity,
             price,
             status: 'FILLED',
-            clientOrderId
+            clientOrderId,
+            timestamp: Date.now()
         });
     } catch (e) {
         const symbol = trade.symbol || trade.instId;
@@ -127,21 +131,30 @@ async function injectOrder(trade) {
 
 async function injectPosition(position) {
     try {
+        const exchange = position.exchange || (position.instId ? 'okx' : 'binance');
         const symbol = position.symbol || position.instId;
-        const size = parseFloat(position.positionAmt || position.pos);
+        const quantity = parseFloat(position.positionAmt || position.pos);
         const entryPrice = parseFloat(position.entryPrice || position.avgPx);
         const leverage = parseFloat(position.leverage || position.lever || 10);
+        const markPrice = parseFloat(position.markPrice || position.markPx || entryPrice);
+        const side = quantity > 0 ? 'LONG' : (quantity < 0 ? 'SHORT' : 'BOTH');
+        const margin = (Math.abs(quantity) * entryPrice) / leverage;
 
         if (!symbol) return;
 
-        await postJSON('/mock/position', {
-            symbol: symbol,
-            size: size,
-            entryPrice: entryPrice,
-            side: size > 0 ? 'LONG' : (size < 0 ? 'SHORT' : 'BOTH'),
-            margin: (Math.abs(size) * entryPrice) / leverage
+        await postJSON('/core/position', {
+            exchange,
+            symbol,
+            side,
+            quantity,
+            entryPrice,
+            markPrice,
+            unrealizedPnl: 0,
+            margin,
+            leverage,
+            timestamp: Date.now()
         });
-        console.log(`  -> Injected Position: ${symbol} Size:${size}`);
+        console.log(`  -> Injected Position: ${exchange}:${symbol} Qty:${quantity}`);
     } catch (e) {
         const symbol = position.symbol || position.instId;
         const size = parseFloat(position.positionAmt || position.pos);
@@ -177,11 +190,14 @@ function generateMockTrades(signals) {
     const okxTrades = [];
     const legA = hedgeConfig.legs.find(l => l.role === 'legA');
     const legB = hedgeConfig.legs.find(l => l.role === 'legB');
-    const positionSizeUsdt = strategyConfig.params.funding.position_size_usdt || 10000;
+    const fundingParams = (strategyConfig.params && strategyConfig.params.funding) || {};
+    const execParams = (strategyConfig.params && strategyConfig.params.execution) || {};
+    const positionSizeUsdt = (execParams.order_notional_usdt ?? fundingParams.position_size_usdt ?? 10000);
 
     let tradeIdCounter = 1000000;
     const sessionMap = new Map(); // Track entry side to reverse on Close
 
+    const approxPrice = (execParams.approx_price ?? fundingParams.approx_price ?? 0.15);
     signals.forEach((signal) => {
         const ts = signal.timestamp;
         const isClose = signal.type === 'CLOSE';
@@ -204,8 +220,10 @@ function generateMockTrades(signals) {
 
         if (!action) return;
 
-        const priceA = signal.legA_price || signal.binancePrice;
-        const priceB = signal.legB_price || signal.okxPrice;
+        const legBinance = Array.isArray(signal.legs) ? signal.legs.find(l => l.exchange === 'binance') : null;
+        const legOkx = Array.isArray(signal.legs) ? signal.legs.find(l => l.exchange === 'okx') : null;
+        const priceA = (signal.legA_price || signal.binancePrice || (legBinance && legBinance.price) || approxPrice);
+        const priceB = (signal.legB_price || signal.okxPrice || (legOkx && legOkx.price) || approxPrice);
 
         const qtyA = Math.floor((positionSizeUsdt / priceA) / legA.contract_profile.contract_size) * legA.contract_profile.contract_size;
         const qtyB = Math.floor((positionSizeUsdt / priceB) / legB.contract_profile.contract_size) * legB.contract_profile.contract_size;
@@ -213,6 +231,7 @@ function generateMockTrades(signals) {
         // Binance Trade
         const sideA = action.includes('BUY_BINANCE') ? 'BUY' : 'SELL';
         binanceTrades.push({
+            exchange: 'binance',
             id: tradeIdCounter++,
             orderId: signal.id,
             symbol: legA.symbol,
@@ -227,6 +246,7 @@ function generateMockTrades(signals) {
         // OKX Trade
         const sideB = action.includes('BUY_OKX') ? 'BUY' : 'SELL';
         okxTrades.push({
+            exchange: 'okx',
             instId: legB.symbol,
             tradeId: String(tradeIdCounter++),
             ordId: signal.id,
@@ -246,7 +266,9 @@ function generateMockTrades(signals) {
 function generateMockPositions(signals) {
     const legA = hedgeConfig.legs.find(l => l.role === 'legA');
     const legB = hedgeConfig.legs.find(l => l.role === 'legB');
-    const positionSizeUsdt = strategyConfig.params.funding.position_size_usdt || 10000;
+    const fundingParams = (strategyConfig.params && strategyConfig.params.funding) || {};
+    const execParams = (strategyConfig.params && strategyConfig.params.execution) || {};
+    const positionSizeUsdt = (execParams.order_notional_usdt ?? fundingParams.position_size_usdt ?? 10000);
 
     let legANetQty = 0;
     let legBNetQty = 0;
@@ -266,8 +288,10 @@ function generateMockPositions(signals) {
 
         if (!action) return;
 
-        const priceA = signal.legA_price || signal.binancePrice;
-        const priceB = signal.legB_price || signal.okxPrice;
+        const legBinance = Array.isArray(signal.legs) ? signal.legs.find(l => l.exchange === 'binance') : null;
+        const legOkx = Array.isArray(signal.legs) ? signal.legs.find(l => l.exchange === 'okx') : null;
+        const priceA = (signal.legA_price || signal.binancePrice || (legBinance && legBinance.price) || approxPrice);
+        const priceB = (signal.legB_price || signal.okxPrice || (legOkx && legOkx.price) || approxPrice);
         const qtyA = Math.floor((positionSizeUsdt / priceA) / legA.contract_profile.contract_size) * legA.contract_profile.contract_size;
         const qtyB = Math.floor((positionSizeUsdt / priceB) / legB.contract_profile.contract_size) * legB.contract_profile.contract_size;
 
@@ -279,10 +303,14 @@ function generateMockPositions(signals) {
     });
 
     const lastSignal = signals[signals.length - 1];
-    const lastPriceA = lastSignal ? (lastSignal.legA_price || lastSignal.binancePrice) : 0;
-    const lastPriceB = lastSignal ? (lastSignal.legB_price || lastSignal.okxPrice) : 0;
+    const approxPrice = (execParams.approx_price ?? fundingParams.approx_price ?? 0.15);
+    const legBinanceLast = (lastSignal && Array.isArray(lastSignal.legs)) ? lastSignal.legs.find(l => l.exchange === 'binance') : null;
+    const legOkxLast = (lastSignal && Array.isArray(lastSignal.legs)) ? lastSignal.legs.find(l => l.exchange === 'okx') : null;
+    const lastPriceA = lastSignal ? (lastSignal.legA_price || lastSignal.binancePrice || (legBinanceLast && legBinanceLast.price) || approxPrice) : approxPrice;
+    const lastPriceB = lastSignal ? (lastSignal.legB_price || lastSignal.okxPrice || (legOkxLast && legOkxLast.price) || approxPrice) : approxPrice;
 
     const binancePosition = {
+        exchange: 'binance',
         symbol: legA.symbol,
         positionAmt: String(legANetQty),
         entryPrice: String(lastPriceA),
@@ -295,6 +323,7 @@ function generateMockPositions(signals) {
     };
 
     const okxPosition = {
+        exchange: 'okx',
         instId: legB.symbol,
         pos: String(legBNetQty),
         avgPx: String(lastPriceB),

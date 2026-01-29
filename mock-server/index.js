@@ -2,6 +2,7 @@ const fastify = require('fastify')({ logger: true });
 const cors = require('@fastify/cors');
 const fs = require('fs');
 const path = require('path');
+const ParameterFilter = require('./middleware/parameter-filter');
 
 // Register CORS
 // Register CORS
@@ -17,6 +18,9 @@ const db = require('./database');
 
 // Current market prices (cached in memory for speed)
 const currentPrices = new Map();
+
+// Parameter filter
+const parameterFilter = new ParameterFilter();
 
 // Positions storage (cached in memory for speed)
 const positions = new Map();
@@ -449,6 +453,10 @@ fastify.get('/fapi/v1/allOrders', async (request, reply) => {
  * Binance compatible position endpoint
  */
 fastify.get('/fapi/v2/positionRisk', async (request, reply) => {
+    const result = parameterFilter.validateParameters('binance', '/fapi/v2/positionRisk', request.query || {});
+    if (!result.valid) {
+        return reply.code(400).send({ success: false, errors: result.errors });
+    }
     return BinanceAdapter.getPositionRisk(positions, currentPrices);
 });
 
@@ -457,9 +465,18 @@ fastify.get('/fapi/v2/positionRisk', async (request, reply) => {
  * Binance compatible trades endpoint
  */
 fastify.get('/fapi/v1/userTrades', async (request, reply) => {
-    const trades = db.getTrades();
+    const result = parameterFilter.validateParameters('binance', '/fapi/v1/userTrades', request.query || {});
+    if (!result.valid) {
+        return reply.code(400).send({ success: false, errors: result.errors });
+    }
+    const symbol = result.filtered.symbol;
+    const limit = result.filtered.limit ? Math.min(result.filtered.limit, 1000) : 50;
+    let trades = db.getTrades();
+    if (symbol) {
+        trades = trades.filter(t => t.symbol === symbol);
+    }
     const sorted = trades.sort((a, b) => b.timestamp - a.timestamp);
-    return BinanceAdapter.getUserTrades(sorted.slice(0, 50));
+    return BinanceAdapter.getUserTrades(sorted.slice(0, limit));
 });
 
 /**
@@ -472,15 +489,15 @@ fastify.get('/fapi/v2/balance', async (request, reply) => {
 
 
 fastify.get('/fapi/v1/income', async (request, reply) => {
-    // Basic income history mock based on trades
-    const trades = db.getTrades();
-    // In a real scenario, we'd map trades to income types (commission, pnl, etc)
-    // For now, let's just return commission entries for each trade
-    
-    const income = [];
+    const result = parameterFilter.validateParameters('binance', '/fapi/v1/income', request.query || {});
+    if (!result.valid) {
+        return reply.code(400).send({ success: false, errors: result.errors });
+    }
+    const { symbol, incomeType, startTime, endTime } = result.filtered;
+    const limit = result.filtered.limit ? Math.min(result.filtered.limit, 1000) : 50;
 
-    // Add Commission from trades
-    trades.forEach(t => {
+    const income = [];
+    db.getTrades().forEach(t => {
         income.push({
             symbol: t.symbol,
             incomeType: "COMMISSION",
@@ -488,21 +505,30 @@ fastify.get('/fapi/v1/income', async (request, reply) => {
             asset: t.commissionAsset,
             time: t.timestamp,
             info: "Commission for trade",
-            tranId: t.id * 10, // Mock tranId
+            tranId: t.id * 10,
             tradeId: t.id
         });
     });
-
-    // Add Custom Incomes (Funding Fees etc)
     customIncomes.forEach(inc => {
         income.push(inc);
     });
 
-    // Sort by time desc
-    const sorted = income.sort((a, b) => b.time - a.time);
+    let filtered = income;
+    if (symbol) {
+        filtered = filtered.filter(r => r.symbol === symbol);
+    }
+    if (incomeType) {
+        filtered = filtered.filter(r => r.incomeType === incomeType);
+    }
+    if (startTime) {
+        filtered = filtered.filter(r => r.time >= startTime);
+    }
+    if (endTime) {
+        filtered = filtered.filter(r => r.time <= endTime);
+    }
 
-    // Limit to 50 items to prevent message passing timeout
-    return sorted.slice(0, 50);
+    const sorted = filtered.sort((a, b) => b.time - a.time);
+    return sorted.slice(0, limit);
 });
 
 /**
@@ -534,8 +560,9 @@ fastify.post('/mock/income', async (request, reply) => {
 // ========== Server Start ==========
 const start = async () => {
     try {
-        await fastify.listen({ port: 3000, host: '0.0.0.0' });
-        console.log('🚀 Mock Server running on http://localhost:3000');
+        const port = parseInt(process.env.PORT || '3000', 10);
+        await fastify.listen({ port, host: '0.0.0.0' });
+        console.log(`🚀 Mock Server running on http://localhost:${port}`);
         console.log('\nAvailable endpoints:');
         console.log('  POST /mock/price          - Update market price');
         console.log('  GET  /mock/price/:symbol  - Get current price');

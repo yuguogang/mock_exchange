@@ -32,7 +32,11 @@ class TranslationEngine {
         const legA = this.config.hedge.legs.find(l => l.role === 'legA');
         const legB = this.config.hedge.legs.find(l => l.role === 'legB');
 
-        const { action, type, sessionId, id, timestamp } = signal;
+        const { action, type, sessionId, id, timestamp, ts, legs } = signal;
+        // Normalize timestamp: prefer 'ts' but fallback to 'timestamp'
+        const normalizedTs = ts || timestamp;
+
+        console.log(`[DEBUG] Translating ${type} ${sessionId}. Action=${action}. SessionStateKeys=[${Array.from(this.sessionState.keys())}]`);
 
         // Generate settlements BEFORE closing if this is a CLOSE signal
         if (type === 'CLOSE') {
@@ -46,6 +50,11 @@ class TranslationEngine {
             sideA = (action.includes('SELL_BINANCE') || action.includes('SELL_A')) ? 'SELL' : 'BUY';
             // Avoid matching 'BUY_B' within 'BUY_BINANCE'
             sideB = (action.includes('BUY_OKX') || (action.includes('BUY_B') && !action.includes('BUY_BINANCE'))) ? 'BUY' : 'SELL';
+        } else if (type === 'CLOSE' && this.sessionState.has(sessionId)) {
+            // Implicit CLOSE action: Reverse the sides from the session
+            const session = this.sessionState.get(sessionId);
+            sideA = session.sideA === 'SELL' ? 'BUY' : 'SELL';
+            sideB = session.sideB === 'SELL' ? 'BUY' : 'SELL';
         } else if (type === 'OPEN' || type === 'CLOSE') {
             return results;
         }
@@ -55,23 +64,43 @@ class TranslationEngine {
         // Qty Calculation
         let baseQtyA, baseQtyB;
         if (type === 'OPEN') {
-            const params = this.config.strategy.params.funding;
-            const posSize = params.position_size_usdt || 10000;
-            const approxPrice = params.approx_price || 0.3;
+            const fundingParams = (this.config.strategy && this.config.strategy.params && this.config.strategy.params.funding) || {};
+            const execParams = (this.config.strategy && this.config.strategy.params && this.config.strategy.params.execution) || {};
+            const posSize = (execParams.order_notional_usdt ?? fundingParams.position_size_usdt ?? 10000);
+            const approxPrice = (execParams.approx_price ?? fundingParams.approx_price ?? 0.3);
 
-            const priceA = signal.legA_price || signal.binancePrice || approxPrice;
-            const priceB = signal.legB_price || signal.okxPrice || approxPrice;
+            let priceA = approxPrice;
+            let priceB = approxPrice;
+
+            if (legs && legs.length >= 2) {
+                // Assuming leg order matches config leg order, or by exchange name match if possible
+                // Config: legA (binance), legB (okx)
+                // New Format legs: [{exchange: 'binance', price: ...}, {exchange: 'okx', price: ...}]
+
+                const legAData = legs.find(l => l.exchange === legA.exchange);
+                const legBData = legs.find(l => l.exchange === legB.exchange);
+
+                if (legAData) priceA = legAData.price;
+                if (legBData) priceB = legBData.price;
+            } else {
+                // Fallback to old keys
+                priceA = signal.legA_price || signal.binancePrice || approxPrice;
+                priceB = signal.legB_price || signal.okxPrice || approxPrice;
+            }
 
             baseQtyA = posSize / priceA;
             baseQtyB = posSize / priceB;
 
             // Store in session state
             this.sessionState.set(sessionId, {
-                startTime: timestamp,
+                startTime: normalizedTs,
+                qtyA: baseQtyA,
                 qtyA: baseQtyA,
                 qtyB: baseQtyB,
                 priceA,
-                priceB
+                priceB,
+                sideA,
+                sideB
             });
         } else if (type === 'CLOSE') {
             if (session) {
@@ -80,16 +109,44 @@ class TranslationEngine {
                 this.sessionState.delete(sessionId);
             } else {
                 // Fallback if session not found
-                const params = this.config.strategy.params.funding;
-                const posSize = params.position_size_usdt || 10000;
-                const approxPrice = params.approx_price || 0.3;
-                baseQtyA = posSize / (signal.legA_price || approxPrice);
-                baseQtyB = posSize / (signal.legB_price || approxPrice);
+                const fundingParams = (this.config.strategy && this.config.strategy.params && this.config.strategy.params.funding) || {};
+                const execParams = (this.config.strategy && this.config.strategy.params && this.config.strategy.params.execution) || {};
+                const posSize = (execParams.order_notional_usdt ?? fundingParams.position_size_usdt ?? 10000);
+                const approxPrice = (execParams.approx_price ?? fundingParams.approx_price ?? 0.3);
+
+                // Try to extract price from signal for fallback
+                let pA = approxPrice, pB = approxPrice;
+                if (legs && legs.length >= 2) {
+                    const legAData = legs.find(l => l.exchange === legA.exchange);
+                    const legBData = legs.find(l => l.exchange === legB.exchange);
+                    if (legAData) pA = legAData.price;
+                    if (legBData) pB = legBData.price;
+                } else {
+                    pA = signal.legA_price || approxPrice;
+                    pB = signal.legB_price || approxPrice;
+                }
+
+                baseQtyA = posSize / pA;
+                baseQtyB = posSize / pB;
             }
         }
 
-        const priceA = signal.legA_price || (session ? session.priceA : 0.3);
-        const priceB = signal.legB_price || (session ? session.priceB : 0.3);
+        // Determine prices for Orders (if needed for limit orders, though mock uses market usually)
+        let finalPriceA = (session ? session.priceA : 0.3);
+        let finalPriceB = (session ? session.priceB : 0.3);
+
+        // If current prices are available in signal, use them? 
+        // Mock server executes at 'current market price', but we send price in order object sometimes.
+        // Let's stick to session entry price or signal price.
+        if (legs && legs.length >= 2) {
+            const legAData = legs.find(l => l.exchange === legA.exchange);
+            const legBData = legs.find(l => l.exchange === legB.exchange);
+            if (legAData) finalPriceA = legAData.price;
+            if (legBData) finalPriceB = legBData.price;
+        } else {
+            if (signal.legA_price) finalPriceA = signal.legA_price;
+            if (signal.legB_price) finalPriceB = signal.legB_price;
+        }
 
         // Apply rules
         const ruleA = this.rules[legA.exchange.toLowerCase()];
@@ -103,7 +160,7 @@ class TranslationEngine {
                     symbol: ruleA.symbolMapping(legA.symbol),
                     side: sideA,
                     quantity: ruleA.quantityCalculation(baseQtyA, legA.contract_profile),
-                    price: priceA,
+                    price: finalPriceA,
                     clientOrderId: `${id || sessionId}_A`
                 })
             });
@@ -117,7 +174,7 @@ class TranslationEngine {
                     symbol: ruleB.symbolMapping(legB.symbol),
                     side: sideB,
                     quantity: ruleB.quantityCalculation(baseQtyB, legB.contract_profile),
-                    price: priceB,
+                    price: finalPriceB,
                     clientOrderId: `${id || sessionId}_B`
                 })
             });
@@ -132,7 +189,7 @@ class TranslationEngine {
 
         const openTime = session.startTime;
 
-        const closeTime = closeSignal.timestamp;
+        const closeTime = closeSignal.ts || closeSignal.timestamp;
         const settlements = [];
 
         for (const leg of this.config.hedge.legs) {
@@ -168,9 +225,10 @@ class TranslationEngine {
     async calculateFeeAtTime(leg, timestamp, rate) {
         // We need to know the size and side at that time.
         // Assuming position_size_usdt and approx_price for now.
-        const params = this.config.strategy.params.funding;
-        const posSize = params.position_size_usdt || 10000;
-        const approxPrice = params.approx_price || 0.3;
+        const fundingParams = (this.config.strategy && this.config.strategy.params && this.config.strategy.params.funding) || {};
+        const execParams = (this.config.strategy && this.config.strategy.params && this.config.strategy.params.execution) || {};
+        const posSize = (execParams.order_notional_usdt ?? fundingParams.position_size_usdt ?? 10000);
+        const approxPrice = (execParams.approx_price ?? fundingParams.approx_price ?? 0.3);
 
         // Determine side based on typical hedge behavior if not tracked
         // In this TRX example, LegA is often SELL and LegB is BUY for neutral funding Arb.
